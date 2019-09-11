@@ -1,3 +1,1 @@
-# helloworld
-yuzt's first git test
-this is my first commit test...
+# ppc 失联诊断工具
