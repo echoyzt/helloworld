@@ -1,0 +1,8 @@
+=====pstack 14270-----ECMA
+#0  0x0031d424 in __kernel_vsyscall ()
+#1  0x0043007d in ___newselect_nocancel () from /lib/libc.so.6
+#2  0x0057c293 in CNFD::CNFD_Select(fd_set*, fd_set*, int*, int) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#3  0x0058bfde in CNEH::CNEH_MainLoop() () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#4  0x005846c8 in CNMAHandler::CNMA_mainloop() () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#5  0x00582284 in CN4A_main_loop () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#6  0x0807b53a in main ()

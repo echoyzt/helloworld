@@ -1,0 +1,11 @@
+=====pstack 13221-----ITDS
+#0  0x005e9424 in __kernel_vsyscall ()
+#1  0x001ff07d in ___newselect_nocancel () from /lib/libc.so.6
+#2  0x00e3c293 in CNFD::CNFD_Select(fd_set*, fd_set*, int*, int) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#3  0x00e40276 in CNCM::CNCM_RecvreqIntime(unsigned long, int, long, void*, int, int*, int*, int, unsigned long*) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#4  0x00e408da in CNCM::CNCM_ReceiveRequest(unsigned long, int, void*, int, int*, int*, int, unsigned long*) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#5  0x00e45ef0 in CNMAHandler::CNMA_receiveRequest(char const*, void*, int, int*, int*, int) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#6  0x00e42c52 in CN4A_receive_request () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#7  0x00ea6a29 in ITMessage::RecRequest(int) () from /home/506OI/SMEE/lib/linux/libIT4A.so
+#8  0x080497b3 in ITDistributeServer::Active() ()
+#9  0x08049c6f in main ()

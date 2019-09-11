@@ -1,0 +1,13 @@
+=====pstack 12940-----SMMB
+#0  0x00489424 in __kernel_vsyscall ()
+#1  0x001ff07d in ___newselect_nocancel () from /lib/libc.so.6
+#2  0x006bc293 in CNFD::CNFD_Select(fd_set*, fd_set*, int*, int) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#3  0x006c0276 in CNCM::CNCM_RecvreqIntime(unsigned long, int, long, void*, int, int*, int*, int, unsigned long*) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#4  0x006c08da in CNCM::CNCM_ReceiveRequest(unsigned long, int, void*, int, int*, int*, int, unsigned long*) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#5  0x006c5ef0 in CNMAHandler::CNMA_receiveRequest(char const*, void*, int, int*, int*, int) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#6  0x006c2c52 in CN4A_receive_request () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#7  0x009de217 in CN4AWrapper::receiveRequest(void*, int, int*, int*, int) () from /home/506OI/SMEE/lib/linux/libSMGN.so
+#8  0x009dbe7a in SMMessageTransport<SMMB_UNION_MSG, SMMB_UNION_MSG>::receiveRequest(SMMB_UNION_MSG*, char const*, int*, int) () from /home/506OI/SMEE/lib/linux/libSMGN.so
+#9  0x009d49fe in SMMBMessage::receiveRequest() () from /home/506OI/SMEE/lib/linux/libSMGN.so
+#10 0x08049453 in SMMBserverHandler::dispatch() ()
+#11 0x080497bb in main ()

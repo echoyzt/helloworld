@@ -1,0 +1,4 @@
+Process id: 3755
+Signal information: Segmentation fault
+Stack information:
+[0x3b3400]

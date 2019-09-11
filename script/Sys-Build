@@ -1,0 +1,59 @@
+#!/bin/bash
+LANG=zh_CN.GB18030
+export LANG
+
+CHECK_OUT="$HOME/StarTeamCP_2005r2/bin/stcmd co -p"
+project="$1"
+label="$2"
+. project.cfg
+
+if [ ! -z "`echo $pro203mNew | grep $project`" ];then 
+    if [ "$project" = "203M/3.3" ]
+    then
+        cd $HOME/SSB500_10M/203M_SWS/3.3
+    elif [ "$project" = "203M/3.4" ]
+    then
+        cd $HOME/SSB500_10M/203M_SWS/3.4
+    fi
+    ./qbBuild $label 
+elif [ ! -z "`echo $pro205new  | grep $project`" ];then
+    if [ "$project" = "205/3.3" ]
+    then
+        cd $HOME/SSB500_30/205_SWS/3.3
+    elif [ "$project" = "205/3.4" ]
+    then
+        cd $HOME/SSB500_30/205_SWS/3.4
+    fi
+    ./qbBuild $label 
+elif [ ! -z "`echo $pro20516   | grep $project`" ];then 
+    if [ "$project" = "207999" ]
+    then
+        cd $HOME/207999
+        ./build 207999 $label 203build 203smeebuild
+    elif [ "$project" = "20516/1.x" ];then 
+        cd $HOME/20516/1.x
+        ./build $label
+    elif [ "$project" = "20516/2.x" ];then 
+        cd $HOME/20516/2.x
+        ./build $label
+    fi
+elif [ ! -z "`echo $pro206     | grep $project`" ];then 
+    cd $HOME/SSB545_10/1.x
+    ./build $label
+elif [ ! -z "`echo $pro205c    | grep $project`" ];then
+    if [ "$project" = "211999" ]
+    then
+        cd $HOME/211999
+        ./build 211999 $label 203build 203smeebuild
+    else
+        cd $HOME/205C/1.x
+        ./build $label
+    fi
+elif [ ! -z "`echo $pro301c    | grep $project`" ];then 
+    cd $HOME/301C/1.x
+    ./build $label
+else
+	echo "error project" $project
+	exit 1
+fi
+exit 0

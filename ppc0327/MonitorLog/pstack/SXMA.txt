@@ -1,0 +1,16 @@
+=====pstack 13756-----SXMA
+Thread 2 (Thread 0xb7350b70 (LWP 13798)):
+#0  0x001c2424 in __kernel_vsyscall ()
+#1  0x00a25986 in nanosleep () from /lib/libc.so.6
+#2  0x0092a818 in GFTD_sleep () from /home/506OI/SMEE/lib/linux/libGF4A.so
+#3  0x0805bd85 in WriteEventDataToDBAssistant ()
+#4  0x001929e9 in start_thread () from /lib/libpthread.so.0
+#5  0x00a65cde in clone () from /lib/libc.so.6
+Thread 1 (Thread 0xb78b9740 (LWP 13756)):
+#0  0x001c2424 in __kernel_vsyscall ()
+#1  0x00a5e0b1 in select () from /lib/libc.so.6
+#2  0x007e0293 in CNFD::CNFD_Select(fd_set*, fd_set*, int*, int) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#3  0x007effde in CNEH::CNEH_MainLoop() () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#4  0x007e86c8 in CNMAHandler::CNMA_mainloop() () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#5  0x007e6284 in CN4A_main_loop () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#6  0x0805271e in main ()

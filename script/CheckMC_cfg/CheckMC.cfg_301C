@@ -1,0 +1,35 @@
+******************************************CHeckMC配置文件***********************************
+
+#XXMC_tc.h数据结构定义文件的存放路径，需包含要解析的XXMC_tc.h及其依赖的头文件，推荐使用项目根目录
+tc_path = C:\SSB300\206009\开发区\SRC
+
+#XXMC.ini机器常数文件的存放路径
+ini_path = C:\SSB300\206009\开发区\IT\CM\data
+
+#特定的机器常数中使用了宏,不存在不用填，多项之间使用逗号分隔
+macro =
+
+#不是按照XXMC_FILE_STRUCT命名的需手动给出ini与STRUCT的对应关系，ini和STRUCT用冒号分开，多项之间使用逗号分隔
+sp_mc = FCMC_FACTORY.ini:FCMC_FACTORY_CONSTANTS_FC_FILE_STRUCT,
+FCMC_RETICLE.ini:FCMC_RETICLE_DATA_RANGE_FC_FILE_STRUCT,
+WSMOMC.ini:WSMOMC_FILE_STRUCT,
+WSMC_MIRROR_MAP.ini:WSMC_MIRROR_MAP_FILE_STRUCT,
+WSMC_MOTOR_COMPENSATE.ini:WSMC_MOTOR_COMPENSATE_FILE_STRUCT,
+RSMOMC.ini:RSMOMC_FILE_STRUCT,
+RSMC_MIRROR_MAP.ini:RSMC_MIRROR_MAP_FILE_STRUCT
+RVMC_POD.ini:RVMC_FILE_STRUCT, 
+RVMC_RETICLE.ini:RVMC_FILE_STRUCT
+
+#不是按照XXMC_tc.h命名的，需要手动给出tc_path后面的路径名解析，多项之间使用逗号分隔
+sp_file = WHFC.ini:\WRH\WH\com\ext\typ\WHFC_tc.h,
+RHFC.ini:\WRH\RH\com\ext\typ\RHFC_tc.h, 
+WSMOMC.ini:WRS\WS\com\ext\typ\WSMOMC_tc.h,
+WSMC_MIRROR_MAP.ini:WRS\WS\com\ext\typ\WSMOMC_tc.h,
+WSMC_MOTOR_COMPENSATE.ini:WRS\WS\com\ext\typ\WSMOMC_tc.h,
+RSMOMC.ini:WRS\RS\com\ext\typ\RSMOMC_tc.h,
+RSMC_MIRROR_MAP.ini:WRS\RS\com\ext\typ\RSMOMC_tc.h
+VMMC.ini:\ES\VM\com\ext\typ\VMMC.h
+
+#存在同名文件，但内容不一样，某些机器常数需要指定特定的目录，多项之间使用逗号分隔
+sp_dir = WMMC.ini:\WRH\WM\com\ext, 
+RMMC.ini:\WRH\RM\com\ext

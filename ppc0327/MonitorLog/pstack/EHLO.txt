@@ -1,0 +1,11 @@
+=====pstack 13132-----EHLO
+#0  0x00ade424 in __kernel_vsyscall ()
+#1  0x006780b1 in select () from /lib/libc.so.6
+#2  0x00d91293 in CNFD::CNFD_Select(fd_set*, fd_set*, int*, int) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#3  0x00d95276 in CNCM::CNCM_RecvreqIntime(unsigned long, int, long, void*, int, int*, int*, int, unsigned long*) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#4  0x00d958da in CNCM::CNCM_ReceiveRequest(unsigned long, int, void*, int, int*, int*, int, unsigned long*) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#5  0x00d9aef0 in CNMAHandler::CNMA_receiveRequest(char const*, void*, int, int*, int*, int) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#6  0x00d97c52 in CN4A_receive_request () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#7  0x0804a9af in EHMessager::receive_request(int, int*) ()
+#8  0x0805b6ad in EHLogRcordHandler::EHLO_active(EHMessager*) ()
+#9  0x0805bd93 in main ()

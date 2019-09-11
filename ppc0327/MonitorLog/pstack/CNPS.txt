@@ -1,0 +1,9 @@
+=====pstack 13354-----CNPS
+#0  0x00306424 in __kernel_vsyscall ()
+#1  0x00a5e07d in ___newselect_nocancel () from /lib/libc.so.6
+#2  0x004b1293 in CNFD::CNFD_Select(fd_set*, fd_set*, int*, int) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#3  0x004b5276 in CNCM::CNCM_RecvreqIntime(unsigned long, int, long, void*, int, int*, int*, int, unsigned long*) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#4  0x004b58da in CNCM::CNCM_ReceiveRequest(unsigned long, int, void*, int, int*, int*, int, unsigned long*) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#5  0x004baef0 in CNMAHandler::CNMA_receiveRequest(char const*, void*, int, int*, int*, int) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#6  0x004b7c52 in CN4A_receive_request () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#7  0x08049e14 in main ()

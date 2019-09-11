@@ -1,0 +1,8 @@
+=====pstack 14284-----LOMA
+#0  0x00d35424 in __kernel_vsyscall ()
+#1  0x0028507d in ___newselect_nocancel () from /lib/libc.so.6
+#2  0x00940293 in CNFD::CNFD_Select(fd_set*, fd_set*, int*, int) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#3  0x0094ffde in CNEH::CNEH_MainLoop() () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#4  0x009486c8 in CNMAHandler::CNMA_mainloop() () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#5  0x00946284 in CN4A_main_loop () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#6  0x080564fe in main ()

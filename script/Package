@@ -1,0 +1,79 @@
+#!/bin/bash
+LANG=zh_CN.GB18030
+export LANG
+
+CHECK_OUT="$HOME/StarTeamCP_2005r2/bin/stcmd co -p"
+CHECK_IN="$HOME/StarTeamCP_2005r2/bin/stcmd ci -p"
+CHECK_ADD="$HOME/StarTeamCP_2005r2/bin/stcmd add -p"
+
+project="$1"
+label="$2"
+. project.cfg
+
+local_dir=$label
+
+if   [ ! -z "`echo $pro205     | grep $project`" ];then 
+    starTeam=$ST205
+    SIT=$SIT205
+    install=$install205
+elif [ ! -z "`echo $pro203m    | grep $project`" ];then
+    starTeam=$ST203m
+    SIT=$SIT203m
+    install=$install203m
+elif [ ! -z "`echo $pro203mNew | grep $project`" ];then
+    starTeam=$ST203mNew
+    SIT=$SIT203mNew
+    install=$install203mNew    
+elif [ ! -z "`echo $pro203m_13  | grep $project`" ];then
+    starTeam=$ST203m_13
+    SIT=$SIT203m_13
+    install=$install203m_13   
+elif [ ! -z "`echo $pro203m_cb  | grep $project`" ];then
+    starTeam=$ST203m_cb
+    SIT=$SIT203m_cb
+    install=$install203m_cb   
+elif [ ! -z "`echo $pro205new  | grep $project`" ];then
+    starTeam=$ST205new
+    SIT=$SIT205new
+    install=$install205new
+elif [ ! -z "`echo $pro20516   | grep $project`" ];then
+    starTeam=$ST20516
+    SIT=$SIT20516
+    install=$install20516
+elif [ ! -z "`echo $pro206     | grep $project`" ];then
+    starTeam=$ST206
+    SIT=$SIT206
+    install=$install206
+elif [ ! -z "`echo $pro205c    | grep $project`" ];then
+    starTeam=$ST205c
+    SIT=$SIT205c
+    install=$install205c
+elif [ ! -z "`echo $pro509     | grep $project`" ];then
+    starTeam=$ST509
+    SIT=$SIT509
+    install=$install509
+elif [ ! -z "`echo $pro301     | grep $project`" ];then
+    starTeam=$ST301
+    SIT=$SIT301
+    install=$install301
+elif [ ! -z "`echo $pro301new     | grep $project`" ];then
+    starTeam=$ST301new
+    SIT=$SIT301new
+    install=$install301new
+elif [ ! -z "`echo $pro301c    | grep $project`" ];then 
+    starTeam=$ST301c
+    SIT=$SIT205
+    install=$install301c
+else
+	echo "error project" $project
+	exit 1
+fi
+mkdir $HOME/$local_dir
+$CHECK_OUT "$starTeam/$project/$SIT" -vl "$label" -fp "$HOME/$local_dir" -eol "lf" -is -o "*"
+cd $HOME
+zip -r $local_dir.zip  $local_dir
+$CHECK_IN   "$starTeam/$project/$install" -vl "$label" -r "$label" -filter "M" -nologo -fp "$HOME" "$local_dir.zip"
+$CHECK_ADD  "$starTeam/$project/$install" -vl "$label" -d "$label"             -nologo -fp "$HOME" "$local_dir.zip"
+/bin/rm -rf $local_dir
+/bin/rm -rf $local_dir.zip
+exit 0

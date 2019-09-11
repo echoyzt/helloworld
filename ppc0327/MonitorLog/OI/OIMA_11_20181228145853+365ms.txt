@@ -1,0 +1,17 @@
+Process id: 18558
+Signal information: Segmentation fault
+Stack information:
+[0xf4b400]
+/usr/local/qt4.8.5/lib/libQtCore.so.4(_ZN11QMetaObject8activateEP7QObjectPKS_iPPv+0x5f) [0x2fb4e1f]
+/home/206syt1/SMEE/lib/linux/libOIGN.so(_ZN4SMEE17OIAbstractCommand19commandResultSignalEP7QObjecti+0x49) [0x6c06f9]
+lib/linux/libOISSUI.so(_ZN4SMEE4OISS23getLightLifeTimeCommand7executeEv+0x86) [0x1bc8106]
+/home/206syt1/SMEE/lib/linux/libOIGN.so(_ZN4SMEE16OICommandManager9procEventEi+0x84) [0x6bd244]
+/home/206syt1/SMEE/lib/linux/libOIGN.so(_ZN4SMEE16OICommandManager8pipeProcEPvP16CN4A_PROC_STRUCTi+0x29) [0x6bd329]
+/home/206syt1/SMEE/lib/linux/libCN4A.so(_ZN4CNEH23CNEH_local_pipe_handlerEi+0x2a9) [0x131e89]
+/home/206syt1/SMEE/lib/linux/libCN4A.so(_ZN4CNEH13CNEH_MainLoopEv+0x43d) [0x13422d]
+/home/206syt1/SMEE/lib/linux/libCN4A.so(_ZN11CNMAHandler13CNMA_mainloopEv+0x48) [0x12c6c8]
+/home/206syt1/SMEE/lib/linux/libCN4A.so(CN4A_main_loop+0x54) [0x12a284]
+/home/206syt1/SMEE/lib/linux/libOIGN.so(_ZN4SMEE16OICommandManager3runEv+0xa5) [0x6bcc75]
+/usr/local/qt4.8.5/lib/libQtCore.so.4(+0x6ff2f) [0x2e93f2f]
+/lib/libpthread.so.0() [0x9b69e9]
+/lib/libc.so.6(clone+0x5e) [0xdb9cde]

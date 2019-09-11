@@ -1,0 +1,105 @@
+#!/bin/bash
+LANG=zh_CN.GB18030
+export LANG
+
+project=$1
+
+. project.cfg
+
+if [ -z "$1" ];then
+	echo usage: baseline View label
+	exit 1
+fi
+
+
+LANG=C
+export LANG
+
+CHECK_OUT="$HOME/StarTeamCP_2005r2/bin/stcmd co -p"
+
+r=$RANDOM
+
+local_dir="$HOME/$project"
+if [ $project = 20516/1.x ];then
+    starTeam=$ST20516/1.x
+    src=$src20516
+    sun=$sun20516
+    lib=$lib20516
+elif [ $project = 20516/2.x ];then
+    starTeam=$ST20516/2.x
+    src=$src20516
+    sun=$sun20516
+    lib=$lib20516  
+elif [ $project = 207999 ];then
+    starTeam=$ST20516/207999
+    src=$src20516
+    sun=$sun20516
+    lib=$lib20516    
+elif [ $project = 301C/1.x ];then
+    starTeam=$ST301c/1.x
+    src=$src301c
+    sun=$sun301c
+    lib=$lib301c 
+elif [ $project = 205C/1.x ];then
+    starTeam=$ST205c/1.x
+    src=$src205c
+    sun=$sun205c
+    lib=$lib205c 
+elif [ $project = 211999 ];then
+    starTeam=$ST205c/211999
+    src=$src205c
+    sun=$sun205c
+    lib=$lib205c    
+elif [ $project = 206/1.x ];then
+    local_dir="$HOME/SSB545_10/1.x"
+    starTeam=$ST206/1.x
+    src=$src206
+    sun=$sun206
+    lib=$lib206 
+elif [ $project = 203M/3.3 ];then 
+    local_dir="$HOME/SSB500_10M/203M_SWS/3.3"
+    starTeam=$ST203mNew/3.3
+    src=$src203mNew
+    lib=$lib203mNew
+    sun=$sun203mNew
+elif [ $project = 203M/3.4 ];then 
+    local_dir="$HOME/SSB500_10M/203M_SWS/3.4"
+    starTeam=$ST203mNew/3.4
+    src=$src203mNew
+    lib=$lib203mNew
+    sun=$sun203mNew
+elif [ $project = 205/3.3 ];then     
+    local_dir="$HOME/SSB500_30/205_SWS/3.3"
+    starTeam=$ST205new/3.3
+    src=$src205new
+    lib=$lib205new
+    sun=$sun205new
+elif [ $project = 205/3.4 ];then 
+    local_dir="$HOME/SSB500_30/205_SWS/3.4"
+    starTeam=$ST205new/3.4
+    src=$src205new
+    lib=$lib205new
+    sun=$sun205new
+else
+    echo Error: project--$project invalid，is not in list[20516、 207999、205C、 211999、301C、206、509, 203M/3.3, 205/3.3, 205/3.4, 203m/3.4].
+    exit 1
+fi        
+
+LANG=zh_CN.GB18030
+export LANG
+
+/bin/rm -rf "$local_dir/$SIT"
+/bin/rm -rf "$local_dir/$src"
+$CHECK_OUT "$starTeam/$sun"  -fp "$local_dir/$sun" -is -o "*"
+$CHECK_OUT "$starTeam/$lib"  -fp "$local_dir/$lib" -is -o "*"
+$CHECK_OUT "$starTeam/$src"  -fp "$local_dir/$src" -is -o "*"
+
+if [ ! -z "`echo $pro301        | grep $project`" ];then 
+    $CHECK_OUT "$starTeam/$SIT/external"  -fp "$local_dir/$SIT/external" -is -o "*"
+fi
+
+if [ ! -z "`echo $pro301new     | grep $project`" ];then 
+    $CHECK_OUT "$starTeam/$SIT/external"  -fp "$local_dir/$SIT/external" -is -o "*"
+fi
+
+exit 0

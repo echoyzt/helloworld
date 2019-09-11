@@ -1,0 +1,427 @@
+09/20/2018 18:19:42+815478us LOMA <LO> LOMA_bind_handler > (function_code = 0x4c4fff10)
+09/20/2018 18:19:42+815556us LOMA <LO> LOMAAP_start_production >>()
+09/20/2018 18:19:42+815844us LOMA <LO> LOSM_get_Q_state > ()
+09/20/2018 18:19:42+816204us LOMA <LO> LOSM_get_Q_state < () = OK
+09/20/2018 18:19:42+816256us LOMA <LO> lomaap_check_system_status >>()
+09/20/2018 18:19:42+816440us LOMA <LO> lomaap_check_system_status < () = OK
+09/20/2018 18:19:42+816496us LOMA <LO> LOSM_report_event > ()
+09/20/2018 18:19:42+818230us LOMA <LO> LOSM_report_event < () = OK
+09/20/2018 18:19:42+818426us LOMA <LO> LOSM_get_queue_info > ()
+09/20/2018 18:19:42+818886us LOMA <LO> LOSM_get_queue_info < () = OK
+09/20/2018 18:19:42+818937us LOMA <LO> LOWH_start_production > ()
+09/20/2018 18:19:42+819166us LOMA <LO> LOWH_start_production < () = OK
+09/20/2018 18:19:42+819210us LOMA <LO> LOMAAP_start_production < () = OK
+09/20/2018 18:19:42+819247us LOMA <LO> LOMAGN_raise_4A_start_production > 
+09/20/2018 18:19:42+819309us LOMA <LO> LOMAGN_raise_4A_start_production < () = OK
+09/20/2018 18:19:42+819351us LOMA <LO> LOMA_bind_handler < () = OK
+09/20/2018 18:19:42+819424us LOMA <LO> lomaap_sm_lot_queue_info_event_sb > (nr_of_lots=0, error_code=0x0)
+09/20/2018 18:19:42+819463us LOMA <LO> LOMAGN_raise_4A_queue_info_event_subscribe > 
+09/20/2018 18:19:42+819561us LOMA <LO> LOMAGN_raise_4A_queue_info_event_subscribe < () = OK
+09/20/2018 18:19:42+819591us LOMA <LO> lomaap_sm_lot_queue_info_event_sb < ()=OK
+09/20/2018 18:19:42+819654us LOMA <LO> lomaap_sm_lot_queue_info_event_sb > (nr_of_lots=0, error_code=0x0)
+09/20/2018 18:19:42+819681us LOMA <LO> LOMAGN_raise_4A_queue_info_event_subscribe > 
+09/20/2018 18:19:42+819763us LOMA <LO> LOMAGN_raise_4A_queue_info_event_subscribe < () = OK
+09/20/2018 18:19:42+819792us LOMA <LO> lomaap_sm_lot_queue_info_event_sb < ()=OK
+------------------------------merge1 end------------------------------
+
+09/20/2018 18:19:48+480239us LOMA <LO> LOMA_bind_handler > (function_code = 0x4c4fff12)
+09/20/2018 18:19:48+480322us LOMA <LO> LOMAAP_create_lot > (job_path_name = ./data/user/recipes/user/TEST/20180918_segment_velocity_test.rdf)
+09/20/2018 18:19:48+484038us LOMA <LO> LODM_new_lot > ()
+09/20/2018 18:19:48+629594us LOMA <LO> LODM_new_lot < () = OK
+09/20/2018 18:19:48+629650us LOMA <LO> LOMAAP_create_lot < () = OK
+09/20/2018 18:19:48+629693us LOMA <LO> LOMAGN_raise_4A_create_lot > 
+09/20/2018 18:19:48+629765us LOMA <LO> LOMAGN_raise_4A_create_lot < () = OK
+09/20/2018 18:19:48+629806us LOMA <LO> LOMA_bind_handler < () = OK
+------------------------------merge2 end------------------------------
+
+09/20/2018 18:19:50+163138us LOMA <LO> LOMA_bind_handler > (function_code = 0x4c4fff13)
+09/20/2018 18:19:50+163217us LOMA <LO> LOMAAP_add_lot >>(lot_id=1093,lot_name=1093,g_loma_nr_of_acitve_lot=0)
+09/20/2018 18:19:50+163266us LOMA <LO> LOQU_lot_is_exist > (lot_id=1093)
+09/20/2018 18:19:50+163304us LOMA <LO> LOQU_lot_is_exist < (is_exist=0) = OK
+09/20/2018 18:19:50+163340us LOMA <LO> LOQU_is_full > ()
+09/20/2018 18:19:50+163376us LOMA <LO> LOQU_get_lot_nr > ()
+09/20/2018 18:19:50+163411us LOMA <LO> LOQU_get_lot_nr < (lot_num=0) = OK
+09/20/2018 18:19:50+163447us LOMA <LO> LOQU_is_full < (is_full=0) = OK
+09/20/2018 18:19:50+163486us LOMA <LO> LODM_add_lot > ()
+09/20/2018 18:19:50+423538us LOMA <LO> LODM_add_lot < () = OK
+09/20/2018 18:19:50+423601us LOMA <LO> LOQU_add_lot > (lot_id=1093)
+09/20/2018 18:19:50+423642us LOMA <LO> LOQU_add_lot < ( ) = OK
+09/20/2018 18:19:50+423683us LOMA <LO> LOSM_add_L_state_model > ()
+09/20/2018 18:19:50+426047us LOMA <LO> LOSM_add_L_state_model < () = OK
+09/20/2018 18:19:50+426099us LOMA <LO> LOSM_report_event > ()
+09/20/2018 18:19:50+427902us LOMA <LO> LOSM_report_event < () = OK
+09/20/2018 18:19:50+427949us LOMA <LO> lomaap_update_slot_info > (lot_id=1093,allocate_slot=TRUE)
+09/20/2018 18:19:50+427991us LOMA <LO> LODM_get_lot_data > ()
+09/20/2018 18:19:50+429251us LOMA <LO> LODM_get_lot_data < () = OK
+09/20/2018 18:19:50+429304us LOMA <LO> lomaap_update_slot_info < () = OK
+09/20/2018 18:19:50+429343us LOMA <LO> LOSM_get_P_state > ()
+09/20/2018 18:19:50+429922us LOMA <LO> LOSM_get_P_state < () = OK
+09/20/2018 18:19:50+429957us LOMA <LO> LOSM_get_Q_state > ()
+09/20/2018 18:19:50+430191us LOMA <LO> LOSM_get_Q_state < () = OK
+09/20/2018 18:19:50+430224us LOMA <LO> LOSM_get_queue_info > ()
+09/20/2018 18:19:50+430559us LOMA <LO> LOSM_get_queue_info < () = OK
+09/20/2018 18:19:50+430592us LOMA <LO> LOQU_get_first_lot > ()
+09/20/2018 18:19:50+430615us LOMA <LO> LOQU_get_first_lot < ( lot_id=1093 ) = OK
+09/20/2018 18:19:50+430639us LOMA <LO> lomaap_prepare_lot > ()
+09/20/2018 18:19:50+430661us LOMA <LO> LOSM_get_Q_state > ()
+09/20/2018 18:19:50+430849us LOMA <LO> LOSM_get_Q_state < () = OK
+09/20/2018 18:19:50+430883us LOMA <LO> LOSM_get_P_state > ()
+09/20/2018 18:19:50+431064us LOMA <LO> LOSM_get_P_state < () = OK
+09/20/2018 18:19:50+431097us LOMA <LO> LOSM_get_L_state > ()
+09/20/2018 18:19:50+431302us LOMA <LO> LOSM_get_L_state < () = OK
+09/20/2018 18:19:50+433018us LOMA <LO> LOPL_prepare_lot_fcn >
+09/20/2018 18:19:50+433096us LOMA <LO> LOPL_prepare_lot_fcn < () = OK
+09/20/2018 18:19:50+433136us LOMA <LO> LOMAGN_raise_4A_ui_message_event_subscribe > 
+09/20/2018 18:19:50+433201us LOMA <LO> LOMAGN_raise_4A_ui_message_event_subscribe < () = OK
+09/20/2018 18:19:50+433232us LOMA <LO> lomaap_prepare_lot < (g_loma_nr_of_acitve_lot=1) = OK
+09/20/2018 18:19:50+433257us LOMA <LO> LOMAAP_add_lot < (lot_id=1093,result=OK)
+09/20/2018 18:19:50+433280us LOMA <LO> LOMAAP_add_lot <<()=OK
+09/20/2018 18:19:50+433303us LOMA <LO> LOMAGN_raise_4A_add_lot > 
+09/20/2018 18:19:50+433352us LOMA <LO> LOMAGN_raise_4A_add_lot < () = OK
+09/20/2018 18:19:50+433380us LOMA <LO> LOMA_bind_handler < () = OK
+09/20/2018 18:19:50+433436us LOMA <LO> lomaap_sm_lot_queue_info_event_sb > (nr_of_lots=1, error_code=0x0)
+09/20/2018 18:19:50+433462us LOMA <LO> LOMAGN_raise_4A_queue_info_event_subscribe > 
+09/20/2018 18:19:50+433546us LOMA <LO> LOMAGN_raise_4A_queue_info_event_subscribe < () = OK
+09/20/2018 18:19:50+433574us LOMA <LO> lomaap_sm_lot_queue_info_event_sb < ()=OK
+09/20/2018 18:19:50+433629us LOMA <LO> lomaap_sm_lot_queue_info_event_sb > (nr_of_lots=1, error_code=0x0)
+09/20/2018 18:19:50+433654us LOMA <LO> LOMAGN_raise_4A_queue_info_event_subscribe > 
+09/20/2018 18:19:50+433731us LOMA <LO> LOMAGN_raise_4A_queue_info_event_subscribe < () = OK
+09/20/2018 18:19:50+433759us LOMA <LO> lomaap_sm_lot_queue_info_event_sb < ()=OK
+09/20/2018 18:19:50+433798us LOMA <LO> lomaap_st_sys_event_sb > (value=3)
+09/20/2018 18:19:50+433824us LOMA <LO> lomaap_st_sys_event_sb < ()=OK
+09/20/2018 18:19:50+434260us LOMA <LO> lomaap_st_sys_event_sb > (value=4)
+09/20/2018 18:19:50+434307us LOMA <LO> lomaap_st_sys_event_sb < ()=OK
+09/20/2018 18:19:50+436231us LOMA <LO> lomaap_sm_lot_queue_info_event_sb > (nr_of_lots=1, error_code=0x0)
+09/20/2018 18:19:50+436281us LOMA <LO> LOMAGN_raise_4A_queue_info_event_subscribe > 
+09/20/2018 18:19:50+436375us LOMA <LO> LOMAGN_raise_4A_queue_info_event_subscribe < () = OK
+09/20/2018 18:19:50+436415us LOMA <LO> lomaap_sm_lot_queue_info_event_sb < ()=OK
+09/20/2018 18:19:50+439615us LOMA <LO> lomaap_prepare_lot_cb > (lot_id=1093,error_code=0x0,g_loma_nr_of_acitve_lot=1)
+09/20/2018 18:19:50+439666us LOMA <LO> LOSM_get_queue_info > ()
+09/20/2018 18:19:50+440235us LOMA <LO> LOSM_get_queue_info < () = OK
+09/20/2018 18:19:50+440282us LOMA <LO> LOQU_get_first_lot > ()
+09/20/2018 18:19:50+440319us LOMA <LO> LOQU_get_first_lot < ( lot_id=1093 ) = OK
+09/20/2018 18:19:50+440356us LOMA <LO> lomaap_prepare_lot > ()
+09/20/2018 18:19:50+440390us LOMA <LO> LOSM_get_Q_state > ()
+09/20/2018 18:19:50+440712us LOMA <LO> LOSM_get_Q_state < () = OK
+09/20/2018 18:19:50+440755us LOMA <LO> LOSM_get_P_state > ()
+09/20/2018 18:19:50+441084us LOMA <LO> LOSM_get_P_state < () = OK
+09/20/2018 18:19:50+441128us LOMA <LO> LOSM_get_L_state > ()
+09/20/2018 18:19:50+441431us LOMA <LO> LOSM_get_L_state < () = OK
+09/20/2018 18:19:50+441473us LOMA <LO> lomaap_prepare_lot < (g_loma_nr_of_acitve_lot=1) = OK
+09/20/2018 18:19:50+441510us LOMA <LO> lomaap_prepare_lot_cb < (lot_id=1093,result=OK)
+09/20/2018 18:19:50+454841us LOMA <LO> lomaap_st_sys_event_sb > (value=6)
+09/20/2018 18:19:50+454990us LOMA <LO> lomaap_st_sys_event_sb < ()=OK
+09/20/2018 18:19:50+456166us LOMA <LO> lomaap_sm_lot_queue_info_event_sb > (nr_of_lots=1, error_code=0x0)
+09/20/2018 18:19:50+456217us LOMA <LO> LOMAGN_raise_4A_queue_info_event_subscribe > 
+09/20/2018 18:19:50+456330us LOMA <LO> LOMAGN_raise_4A_queue_info_event_subscribe < () = OK
+09/20/2018 18:19:50+456373us LOMA <LO> lomaap_sm_lot_queue_info_event_sb < ()=OK
+09/20/2018 18:19:50+456682us LOMA <LO> lomaap_sm_lot_queue_info_event_sb > (nr_of_lots=1, error_code=0x0)
+09/20/2018 18:19:50+456729us LOMA <LO> LOMAGN_raise_4A_queue_info_event_subscribe > 
+09/20/2018 18:19:50+456829us LOMA <LO> LOMAGN_raise_4A_queue_info_event_subscribe < () = OK
+09/20/2018 18:19:50+456870us LOMA <LO> lomaap_sm_lot_queue_info_event_sb < ()=OK
+09/20/2018 18:19:50+457108us LOMA <LO> lomaap_pl_lot_start_event_sb > (lot_event_info.lot_id=1093, lot_event_info.plate_type=1,error_code=0x0)
+09/20/2018 18:19:50+457155us LOMA <LO> LOMAGN_raise_4A_lot_start_event_subscribe > 
+09/20/2018 18:19:50+457214us LOMA <LO> LOMAGN_raise_4A_lot_start_event_subscribe < () = OK
+09/20/2018 18:19:50+457253us LOMA <LO> lomaap_pl_lot_start_event_sb < ()=OK
+09/20/2018 18:19:50+668262us LOMA <LO> LOMA_bind_handler > (function_code = 0x4c4fff1b)
+09/20/2018 18:19:50+668336us LOMA <LO> LOMAAP_get_lot_page_data > (lot_id=1093)
+09/20/2018 18:19:50+668383us LOMA <LO> LODM_get_lot_page_data > ()
+09/20/2018 18:19:50+772175us LOMA <LO> LODM_get_lot_page_data < () = OK
+09/20/2018 18:19:50+772241us LOMA <LO> LOMAAP_get_lot_page_data < (lot_id = 1093, lot_name=1093, job_ID=20180918_segment_velocity_test, auto_start=TRUE, perform_mark_training = FALSE)=OK
+09/20/2018 18:19:50+772291us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data > 
+09/20/2018 18:19:50+772360us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data < () = OK
+09/20/2018 18:19:50+772400us LOMA <LO> LOMA_bind_handler < () = OK
+09/20/2018 18:19:50+773024us LOMA <LO> LOMA_bind_handler > (function_code = 0x4c4fff1b)
+09/20/2018 18:19:50+773074us LOMA <LO> LOMAAP_get_lot_page_data > (lot_id=1093)
+09/20/2018 18:19:50+773113us LOMA <LO> LODM_get_lot_page_data > ()
+09/20/2018 18:19:50+913079us LOMA <LO> LODM_get_lot_page_data < () = OK
+09/20/2018 18:19:50+913137us LOMA <LO> LOMAAP_get_lot_page_data < (lot_id = 1093, lot_name=1093, job_ID=20180918_segment_velocity_test, auto_start=TRUE, perform_mark_training = FALSE)=OK
+09/20/2018 18:19:50+913181us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data > 
+09/20/2018 18:19:50+913244us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data < () = OK
+09/20/2018 18:19:50+913286us LOMA <LO> LOMA_bind_handler < () = OK
+09/20/2018 18:19:50+913501us LOMA <LO> LOMA_bind_handler > (function_code = 0x4c4fff1b)
+09/20/2018 18:19:50+913553us LOMA <LO> LOMAAP_get_lot_page_data > (lot_id=1093)
+09/20/2018 18:19:50+913591us LOMA <LO> LODM_get_lot_page_data > ()
+------------------------------merge3 end------------------------------
+
+09/20/2018 18:19:51+040106us LOMA <LO> LODM_get_lot_page_data < () = OK
+09/20/2018 18:19:51+040164us LOMA <LO> LOMAAP_get_lot_page_data < (lot_id = 1093, lot_name=1093, job_ID=20180918_segment_velocity_test, auto_start=TRUE, perform_mark_training = FALSE)=OK
+09/20/2018 18:19:51+040207us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data > 
+09/20/2018 18:19:51+040275us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data < () = OK
+09/20/2018 18:19:51+040316us LOMA <LO> LOMA_bind_handler < () = OK
+09/20/2018 18:19:51+041325us LOMA <LO> LOMA_bind_handler > (function_code = 0x4c4fff1b)
+09/20/2018 18:19:51+041374us LOMA <LO> LOMAAP_get_lot_page_data > (lot_id=1093)
+09/20/2018 18:19:51+041411us LOMA <LO> LODM_get_lot_page_data > ()
+09/20/2018 18:19:51+177855us LOMA <LO> LODM_get_lot_page_data < () = OK
+09/20/2018 18:19:51+177915us LOMA <LO> LOMAAP_get_lot_page_data < (lot_id = 1093, lot_name=1093, job_ID=20180918_segment_velocity_test, auto_start=TRUE, perform_mark_training = FALSE)=OK
+09/20/2018 18:19:51+177958us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data > 
+09/20/2018 18:19:51+178025us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data < () = OK
+09/20/2018 18:19:51+178064us LOMA <LO> LOMA_bind_handler < () = OK
+09/20/2018 18:19:51+178280us LOMA <LO> LOMA_bind_handler > (function_code = 0x4c4fff1b)
+09/20/2018 18:19:51+178320us LOMA <LO> LOMAAP_get_lot_page_data > (lot_id=1093)
+09/20/2018 18:19:51+178345us LOMA <LO> LODM_get_lot_page_data > ()
+09/20/2018 18:19:51+318453us LOMA <LO> LODM_get_lot_page_data < () = OK
+09/20/2018 18:19:51+318513us LOMA <LO> LOMAAP_get_lot_page_data < (lot_id = 1093, lot_name=1093, job_ID=20180918_segment_velocity_test, auto_start=TRUE, perform_mark_training = FALSE)=OK
+09/20/2018 18:19:51+318557us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data > 
+09/20/2018 18:19:51+318624us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data < () = OK
+09/20/2018 18:19:51+318676us LOMA <LO> LOMA_bind_handler < () = OK
+09/20/2018 18:19:51+319325us LOMA <LO> LOMA_bind_handler > (function_code = 0x4c4fff1b)
+09/20/2018 18:19:51+319377us LOMA <LO> LOMAAP_get_lot_page_data > (lot_id=1093)
+09/20/2018 18:19:51+319414us LOMA <LO> LODM_get_lot_page_data > ()
+09/20/2018 18:19:51+415966us LOMA <LO> LODM_get_lot_page_data < () = OK
+09/20/2018 18:19:51+416029us LOMA <LO> LOMAAP_get_lot_page_data < (lot_id = 1093, lot_name=1093, job_ID=20180918_segment_velocity_test, auto_start=TRUE, perform_mark_training = FALSE)=OK
+09/20/2018 18:19:51+416073us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data > 
+09/20/2018 18:19:51+416141us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data < () = OK
+09/20/2018 18:19:51+416182us LOMA <LO> LOMA_bind_handler < () = OK
+09/20/2018 18:19:51+416504us LOMA <LO> LOMA_bind_handler > (function_code = 0x4c4fff1b)
+09/20/2018 18:19:51+416571us LOMA <LO> LOMAAP_get_lot_page_data > (lot_id=1093)
+09/20/2018 18:19:51+416614us LOMA <LO> LODM_get_lot_page_data > ()
+09/20/2018 18:19:51+517992us LOMA <LO> LODM_get_lot_page_data < () = OK
+09/20/2018 18:19:51+518078us LOMA <LO> LOMAAP_get_lot_page_data < (lot_id = 1093, lot_name=1093, job_ID=20180918_segment_velocity_test, auto_start=TRUE, perform_mark_training = FALSE)=OK
+09/20/2018 18:19:51+518122us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data > 
+09/20/2018 18:19:51+518189us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data < () = OK
+09/20/2018 18:19:51+518231us LOMA <LO> LOMA_bind_handler < () = OK
+09/20/2018 18:19:51+518318us LOMA <LO> lomaap_sm_lot_queue_info_event_sb > (nr_of_lots=1, error_code=0x0)
+09/20/2018 18:19:51+518362us LOMA <LO> LOMAGN_raise_4A_queue_info_event_subscribe > 
+09/20/2018 18:19:51+518461us LOMA <LO> LOMAGN_raise_4A_queue_info_event_subscribe < () = OK
+09/20/2018 18:19:51+518501us LOMA <LO> lomaap_sm_lot_queue_info_event_sb < ()=OK
+09/20/2018 18:19:51+518577us LOMA <LO> lomaap_sm_lot_queue_info_event_sb > (nr_of_lots=1, error_code=0x0)
+09/20/2018 18:19:51+518617us LOMA <LO> LOMAGN_raise_4A_queue_info_event_subscribe > 
+09/20/2018 18:19:51+518711us LOMA <LO> LOMAGN_raise_4A_queue_info_event_subscribe < () = OK
+09/20/2018 18:19:51+518749us LOMA <LO> lomaap_sm_lot_queue_info_event_sb < ()=OK
+09/20/2018 18:19:51+518795us LOMA <LO> lomaap_pl_lot_sub_change_event_sb > (substrate_seq_nbr=0, error_code=0x0)
+09/20/2018 18:19:51+518824us LOMA <LO> LOMAGN_raise_4A_substrate_change_event_subscribe > 
+09/20/2018 18:19:51+518873us LOMA <LO> LOMAGN_raise_4A_substrate_change_event_subscribe < () = OK
+09/20/2018 18:19:51+518901us LOMA <LO> lomaap_pl_lot_sub_change_event_sb < ()=OK
+09/20/2018 18:19:51+518939us LOMA <LO> lomaap_st_sys_event_sb > (value=7)
+09/20/2018 18:19:51+518965us LOMA <LO> lomaap_st_sys_event_sb < ()=OK
+09/20/2018 18:19:51+519503us LOMA <LO> LOMA_bind_handler > (function_code = 0x4c4fff1b)
+09/20/2018 18:19:51+519557us LOMA <LO> LOMAAP_get_lot_page_data > (lot_id=1093)
+09/20/2018 18:19:51+519596us LOMA <LO> LODM_get_lot_page_data > ()
+09/20/2018 18:19:51+639853us LOMA <LO> LODM_get_lot_page_data < () = OK
+09/20/2018 18:19:51+639940us LOMA <LO> LOMAAP_get_lot_page_data < (lot_id = 1093, lot_name=1093, job_ID=20180918_segment_velocity_test, auto_start=TRUE, perform_mark_training = FALSE)=OK
+09/20/2018 18:19:51+639983us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data > 
+09/20/2018 18:19:51+640055us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data < () = OK
+09/20/2018 18:19:51+640095us LOMA <LO> LOMA_bind_handler < () = OK
+09/20/2018 18:19:51+640338us LOMA <LO> LOMA_bind_handler > (function_code = 0x4c4fff1b)
+09/20/2018 18:19:51+640383us LOMA <LO> LOMAAP_get_lot_page_data > (lot_id=1093)
+09/20/2018 18:19:51+640417us LOMA <LO> LODM_get_lot_page_data > ()
+09/20/2018 18:19:51+792767us LOMA <LO> LODM_get_lot_page_data < () = OK
+09/20/2018 18:19:51+792832us LOMA <LO> LOMAAP_get_lot_page_data < (lot_id = 1093, lot_name=1093, job_ID=20180918_segment_velocity_test, auto_start=TRUE, perform_mark_training = FALSE)=OK
+09/20/2018 18:19:51+792884us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data > 
+09/20/2018 18:19:51+792955us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data < () = OK
+09/20/2018 18:19:51+792996us LOMA <LO> LOMA_bind_handler < () = OK
+09/20/2018 18:19:51+795791us LOMA <LO> LOMA_bind_handler > (function_code = 0x4c4fff1b)
+09/20/2018 18:19:51+795843us LOMA <LO> LOMAAP_get_lot_page_data > (lot_id=1093)
+09/20/2018 18:19:51+795888us LOMA <LO> LODM_get_lot_page_data > ()
+09/20/2018 18:19:51+923702us LOMA <LO> LODM_get_lot_page_data < () = OK
+09/20/2018 18:19:51+923760us LOMA <LO> LOMAAP_get_lot_page_data < (lot_id = 1093, lot_name=1093, job_ID=20180918_segment_velocity_test, auto_start=TRUE, perform_mark_training = FALSE)=OK
+09/20/2018 18:19:51+923802us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data > 
+09/20/2018 18:19:51+923870us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data < () = OK
+09/20/2018 18:19:51+923909us LOMA <LO> LOMA_bind_handler < () = OK
+------------------------------merge4 end------------------------------
+
+09/20/2018 18:19:52+663524us LOMA <LO> lomaap_al_lot_image_begin_event_sb > (lot_id=1093, error_code=0x0)
+09/20/2018 18:19:52+663584us LOMA <LO> LOMAGN_raise_4A_image_begin_event_subscribe > 
+09/20/2018 18:19:52+663662us LOMA <LO> LOMAGN_raise_4A_image_begin_event_subscribe < () = OK
+09/20/2018 18:19:52+663703us LOMA <LO> lomaap_al_lot_image_begin_event_sb < ()=OK
+09/20/2018 18:19:52+666955us LOMA <LO> LOMA_bind_handler > (function_code = 0x4c4fff1c)
+09/20/2018 18:19:52+672350us LOMA <LO> LOMAAP_get_lot_cell_data > (lot_id=1093)
+09/20/2018 18:19:52+672401us LOMA <LO> LODM_get_lot_seal_data > ()
+09/20/2018 18:19:52+931073us LOMA <LO> LODM_get_lot_seal_data < () = OK
+09/20/2018 18:19:52+931288us LOMA <LO> LOMAAP_get_lot_cell_data (lot_id = 1093, cell_id[0]=0,seg_num[0]=8,seg_type[0][0]=1,start_pos[0][0](x,y)=(-0.548249,0.394098)end_pos[0][0]=(-0.479829,0.394098),arc_center_pos=(0.000000,0.000000),arc_angle=0.000000,radius=0.000000
+09/20/2018 18:19:52+932012us LOMA <LO> LOMAAP_get_lot_cell_data < ()=OK
+09/20/2018 18:19:52+932061us LOMA <LO> LOMAGN_raise_4A_get_lot_cell_data > 
+09/20/2018 18:19:52+964304us LOMA <LO> LOMAGN_raise_4A_get_lot_cell_data < () = OK
+09/20/2018 18:19:52+964653us LOMA <LO> LOMA_bind_handler < () = OK
+09/20/2018 18:19:52+964720us LOMA <LO> LOMA_bind_handler > (function_code = 0x4c4fff1b)
+09/20/2018 18:19:52+964767us LOMA <LO> LOMAAP_get_lot_page_data > (lot_id=1093)
+09/20/2018 18:19:52+964808us LOMA <LO> LODM_get_lot_page_data > ()
+------------------------------merge5 end------------------------------
+
+09/20/2018 18:19:53+072587us LOMA <LO> LODM_get_lot_page_data < () = OK
+09/20/2018 18:19:53+072653us LOMA <LO> LOMAAP_get_lot_page_data < (lot_id = 1093, lot_name=1093, job_ID=20180918_segment_velocity_test, auto_start=TRUE, perform_mark_training = FALSE)=OK
+09/20/2018 18:19:53+072703us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data > 
+09/20/2018 18:19:53+072775us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data < () = OK
+09/20/2018 18:19:53+072817us LOMA <LO> LOMA_bind_handler < () = OK
+09/20/2018 18:19:53+073204us LOMA <LO> LOMA_bind_handler > (function_code = 0x4c4fff1b)
+09/20/2018 18:19:53+073263us LOMA <LO> LOMAAP_get_lot_page_data > (lot_id=1093)
+09/20/2018 18:19:53+073306us LOMA <LO> LODM_get_lot_page_data > ()
+09/20/2018 18:19:53+161461us LOMA <LO> LODM_get_lot_page_data < () = OK
+09/20/2018 18:19:53+161524us LOMA <LO> LOMAAP_get_lot_page_data < (lot_id = 1093, lot_name=1093, job_ID=20180918_segment_velocity_test, auto_start=TRUE, perform_mark_training = FALSE)=OK
+09/20/2018 18:19:53+161572us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data > 
+09/20/2018 18:19:53+161645us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data < () = OK
+09/20/2018 18:19:53+161688us LOMA <LO> LOMA_bind_handler < () = OK
+09/20/2018 18:19:53+161922us LOMA <LO> LOMA_bind_handler > (function_code = 0x4c4fff1b)
+09/20/2018 18:19:53+161973us LOMA <LO> LOMAAP_get_lot_page_data > (lot_id=1093)
+09/20/2018 18:19:53+162013us LOMA <LO> LODM_get_lot_page_data > ()
+09/20/2018 18:19:53+249066us LOMA <LO> LODM_get_lot_page_data < () = OK
+09/20/2018 18:19:53+249127us LOMA <LO> LOMAAP_get_lot_page_data < (lot_id = 1093, lot_name=1093, job_ID=20180918_segment_velocity_test, auto_start=TRUE, perform_mark_training = FALSE)=OK
+09/20/2018 18:19:53+249176us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data > 
+09/20/2018 18:19:53+249245us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data < () = OK
+09/20/2018 18:19:53+249287us LOMA <LO> LOMA_bind_handler < () = OK
+09/20/2018 18:19:53+249704us LOMA <LO> LOMA_bind_handler > (function_code = 0x4c4fff1b)
+09/20/2018 18:19:53+249764us LOMA <LO> LOMAAP_get_lot_page_data > (lot_id=1093)
+09/20/2018 18:19:53+249808us LOMA <LO> LODM_get_lot_page_data > ()
+09/20/2018 18:19:53+325453us LOMA <LO> LODM_get_lot_page_data < () = OK
+09/20/2018 18:19:53+325515us LOMA <LO> LOMAAP_get_lot_page_data < (lot_id = 1093, lot_name=1093, job_ID=20180918_segment_velocity_test, auto_start=TRUE, perform_mark_training = FALSE)=OK
+09/20/2018 18:19:53+325559us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data > 
+09/20/2018 18:19:53+325623us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data < () = OK
+09/20/2018 18:19:53+325668us LOMA <LO> LOMA_bind_handler < () = OK
+------------------------------merge6 end------------------------------
+
+09/20/2018 18:20:01+398751us LOMA <LO> lomaap_al_lot_image_end_event_sb > (error_code=0x0)
+09/20/2018 18:20:01+398813us LOMA <LO> LOMAGN_raise_4A_image_end_event_subscribe > 
+09/20/2018 18:20:01+398882us LOMA <LO> LOMAGN_raise_4A_image_end_event_subscribe < () = OK
+09/20/2018 18:20:01+398923us LOMA <LO> lomaap_al_lot_image_end_event_sb < ()=OK
+09/20/2018 18:20:01+400587us LOMA <LO> lomaap_sm_lot_queue_info_event_sb > (nr_of_lots=1, error_code=0x0)
+09/20/2018 18:20:01+400641us LOMA <LO> LOMAGN_raise_4A_queue_info_event_subscribe > 
+09/20/2018 18:20:01+400734us LOMA <LO> LOMAGN_raise_4A_queue_info_event_subscribe < () = OK
+09/20/2018 18:20:01+400774us LOMA <LO> lomaap_sm_lot_queue_info_event_sb < ()=OK
+09/20/2018 18:20:01+400853us LOMA <LO> lomaap_sm_lot_queue_info_event_sb > (nr_of_lots=1, error_code=0x0)
+09/20/2018 18:20:01+400894us LOMA <LO> LOMAGN_raise_4A_queue_info_event_subscribe > 
+09/20/2018 18:20:01+400976us LOMA <LO> LOMAGN_raise_4A_queue_info_event_subscribe < () = OK
+09/20/2018 18:20:01+401015us LOMA <LO> lomaap_sm_lot_queue_info_event_sb < ()=OK
+09/20/2018 18:20:01+401640us LOMA <LO> LOMA_bind_handler > (function_code = 0x4c4fff1b)
+09/20/2018 18:20:01+401689us LOMA <LO> LOMAAP_get_lot_page_data > (lot_id=1093)
+09/20/2018 18:20:01+401727us LOMA <LO> LODM_get_lot_page_data > ()
+09/20/2018 18:20:01+519232us LOMA <LO> LODM_get_lot_page_data < () = OK
+09/20/2018 18:20:01+519297us LOMA <LO> LOMAAP_get_lot_page_data < (lot_id = 1093, lot_name=1093, job_ID=20180918_segment_velocity_test, auto_start=TRUE, perform_mark_training = FALSE)=OK
+09/20/2018 18:20:01+519344us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data > 
+09/20/2018 18:20:01+519415us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data < () = OK
+09/20/2018 18:20:01+519457us LOMA <LO> LOMA_bind_handler < () = OK
+09/20/2018 18:20:01+519506us LOMA <LO> lomaap_pl_lot_stop_event_sb > ()
+09/20/2018 18:20:01+519534us LOMA <LO> LOMAGN_raise_4A_lot_stop_event_subscribe > 
+09/20/2018 18:20:01+519582us LOMA <LO> LOMAGN_raise_4A_lot_stop_event_subscribe < () = OK
+09/20/2018 18:20:01+519610us LOMA <LO> lomaap_pl_lot_stop_event_sb < ()=OK
+09/20/2018 18:20:01+520272us LOMA <LO> LOMA_bind_handler > (function_code = 0x4c4fff1b)
+09/20/2018 18:20:01+520324us LOMA <LO> LOMAAP_get_lot_page_data > (lot_id=1093)
+09/20/2018 18:20:01+520363us LOMA <LO> LODM_get_lot_page_data > ()
+09/20/2018 18:20:01+674378us LOMA <LO> LODM_get_lot_page_data < () = OK
+09/20/2018 18:20:01+674438us LOMA <LO> LOMAAP_get_lot_page_data < (lot_id = 1093, lot_name=1093, job_ID=20180918_segment_velocity_test, auto_start=TRUE, perform_mark_training = FALSE)=OK
+09/20/2018 18:20:01+674484us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data > 
+09/20/2018 18:20:01+674548us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data < () = OK
+09/20/2018 18:20:01+674590us LOMA <LO> LOMA_bind_handler < () = OK
+09/20/2018 18:20:01+674646us LOMA <LO> lomaap_st_sys_event_sb > (value=8)
+09/20/2018 18:20:01+674697us LOMA <LO> lomaap_st_sys_event_sb < ()=OK
+09/20/2018 18:20:01+675151us LOMA <LO> LOMA_bind_handler > (function_code = 0x4c4fff1b)
+09/20/2018 18:20:01+675205us LOMA <LO> LOMAAP_get_lot_page_data > (lot_id=1093)
+09/20/2018 18:20:01+675244us LOMA <LO> LODM_get_lot_page_data > ()
+09/20/2018 18:20:01+777619us LOMA <LO> LODM_get_lot_page_data < () = OK
+09/20/2018 18:20:01+777735us LOMA <LO> LOMAAP_get_lot_page_data < (lot_id = 1093, lot_name=1093, job_ID=20180918_segment_velocity_test, auto_start=TRUE, perform_mark_training = FALSE)=OK
+09/20/2018 18:20:01+777780us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data > 
+09/20/2018 18:20:01+777847us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data < () = OK
+09/20/2018 18:20:01+777886us LOMA <LO> LOMA_bind_handler < () = OK
+09/20/2018 18:20:01+778231us LOMA <LO> LOMA_bind_handler > (function_code = 0x4c4fff1b)
+09/20/2018 18:20:01+778285us LOMA <LO> LOMAAP_get_lot_page_data > (lot_id=1093)
+09/20/2018 18:20:01+778324us LOMA <LO> LODM_get_lot_page_data > ()
+09/20/2018 18:20:01+862052us LOMA <LO> LODM_get_lot_page_data < () = OK
+09/20/2018 18:20:01+862116us LOMA <LO> LOMAAP_get_lot_page_data < (lot_id = 1093, lot_name=1093, job_ID=20180918_segment_velocity_test, auto_start=TRUE, perform_mark_training = FALSE)=OK
+09/20/2018 18:20:01+862162us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data > 
+09/20/2018 18:20:01+862222us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data < () = OK
+09/20/2018 18:20:01+862260us LOMA <LO> LOMA_bind_handler < () = OK
+09/20/2018 18:20:01+864666us LOMA <LO> lomaap_sm_lot_queue_info_event_sb > (nr_of_lots=1, error_code=0x0)
+09/20/2018 18:20:01+864716us LOMA <LO> LOMAGN_raise_4A_queue_info_event_subscribe > 
+09/20/2018 18:20:01+864813us LOMA <LO> LOMAGN_raise_4A_queue_info_event_subscribe < () = OK
+09/20/2018 18:20:01+864852us LOMA <LO> lomaap_sm_lot_queue_info_event_sb < ()=OK
+09/20/2018 18:20:01+864928us LOMA <LO> lomaap_sm_lot_queue_info_event_sb > (nr_of_lots=1, error_code=0x0)
+09/20/2018 18:20:01+864967us LOMA <LO> LOMAGN_raise_4A_queue_info_event_subscribe > 
+09/20/2018 18:20:01+865048us LOMA <LO> LOMAGN_raise_4A_queue_info_event_subscribe < () = OK
+09/20/2018 18:20:01+865076us LOMA <LO> lomaap_sm_lot_queue_info_event_sb < ()=OK
+09/20/2018 18:20:01+865960us LOMA <LO> lomaap_pl_lot_finish_sb >>(lot_id=1093, lot_state=4, g_loma_nr_of_acitve_lot=1,error_code=0x0)
+09/20/2018 18:20:01+866008us LOMA <LO> LOMAGN_raise_4A_ui_message_event_subscribe > 
+09/20/2018 18:20:01+866062us LOMA <LO> LOMAGN_raise_4A_ui_message_event_subscribe < () = OK
+09/20/2018 18:20:01+866100us LOMA <LO> LOQU_update_queue_info > (lot_id=1093, lot_state=4)
+09/20/2018 18:20:01+866136us LOMA <LO> LOQU_update_queue_info < () = OK
+09/20/2018 18:20:01+866171us LOMA <LO> lomaap_update_slot_info > (lot_id=1093,allocate_slot=FALSE)
+09/20/2018 18:20:01+866207us LOMA <LO> LODM_get_lot_data > ()
+09/20/2018 18:20:01+937179us LOMA <LO> LODM_get_lot_data < () = OK
+09/20/2018 18:20:01+937244us LOMA <LO> lomaap_update_slot_info < () = OK
+09/20/2018 18:20:01+937291us LOMA <LO> LOSM_clear_processed_lot > ()
+09/20/2018 18:20:01+937780us LOMA <LO> LOSM_clear_processed_lot < () = OK
+09/20/2018 18:20:01+937832us LOMA <LO> LOSM_get_Q_state > ()
+09/20/2018 18:20:01+938188us LOMA <LO> LOSM_get_Q_state < () = OK
+09/20/2018 18:20:01+938238us LOMA <LO> lomaap_get_first_lot > ()
+09/20/2018 18:20:01+938279us LOMA <LO> LOSM_get_queue_info > ()
+09/20/2018 18:20:01+938762us LOMA <LO> LOSM_get_queue_info < () = OK
+09/20/2018 18:20:01+938810us LOMA <LO> lomaap_get_first_lot > (0 lot:1093 state:4)
+09/20/2018 18:20:01+938849us LOMA <LO> lomaap_get_first_lot < (lot_id=0)=OK
+09/20/2018 18:20:01+939726us LOMA <LO> LOSM_report_event > ()
+09/20/2018 18:20:01+941185us LOMA <LO> LOSM_report_event < () = OK
+09/20/2018 18:20:01+942933us LOMA <LO> lomaap_pl_lot_finish_sb < (g_loma_nr_of_acitve_lot=0) = OK
+09/20/2018 18:20:01+943018us LOMA <LO> lomaap_sm_lot_queue_info_event_sb > (nr_of_lots=1, error_code=0x0)
+09/20/2018 18:20:01+943060us LOMA <LO> LOMAGN_raise_4A_queue_info_event_subscribe > 
+09/20/2018 18:20:01+943165us LOMA <LO> LOMAGN_raise_4A_queue_info_event_subscribe < () = OK
+09/20/2018 18:20:01+943206us LOMA <LO> lomaap_sm_lot_queue_info_event_sb < ()=OK
+09/20/2018 18:20:01+943264us LOMA <LO> lomaap_st_sys_event_sb > (value=9)
+09/20/2018 18:20:01+943306us LOMA <LO> lomaap_st_sys_event_sb < ()=OK
+09/20/2018 18:20:01+943354us LOMA <LO> lomaap_st_sys_event_sb > (value=1)
+09/20/2018 18:20:01+943408us LOMA <LO> lomaap_st_sys_event_sb < ()=OK
+------------------------------merge7 end------------------------------
+
+09/20/2018 18:20:02+217558us LOMA <LO> lomaap_rc_tack_time_event_sb > (lot_name=1093, tack_time=11.090871)
+09/20/2018 18:20:02+217627us LOMA <LO> LOMAGN_raise_4A_tack_time_event_subscribe > 
+09/20/2018 18:20:02+217697us LOMA <LO> LOMAGN_raise_4A_tack_time_event_subscribe < () = OK
+09/20/2018 18:20:02+217737us LOMA <LO> lomaap_rc_tack_time_event_sb < ()=OK
+09/20/2018 18:20:02+456496us LOMA <LO> LOMA_bind_handler > (function_code = 0x4c4fff1b)
+09/20/2018 18:20:02+456575us LOMA <LO> LOMAAP_get_lot_page_data > (lot_id=1093)
+09/20/2018 18:20:02+456622us LOMA <LO> LODM_get_lot_page_data > ()
+09/20/2018 18:20:02+548897us LOMA <LO> LODM_get_lot_page_data < () = OK
+09/20/2018 18:20:02+548954us LOMA <LO> LOMAAP_get_lot_page_data < (lot_id = 1093, lot_name=1093, job_ID=20180918_segment_velocity_test, auto_start=TRUE, perform_mark_training = FALSE)=OK
+09/20/2018 18:20:02+548998us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data > 
+09/20/2018 18:20:02+549057us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data < () = OK
+09/20/2018 18:20:02+549097us LOMA <LO> LOMA_bind_handler < () = OK
+09/20/2018 18:20:02+549535us LOMA <LO> LOMA_bind_handler > (function_code = 0x4c4fff1b)
+09/20/2018 18:20:02+549588us LOMA <LO> LOMAAP_get_lot_page_data > (lot_id=1093)
+09/20/2018 18:20:02+549632us LOMA <LO> LODM_get_lot_page_data > ()
+09/20/2018 18:20:02+661935us LOMA <LO> LODM_get_lot_page_data < () = OK
+09/20/2018 18:20:02+661991us LOMA <LO> LOMAAP_get_lot_page_data < (lot_id = 1093, lot_name=1093, job_ID=20180918_segment_velocity_test, auto_start=TRUE, perform_mark_training = FALSE)=OK
+09/20/2018 18:20:02+662036us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data > 
+09/20/2018 18:20:02+662100us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data < () = OK
+09/20/2018 18:20:02+662136us LOMA <LO> LOMA_bind_handler < () = OK
+09/20/2018 18:20:02+662442us LOMA <LO> LOMA_bind_handler > (function_code = 0x4c4fff1b)
+09/20/2018 18:20:02+662477us LOMA <LO> LOMAAP_get_lot_page_data > (lot_id=1093)
+09/20/2018 18:20:02+662502us LOMA <LO> LODM_get_lot_page_data > ()
+09/20/2018 18:20:02+769259us LOMA <LO> LODM_get_lot_page_data < () = OK
+09/20/2018 18:20:02+769320us LOMA <LO> LOMAAP_get_lot_page_data < (lot_id = 1093, lot_name=1093, job_ID=20180918_segment_velocity_test, auto_start=TRUE, perform_mark_training = FALSE)=OK
+09/20/2018 18:20:02+769364us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data > 
+09/20/2018 18:20:02+769427us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data < () = OK
+09/20/2018 18:20:02+769465us LOMA <LO> LOMA_bind_handler < () = OK
+09/20/2018 18:20:02+770458us LOMA <LO> LOMA_bind_handler > (function_code = 0x4c4fff1b)
+09/20/2018 18:20:02+770511us LOMA <LO> LOMAAP_get_lot_page_data > (lot_id=1093)
+09/20/2018 18:20:02+770550us LOMA <LO> LODM_get_lot_page_data > ()
+09/20/2018 18:20:02+896902us LOMA <LO> LODM_get_lot_page_data < () = OK
+09/20/2018 18:20:02+896967us LOMA <LO> LOMAAP_get_lot_page_data < (lot_id = 1093, lot_name=1093, job_ID=20180918_segment_velocity_test, auto_start=TRUE, perform_mark_training = FALSE)=OK
+09/20/2018 18:20:02+897014us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data > 
+09/20/2018 18:20:02+897074us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data < () = OK
+09/20/2018 18:20:02+897113us LOMA <LO> LOMA_bind_handler < () = OK
+09/20/2018 18:20:02+897423us LOMA <LO> LOMA_bind_handler > (function_code = 0x4c4fff1b)
+09/20/2018 18:20:02+897478us LOMA <LO> LOMAAP_get_lot_page_data > (lot_id=1093)
+09/20/2018 18:20:02+897519us LOMA <LO> LODM_get_lot_page_data > ()
+09/20/2018 18:20:02+977541us LOMA <LO> LODM_get_lot_page_data < () = OK
+09/20/2018 18:20:02+977606us LOMA <LO> LOMAAP_get_lot_page_data < (lot_id = 1093, lot_name=1093, job_ID=20180918_segment_velocity_test, auto_start=TRUE, perform_mark_training = FALSE)=OK
+09/20/2018 18:20:02+977657us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data > 
+09/20/2018 18:20:02+977719us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data < () = OK
+09/20/2018 18:20:02+977759us LOMA <LO> LOMA_bind_handler < () = OK
+09/20/2018 18:20:02+978276us LOMA <LO> LOMA_bind_handler > (function_code = 0x4c4fff1b)
+09/20/2018 18:20:02+978328us LOMA <LO> LOMAAP_get_lot_page_data > (lot_id=1093)
+09/20/2018 18:20:02+978367us LOMA <LO> LODM_get_lot_page_data > ()
+------------------------------merge8 end------------------------------
+
+09/20/2018 18:20:03+046915us LOMA <LO> LODM_get_lot_page_data < () = OK
+09/20/2018 18:20:03+046978us LOMA <LO> LOMAAP_get_lot_page_data < (lot_id = 1093, lot_name=1093, job_ID=20180918_segment_velocity_test, auto_start=TRUE, perform_mark_training = FALSE)=OK
+09/20/2018 18:20:03+047023us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data > 
+09/20/2018 18:20:03+047081us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data < () = OK
+09/20/2018 18:20:03+047120us LOMA <LO> LOMA_bind_handler < () = OK
+09/20/2018 18:20:03+047416us LOMA <LO> LOMA_bind_handler > (function_code = 0x4c4fff1b)
+09/20/2018 18:20:03+047470us LOMA <LO> LOMAAP_get_lot_page_data > (lot_id=1093)
+09/20/2018 18:20:03+047511us LOMA <LO> LODM_get_lot_page_data > ()
+09/20/2018 18:20:03+119613us LOMA <LO> LODM_get_lot_page_data < () = OK
+09/20/2018 18:20:03+119681us LOMA <LO> LOMAAP_get_lot_page_data < (lot_id = 1093, lot_name=1093, job_ID=20180918_segment_velocity_test, auto_start=TRUE, perform_mark_training = FALSE)=OK
+09/20/2018 18:20:03+119728us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data > 
+09/20/2018 18:20:03+119788us LOMA <LO> LOMAGN_raise_4A_get_lot_page_data < () = OK
+09/20/2018 18:20:03+119832us LOMA <LO> LOMA_bind_handler < () = OK
+-------------------------------last9 end------------------------------
+
+------------------------------------------------------------------------
+2018-09-20,18:20:13

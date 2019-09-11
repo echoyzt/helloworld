@@ -1,0 +1,8 @@
+=====pstack 14078-----ALXE
+#0  0x00d48424 in __kernel_vsyscall ()
+#1  0x0020007d in ___newselect_nocancel () from /lib/libc.so.6
+#2  0x00d53293 in CNFD::CNFD_Select(fd_set*, fd_set*, int*, int) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#3  0x00d62fde in CNEH::CNEH_MainLoop() () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#4  0x00d5b6c8 in CNMAHandler::CNMA_mainloop() () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#5  0x00d59284 in CN4A_main_loop () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#6  0x0805106e in main ()

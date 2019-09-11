@@ -1,0 +1,8 @@
+=====pstack 14323-----LOWH
+#0  0x00bae424 in __kernel_vsyscall ()
+#1  0x00a5e07d in ___newselect_nocancel () from /lib/libc.so.6
+#2  0x00e58293 in CNFD::CNFD_Select(fd_set*, fd_set*, int*, int) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#3  0x00e67fde in CNEH::CNEH_MainLoop() () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#4  0x00e606c8 in CNMAHandler::CNMA_mainloop() () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#5  0x00e5e284 in CN4A_main_loop () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#6  0x0804b542 in main ()

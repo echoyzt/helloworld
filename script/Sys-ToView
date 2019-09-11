@@ -1,0 +1,314 @@
+#!/bin/bash
+LANG=zh_CN.GB18030
+export LANG
+
+project=$1
+label=$2
+
+tool=copyToSubView
+
+. project.cfg
+
+if [ -z "$1" ];then
+	echo usage: baseline View label
+	exit 1
+fi
+
+if [ $label = ${label%_*_*_*_*_*} ];then
+    echo error: Invalid label.
+    exit 1
+fi
+
+LANG=C
+export LANG
+
+stCmdSun="$HOME/StarTeamCP_2005r2/bin/stcmd"
+
+r=$RANDOM
+
+typ=${label%%_*}
+
+tempValue=${label#*_}
+view=${tempValue%%_*}
+tempValue=${label#*_*_}
+MM=${tempValue%%_*}
+
+if [ $typ = L ];then
+    if [ $project = 20516/1.x ];then
+        newStHomeB=$ST20516
+        stAreaBsrc=$prv20516/$src20516
+        newStHomeC=$ST20516/1.x
+        stAreaCsrc=$src20516
+        stAreaCsit=$SIT20516
+    elif [ $project = 20516/2.x ];then
+        newStHomeB=$ST20516
+        stAreaBsrc=$prv20516/$src20516
+        newStHomeC=$ST20516/2.x
+        stAreaCsrc=$src20516
+        stAreaCsit=$SIT20516    
+    elif [ $project = 207999 ];then
+        if [ $MM = SECS ];then
+            newStHomeB=$ST205c
+            stAreaBsrc=$prv205c/$src205c
+        else
+            newStHomeB=$ST20516
+            stAreaBsrc=$prv20516/$src20516
+        fi
+        newStHomeC=$ST20516/207999
+        stAreaCsrc=$src20516
+        stAreaCsit=$SIT20516    
+    elif [ $project = 301C/1.x ];then
+        newStHomeB=$ST301c
+        stAreaBsrc=$prv301c/$src301c
+        newStHomeC=$ST301c/1.x
+        stAreaCsrc=$src301c
+        stAreaCsit=$SIT301c
+    elif [ $project = 205C/1.x ];then
+        newStHomeB=$ST205c
+        stAreaBsrc=$prv205c/$src205c
+        newStHomeC=$ST205c/1.x
+        stAreaCsrc=$src205c
+        stAreaCsit=$SIT205c
+    elif [ $project = 211999 ];then
+        if [ $MM = SECS ];then
+            newStHomeB=$ST20516
+            stAreaBsrc=$prv20516/$src20516
+        else
+            newStHomeB=$ST205c
+            stAreaBsrc=$prv205c/$src205c
+        fi
+        newStHomeC=$ST205c/211999
+        stAreaCsrc=$src205c
+        stAreaCsit=$SIT205c    
+    elif [ $project = 206 ];then
+        newStHomeB=$ST206
+        stAreaBsrc=$prv206/$src206
+        newStHomeC=$ST206/1.x
+        stAreaCsrc=$src206
+        stAreaCsit=$SIT206
+    elif [ $project = 509 ];then
+        newStHomeB=$ST509
+        stAreaBsrc=$prv509/$src509
+        newStHomeC=$ST509/1.x
+        stAreaCsrc=$src509
+        stAreaCsit=$SIT509
+    elif [ $project = 203M/3.3 ];then 
+        if [ $view = 203M ];then
+            newStHomeB=$ST203m
+            stAreaBsrc=$prv203m/$src203m
+        else
+            newStHomeB=$ST205
+            stAreaBsrc=$prv205/$src205
+        fi
+        newStHomeC=$ST203mNew/3.3
+        stAreaCsrc=$src203mNew
+        stAreaCsit=$SIT203mNew
+    elif [ $project = 203M/3.4 ];then 
+        if [ $view = 203M ];then
+            newStHomeB=$ST203m
+            stAreaBsrc=$prv203m/$src203m
+        else
+            newStHomeB=$ST205
+            stAreaBsrc=$prv205/$src205
+        fi
+        newStHomeC=$ST203mNew/3.4
+        stAreaCsrc=$src203mNew
+        stAreaCsit=$SIT203mNew
+    elif [ $project = 205/3.3 ];then 
+        if [ $view = 203M ];then
+            newStHomeB=$ST203m
+            stAreaBsrc=$prv203m/$src203m
+        else
+            newStHomeB=$ST205
+            stAreaBsrc=$prv205/$src205
+        fi        
+        newStHomeC=$ST205new/3.3
+        stAreaCsrc=$src205new
+        stAreaCsit=$SIT205new
+    elif [ $project = 205/3.4 ];then 
+        if [ $view = 203M ];then
+            newStHomeB=$ST203m
+            stAreaBsrc=$prv203m/$src203m
+        else
+            newStHomeB=$ST205
+            stAreaBsrc=$prv205/$src205
+        fi        
+        newStHomeC=$ST205new/3.4
+        stAreaCsrc=$src205new
+        stAreaCsit=$SIT205new
+    else
+        echo Error: project--$project invalid，is not in list[20516、 207999、205C、 211999、301C、206、509, 203M/3.3, 205/3.3, 205/3.4, 203m/3.4].
+        exit 1
+    fi        
+else
+    if [ $project = 20516/1.x ];then
+        newStHomeB=$ST20516
+        stAreaBsrc=$ctr20516/$src20516
+        newStHomeC=$ST20516/1.x
+        stAreaCsrc=$src20516
+        stAreaCsit=$SIT20516
+    elif [ $project = 20516/2.x ];then
+        newStHomeB=$ST20516
+        stAreaBsrc=$ctr20516/$src20516
+        newStHomeC=$ST20516/2.x
+        stAreaCsrc=$src20516
+        stAreaCsit=$SIT20516
+    elif [ $project = 207999 ];then
+        if [ $MM = SECS ];then
+            newStHomeB=$ST205c
+            stAreaBsrc=$ctr205c/$src205c
+        else
+            newStHomeB=$ST20516
+            stAreaBsrc=$ctr20516/$src20516
+        fi
+        newStHomeC=$ST20516/207999
+        stAreaCsrc=$src20516
+        stAreaCsit=$SIT20516  
+    elif [ $project = 301C/1.x ];then
+        newStHomeB=$ST301c
+        stAreaBsrc=$ctr301c/$src301c
+        newStHomeC=$ST301c/1.x
+        stAreaCsrc=$src301c
+        stAreaCsit=$SIT301c
+    elif [ $project = 205C/1.x ];then
+        newStHomeB=$ST205c
+        stAreaBsrc=$ctr205c/$src205c
+        newStHomeC=$ST205c/1.x
+        stAreaCsrc=$src205c
+        stAreaCsit=$SIT205c
+    elif [ $project = 211999 ];then
+        if [ $MM = SECS ];then
+            newStHomeB=$ST20516
+            stAreaBsrc=$ctr20516/$src20516
+        else
+            newStHomeB=$ST205c
+            stAreaBsrc=$ctr205c/$src205c
+        fi
+        newStHomeC=$ST205c/211999
+        stAreaCsrc=$src205c
+        stAreaCsit=$SIT205c  
+    elif [ $project = 206 ];then
+        newStHomeB=$ST206
+        stAreaBsrc=$ctr206/$src206
+        newStHomeC=$ST206/1.x
+        stAreaCsrc=$src206
+        stAreaCsit=$SIT206
+    elif [ $project = 509 ];then
+        newStHomeB=$ST509
+        stAreaBsrc=$ctr509/$src509
+        newStHomeC=$ST509/1.x
+        stAreaCsrc=$src509
+        stAreaCsit=$SIT509
+    elif [ $project = 203M/3.3 ];then 
+        if [ $view = 203M ];then
+            newStHomeB=$ST203m
+            stAreaBsrc=$ctr203m/$src203m
+        else
+            newStHomeB=$ST205
+            stAreaBsrc=$ctr205/$src205
+        fi
+        newStHomeC=$ST203mNew/3.3
+        stAreaCsrc=$src203mNew
+        stAreaCsit=$SIT203mNew
+    elif [ $project = 203M/3.4 ];then 
+        if [ $view = 203M ];then
+            newStHomeB=$ST203m
+            stAreaBsrc=$ctr203m/$src203m
+        else
+            newStHomeB=$ST205
+            stAreaBsrc=$ctr205/$src205
+        fi
+        newStHomeC=$ST203mNew/3.4
+        stAreaCsrc=$src203mNew
+        stAreaCsit=$SIT203mNew
+    elif [ $project = 205/3.3 ];then 
+        if [ $view = 203M ];then
+            newStHomeB=$ST203m
+            stAreaBsrc=$ctr203m/$src203m
+        else
+            newStHomeB=$ST205
+            stAreaBsrc=$ctr205/$src205
+        fi        
+        newStHomeC=$ST205new/3.3
+        stAreaCsrc=$src205new
+        stAreaCsit=$SIT205new
+    elif [ $project = 205/3.4 ];then 
+        if [ $view = 203M ];then
+            newStHomeB=$ST203m
+            stAreaBsrc=$ctr203m/$src203m
+        else
+            newStHomeB=$ST205
+            stAreaBsrc=$ctr205/$src205
+        fi        
+        newStHomeC=$ST205new/3.4
+        stAreaCsrc=$src205new
+        stAreaCsit=$SIT205new
+    else
+        echo Error: project--$project invalid，is not in list[20516、 207999、205C、 211999、301C、206、509, 203M/3.3, 205/3.3, 205/3.4, 203m/3.4].
+        exit 1
+    fi
+fi
+
+tempValue=${label#*_*_}
+usedValue=${tempValue%_*_*_*}
+componentDir=${usedValue//_/\/}
+
+if [ -d "$HOME/$label" ];then
+    /bin/rm -r $HOME/$label
+fi
+
+LANG=zh_CN.GB18030
+export LANG
+
+$stCmdSun local-mkdir   -p "$newStHomeB/$stAreaBsrc/$componentDir" -fp $HOME/$label/$areaB/$componentDir -is -x -nologo
+$stCmdSun local-mkdir   -p "$newStHomeC/$stAreaCsrc/$componentDir" -fp $HOME/$label/$areaC/$componentDir -is -x -nologo
+
+$stCmdSun co -p "$newStHomeB/$stAreaBsrc/$componentDir" -fp $HOME/$label/$areaB/$componentDir -is -x -nologo -o -vl "$label"
+
+$stCmdSun label         -p "$newStHomeC/$stAreaCsrc" -x -nl $label -d "$tool: $label" -r
+
+$stCmdSun update-status -p "$newStHomeC/$stAreaCsrc/$componentDir"  -fp $HOME/$label/$areaB/$componentDir   -is -x -v -nologo|grep Missing>>$r.status
+$stCmdSun ci            -p "$newStHomeC/$stAreaCsrc/$componentDir"  -fp $HOME/$label/$areaB/$componentDir   -is -x -nologo -filter "MGUO" -o -r "$tool: $label"
+$stCmdSun add           -p "$newStHomeC/$stAreaCsrc/$componentDir"  -fp $HOME/$label/$areaB/$componentDir   -is -x -nologo
+$stCmdSun apply-label   -p "$newStHomeC/$stAreaCsrc/$componentDir"  -is -x -nologo -lbl "$label"
+
+
+$stCmdSun local-mkdir   -p "$newStHomeC/$stAreaCsit" -fp $HOME/$label/$stAreaCsit -is -x -nologo
+
+if [ -d "$HOME/$label/$areaB/$componentDir/config" ];then
+    /bin/cp -r $HOME/$label/$areaB/$componentDir/config/* $HOME/$label/$stAreaCsit/
+    /bin/rm -rf $HOME/$label/$stAreaCsit/CM
+fi
+
+
+$stCmdSun co -p "$newStHomeC/$stAreaCsrc" -fp $HOME/$label -x -nologo -o history.txt
+descripetion="`date "+20%y-%m-%d %A"` "\"$label\"" "\"$label\""" 
+echo $descripetion>>$HOME/$label/history.txt
+$stCmdSun ci -p "$newStHomeC/$stAreaCsrc" -fp $HOME/$label -r "$label" -filter "M" -nologo history.txt
+
+
+$stCmdSun update-status -p "$newStHomeC/$stAreaCsit" -fp $HOME/$label/$stAreaCsit -is -x -nologo
+$stCmdSun ci            -p "$newStHomeC/$stAreaCsit" -fp $HOME/$label/$stAreaCsit -is -x -nologo -vl "$label" -filter "MGUO" -o -r "$tool: $label"
+$stCmdSun add           -p "$newStHomeC/$stAreaCsit" -fp $HOME/$label/$stAreaCsit -is -x -nologo -vl "$label"
+
+diff -rs $HOME/$label/$areaB $HOME/$label/$areaC|grep Only>>$r.diff
+/bin/rm -r $HOME/$label
+
+
+cat $r.diff|while read line
+do
+	dir=${line//Only in /}
+	dir=${dir//: //}
+	if [ -d "$dir" ];then
+		echo Warning: $line
+	fi
+done
+
+cat $r.status|while read line
+do
+	file=${line//: status/}
+	file=${file//Missing \(was Missing\)/missing}
+	echo Warning: $file
+done
+
+/bin/rm $r.diff $r.status

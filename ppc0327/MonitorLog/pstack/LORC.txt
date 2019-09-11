@@ -1,0 +1,8 @@
+=====pstack 14466-----LORC
+#0  0x00a0e424 in __kernel_vsyscall ()
+#1  0x0028807d in ___newselect_nocancel () from /lib/libc.so.6
+#2  0x008cf293 in CNFD::CNFD_Select(fd_set*, fd_set*, int*, int) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#3  0x008defde in CNEH::CNEH_MainLoop() () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#4  0x008d76c8 in CNMAHandler::CNMA_mainloop() () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#5  0x008d5284 in CN4A_main_loop () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#6  0x08057d7e in main ()

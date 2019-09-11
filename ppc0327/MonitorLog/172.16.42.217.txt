@@ -1,0 +1,1165 @@
+===============================PPC Log start================================
+============================run i=============================
+ i
+
+  NAME        ENTRY       TID    PRI   STATUS      PC       SP     ERRNO  DELAY
+---------- ------------ -------- --- ---------- -------- -------- ------- -----
+tExcTask   excTask      1dfcf730   0 PEND         270604 1dfcf610   3006b     0
+tLogTask   logTask      1dfccaa0   0 PEND         270604 1dfcc990       0     0
+tShell     shell        1bf8aee0   1 READY        268530 1bf8aaa0  300046     0
+tWdbTask   wdbTask      1bf92020   3 PEND         262bd4 1bf91ef0       0     0
+tAioIoTask1aioIoTask    1dfde800  50 PEND         263400 1dfde700       0     0
+tAioIoTask0aioIoTask    1dfd7490  50 PEND         263400 1dfd7390       0     0
+tNetTask   netTask      1c1aad20  50 PEND         262bd4 1c1aac30       0     0
+tAioWait   aioWaitTask  1dfe5b70  51 PEND         262bd4 1dfe5a00  3d0002     0
+tPortmapd  portmapd     1bf97f90  54 PEND         262bd4 1bf97d30  3d0002     0
+tTelnetd   telnetd      1bf95320  55 PEND         262bd4 1bf951b0       0     0
+tTelnetOut_telnetOutTas  82625e0  55 READY        262bd4  82622c0       0     0
+tTelnetIn_8telnetInTask  8256e20  55 PEND         262bd4  8256a20       0     0
+SMSB       SMSB_main    1bd3a290  99 PEND         262bd4 1bd39430  3d0002     0
+tTffsPTask flPollTask   1dfcade0 100 DELAY        267e54 1dfcad30       0   126
+SMJC_main  SMJC_main    1b64e7c0 100 PEND         262bd4 1b64d9b0  3d0002     0
+SMTC_main  SMTC_main    1b6420c0 100 PEND         262bd4 1b6408e0  3d0002     0
+SMTCH_MAIN SMTCH_MAIN   1b61cc80 100 DELAY        267e54 1b61c3b0  3d0002    30
+TRLO_MAIN  TRLO_MAIN    1b635a00 150 PEND         262bd4 1b634cd0  3d0002     0
+CNPS_MAIN  CNPS_MAIN    1b629340 150 PEND         262bd4 1b621370  3d0002     0
+SMHB_MAIN  SMHB_MAIN    1b6105c0 150 DELAY        267e54 1b610490  3d0002 19199
+SMCH_MAIN  SMCH_MAIN    1b603f00 150 DELAY        267e54 1b603980  3d0002  4487
+RIIO_main  RIIO_main    18008580 150 PEND         262bd4 18008010  3d0002     0
+WIIO_main  WIIO_main    177f7320 150 PEND         262bd4 177f6db0  3d0002     0
+WMPU_main  WMPU_main    177dea60 150 PEND         262bd4 177da7c0  300002     0
+WMIM_main  WMIM_main    177c61a0 150 PEND         262bd4 177c1f80  300002     0
+WMMO_main  WMMO_main__F 17fd4750 150 DELAY        267e54 17fd44f0   d0003  4413
+WUA1MA_mainWUA1MA_main  12f109c0 150 PEND         262bd4 12f10450  3d0002     0
+WUA2MA_mainWUA2MA_main  12c340e0 150 PEND         262bd4 12c33b70  3d0002     0
+WUA3MA_mainWUA3MA_main  1276f380 150 PEND         262bd4 1276ee10  3d0002     0
+WUA4MA_mainWUA4MA_main  12492aa0 150 PEND         262bd4 12492530  3d0002     0
+WUREWD_mainWUREWD_main  14166860 150 PEND         262bd4 141662f0  3d0002     0
+WRMA_main  WRMA_main    10721ff0 150 PEND         262bd4 10721a80  3d0002     0
+WCA1MA_mainWCA1MA_main  10763740 150 PEND+T       262bd4 107631d0  3d0002 19728
+WCA2MA_mainWCA2MA_main  10128420 150 PEND+T       262bd4 10127eb0  3d0002 19712
+WCA3MA_mainWCA3MA_main  1010fb60 150 PEND+T       262bd4 1010f5f0  3d0002 19689
+WCRC1_main WCRC1_main    fe0cae0 150 PEND         262bd4  fe0c570  3d0002     0
+WCRC2_main WCRC2_main    fdf4220 150 PEND         262bd4  fdf3cb0  3d0002     0
+WCRC3_main WCRC3_main    fddb960 150 PEND         262bd4  fddb3f0  3d0002     0
+RNMA_main  RNMA_main     d96b0e0 150 PEND         262bd4  d96ab80  3d0002     0
+RKMA_main  RKMA_main     d2b0e40 150 PEND         262bd4  d2b08d0  3d0002     0
+RBMA_main  RBMA_main     cbfb5a0 150 PEND         262bd4  cbfb040  3d0002     0
+RVA1MA_mainRVA1MA_main   c594920 150 PEND         262bd4  c5943b0  3d0002     0
+RMRH_main  RMRH_main     c4a04c0 150 PEND         262bd4  c49c260  300002     0
+RYMA_main  RYMA_main     b78d440 150 PEND         262bd4  b78cee0  3d0002     0
+WEMA_main  WEMA_main     b24afa0 150 PEND         262bd4  b24aa30  3d0002     0
+WSMA_main  WSMA_main     aa84a30 150 PEND         262bd4  aa844c0  3d0002     0
+RSMA_main  RSMA_main     a3ea0c0 150 PEND         262bd4  a3e9b50  3d0002     0
+FSMA_main  FSMA_main     9d410c0 150 PEND         262bd4  9d40b50  3d0002     0
+LFMA_main  LFMA_main     9c4cc60 150 READY        267e54  9c4cab0  3d0001     0
+IPMA_main  IPMA_main     8f76fb0 150 PEND         262bd4  8f76a40  3d0002     0
+WPMA_main  WPMA_main     8947df0 150 PEND         262bd4  8947890  3d0002     0
+value = 0 = 0x0
+->============================tt  SMSB=========================
+ tt "SMSB"
+26ecc8 vxTaskEntry    +68 : 1bd7f930 ()
+1bd7f930 SMSB_main      +784: SMSBserverHandler::dispatch(void) ()
+1bd87a80 SMSBserverHandler::dispatch(void)+108: SMSBMessage::receiveRequest(void) ()
+1bd8e9a4 SMSBMessage::receiveRequest(void)+54 : 1bd9d390 ()
+1bd9d4bc SMDCReadImDataMessage::SMDCReadImDataMessage(void)+7d0: CN4AWrapper::receiveRequest(void *, int, int *, int *, int) ()
+1bdab0a0 CN4AWrapper::receiveRequest(void *, int, int *, int *, int)+74 : CN4A_receive_request ()
+1be8b9a0 CN4A_receive_request+350: 1becb1c8 ()
+1becb1c8 CNMAHandler::CNMA_receiveRequest(char const *, void *, int, int *, int *, int)+3f8: CNCM::CNCM_ReceiveRequest(unsigned long, int, void *, int, int *, int *, int, unsigned long *) ()
+1be93f40 CNCM::CNCM_ReceiveRequest(unsigned long, int, void *, int, int *, int *, int, unsigned long *)+f0 : CNCM::CNCM_RecvreqIntime(unsigned long, int, long, void *, int, int *, int *, int, unsigned long *) ()
+1be94240 CNCM::CNCM_RecvreqIntime(unsigned long, int, long, void *, int, int *, int *, int, unsigned long *)+270: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  SMJC_main=========================
+ tt "SMJC_main"
+26ecc8 vxTaskEntry    +68 : SMJC_main ()
+1bd744ec SMJC_main      +3dc: SMJCserverHandler::dispatch(void) ()
+1bd77a9c SMJCserverHandler::dispatch(void)+dc : SMJCMessage::receiveRequest(void) ()
+1bd914c4 SMJCMessage::receiveRequest(void)+54 : 1bd9e184 ()
+1bd9e2b0 SMDCReadImDataMessage::SMDCReadImDataMessage(void)+15c4: CN4AWrapper::receiveRequest(void *, int, int *, int *, int) ()
+1bdab0a0 CN4AWrapper::receiveRequest(void *, int, int *, int *, int)+74 : CN4A_receive_request ()
+1be8b9a0 CN4A_receive_request+350: 1becb1c8 ()
+1becb1c8 CNMAHandler::CNMA_receiveRequest(char const *, void *, int, int *, int *, int)+3f8: CNCM::CNCM_ReceiveRequest(unsigned long, int, void *, int, int *, int *, int, unsigned long *) ()
+1be93f40 CNCM::CNCM_ReceiveRequest(unsigned long, int, void *, int, int *, int *, int, unsigned long *)+f0 : CNCM::CNCM_RecvreqIntime(unsigned long, int, long, void *, int, int *, int *, int, unsigned long *) ()
+1be94240 CNCM::CNCM_RecvreqIntime(unsigned long, int, long, void *, int, int *, int *, int, unsigned long *)+270: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  SMTC_main=========================
+ tt "SMTC_main"
+26ecc8 vxTaskEntry    +68 : 1bd795ac ()
+1bd795ac SMTC_main      +3f4: SMTCserverHandler::dispatch(void) ()
+1bd7d4ac SMTCserverHandler::dispatch(void)+c0 : SMTCMessage::receiveRequest(void) ()
+1bd931c8 SMTCMessage::receiveRequest(void)+54 : 1bd9ef78 ()
+1bd9f0a4 SMDCReadImDataMessage::SMDCReadImDataMessage(void)+23b8: CN4AWrapper::receiveRequest(void *, int, int *, int *, int) ()
+1bdab0a0 CN4AWrapper::receiveRequest(void *, int, int *, int *, int)+74 : CN4A_receive_request ()
+1be8b9a0 CN4A_receive_request+350: 1becb1c8 ()
+1becb1c8 CNMAHandler::CNMA_receiveRequest(char const *, void *, int, int *, int *, int)+3f8: CNCM::CNCM_ReceiveRequest(unsigned long, int, void *, int, int *, int *, int, unsigned long *) ()
+1be93f40 CNCM::CNCM_ReceiveRequest(unsigned long, int, void *, int, int *, int *, int, unsigned long *)+f0 : CNCM::CNCM_RecvreqIntime(unsigned long, int, long, void *, int, int *, int *, int, unsigned long *) ()
+1be94240 CNCM::CNCM_RecvreqIntime(unsigned long, int, long, void *, int, int *, int *, int, unsigned long *)+270: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  SMTCH_MAIN=========================
+ tt "SMTCH_MAIN"
+26ecc8 vxTaskEntry    +68 : 1bdadd0c ()
+1bdadd0c SMTCH_MAIN     +778: CN4A_send_request ()
+1be8afd0 CN4A_send_request+340: CNMAHandler::CNMA_sendRequest(char const *, void const *, int, int) ()
+1beca8b0 CNMAHandler::CNMA_sendRequest(char const *, void const *, int, int)+280: CNCM::CNCM_SendRequest(unsigned long, int, void const *, int, int, unsigned long) ()
+1be92f08 CNCM::CNCM_SendRequest(unsigned long, int, void const *, int, int, unsigned long)+1a0: CNCM::CNCM_Connect(CNLO_CLIENT_INFO_STRUCT *, int) ()
+1be9343c CNCM::CNCM_Connect(CNLO_CLIENT_INFO_STRUCT *, int)+98 : CNCM::CNCM_ConnectInTime(CNLO_CLIENT_INFO_STRUCT *, int) ()
+1be9382c CNCM::CNCM_ConnectInTime(CNLO_CLIENT_INFO_STRUCT *, int)+2e4: GFTM_delay (3e8)
+1bf4c070 GFTM_delay     +c4 : taskDelay ()
+value = 0 = 0x0
+->============================tt  TRLO_MAIN=========================
+ tt "TRLO_MAIN"
+26ecc8 vxTaskEntry    +68 : 1be79ba8 ()
+1be79ba8 TRLO_MAIN      +c24: TRLocalHandler::Active(int, TRMessager *, TRMode *, TRrealTimeTrace *) ()
+1be78568 TRLocalHandler::Active(int, TRMessager *, TRMode *, TRrealTimeTrace *)+2ec: TRMessager::RecRequest(int) ()
+1be1af9c TRMessager::RecRequest(int)+94 : CN4A_receive_request ()
+1be8b9a0 CN4A_receive_request+350: 1becb1c8 ()
+1becb1c8 CNMAHandler::CNMA_receiveRequest(char const *, void *, int, int *, int *, int)+3f8: CNCM::CNCM_ReceiveRequest(unsigned long, int, void *, int, int *, int *, int, unsigned long *) ()
+1be93f40 CNCM::CNCM_ReceiveRequest(unsigned long, int, void *, int, int *, int *, int, unsigned long *)+f0 : CNCM::CNCM_RecvreqIntime(unsigned long, int, long, void *, int, int *, int *, int, unsigned long *) ()
+1be94240 CNCM::CNCM_RecvreqIntime(unsigned long, int, long, void *, int, int *, int *, int, unsigned long *)+270: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  CNPS_MAIN=========================
+ tt "CNPS_MAIN"
+26ecc8 vxTaskEntry    +68 : CNPS_MAIN ()
+1be76c08 CNPS_MAIN      +348: CN4A_receive_request ()
+1be8b9a0 CN4A_receive_request+350: 1becb1c8 ()
+1becb1c8 CNMAHandler::CNMA_receiveRequest(char const *, void *, int, int *, int *, int)+3f8: CNCM::CNCM_ReceiveRequest(unsigned long, int, void *, int, int *, int *, int, unsigned long *) ()
+1be93f40 CNCM::CNCM_ReceiveRequest(unsigned long, int, void *, int, int *, int *, int, unsigned long *)+f0 : CNCM::CNCM_RecvreqIntime(unsigned long, int, long, void *, int, int *, int *, int, unsigned long *) ()
+1be94240 CNCM::CNCM_RecvreqIntime(unsigned long, int, long, void *, int, int *, int *, int, unsigned long *)+270: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  SMHB_MAIN=========================
+ tt "SMHB_MAIN"
+26ecc8 vxTaskEntry    +68 : SMHB_MAIN ()
+1bdad2cc SMHB_MAIN      +364: GFTM_delay (3a98)
+1bf4c070 GFTM_delay     +c4 : taskDelay ()
+value = 0 = 0x0
+->============================tt  SMCH_MAIN=========================
+ tt "SMCH_MAIN"
+26ecc8 vxTaskEntry    +68 : 1bdacc24 ()
+1bdacc24 SMCH_MAIN      +7fc: CN4A_snd_rqst_rec_rpl ()
+1be8cd44 CN4A_snd_rqst_rec_rpl+364: CNMAHandler::CNMA_sndRqstrecRpl(char const *, void const *, int, void *, int, int *, int, int) ()
+1becbf1c CNMAHandler::CNMA_sndRqstrecRpl(char const *, void const *, int, void *, int, int *, int, int)+36c: CNCM::CNCM_SendRequest(unsigned long, int, void const *, int, int, unsigned long) ()
+1be92f08 CNCM::CNCM_SendRequest(unsigned long, int, void const *, int, int, unsigned long)+1a0: CNCM::CNCM_Connect(CNLO_CLIENT_INFO_STRUCT *, int) ()
+1be9343c CNCM::CNCM_Connect(CNLO_CLIENT_INFO_STRUCT *, int)+98 : CNCM::CNCM_ConnectInTime(CNLO_CLIENT_INFO_STRUCT *, int) ()
+1be9382c CNCM::CNCM_ConnectInTime(CNLO_CLIENT_INFO_STRUCT *, int)+2e4: GFTM_delay (3e8)
+1bf4c070 GFTM_delay     +c4 : taskDelay ()
+value = 0 = 0x0
+->============================tt  RIIO_main=========================
+ tt "RIIO_main"
+26ecc8 vxTaskEntry    +68 : 18008d90 ()
+18008d90 RIIO_main      +530: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WIIO_main=========================
+ tt "WIIO_main"
+26ecc8 vxTaskEntry    +68 : 179f7cb0 ()
+179f7cb0 WIIO_main      +530: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WMPU_main=========================
+ tt "WMPU_main"
+26ecc8 vxTaskEntry    +68 : WMPU_main ()
+1880cffc WMPU_main      +a0 : DRSA4A_get_err_log (1)
+1878c478 DRSA4A_get_err_log+cc : DRSAER_get_err_log(int, char *) (1, 177de970)
+1878ead4 DRSAER_get_err_log(int, char *)+b0 : DRSAXI_recv_reply_from_dsp(int, DRSAXI_dpram_channel_enum, int, DRSAXI_rpl_struct *, int) (1, 2, b, 177da8d0, 7d00)
+187936d4 DRSAXI_recv_reply_from_dsp(int, DRSAXI_dpram_channel_enum, int, DRSAXI_rpl_struct *, int)+340: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WMIM_main=========================
+ tt "WMIM_main"
+26ecc8 vxTaskEntry    +68 : WMIM_main ()
+1880d09c WMIM_main      +30 : DRIM4A_get_err_log (0)
+1877f648 DRIM4A_get_err_log+cc : DRIMER_get_err_log(int, char *) (0, 177c60d0)
+18780010 DRIMER_get_err_log(int, char *)+a8 : DRIMXI_recv_reply_from_dsp(int, DRIMXI_dpram_channel_enum, int, DRIMXI_rpl_struct *) (0, 2, 5, 177c2070)
+18783ccc DRIMXI_recv_reply_from_dsp(int, DRIMXI_dpram_channel_enum, int, DRIMXI_rpl_struct *)+234: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WMMO_main=========================
+ tt "WMMO_main"
+26ecc8 vxTaskEntry    +68 : 1880bb94 ()
+1880bb94 WMMO_main(void)+2838: sleep (1)
+212a38 sleep          +24 : nanosleep ()
+2128a0 nanosleep      +160: taskDelay ()
+value = 0 = 0x0
+->============================tt  WUA1MA_main=========================
+ tt "WUA1MA_main"
+26ecc8 vxTaskEntry    +68 : 133b1714 ()
+133b1714 WUA1MA_main    +64c: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WUA2MA_main=========================
+ tt "WUA2MA_main"
+26ecc8 vxTaskEntry    +68 : 133e82bc ()
+133e82bc WUA2MA_main    +64c: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WUA3MA_main=========================
+ tt "WUA3MA_main"
+26ecc8 vxTaskEntry    +68 : 1341ee64 ()
+1341ee64 WUA3MA_main    +64c: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WUA4MA_main=========================
+ tt "WUA4MA_main"
+26ecc8 vxTaskEntry    +68 : 13455a0c ()
+13455a0c WUA4MA_main    +64c: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WUREWD_main=========================
+ tt "WUREWD_main"
+26ecc8 vxTaskEntry    +68 : 13458398 ()
+13458398 WUREWD_main    +64c: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WRMA_main=========================
+ tt "WRMA_main"
+26ecc8 vxTaskEntry    +68 : 111a4a14 ()
+111a4a14 WRMA_main      +530: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WCA1MA_main=========================
+ tt "WCA1MA_main"
+26ecc8 vxTaskEntry    +68 : 1006dc18 ()
+1006dc18 WCA1MA_main    +530: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WCA2MA_main=========================
+ tt "WCA2MA_main"
+26ecc8 vxTaskEntry    +68 : 10088d70 ()
+10088d70 WCA2MA_main    +530: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WCA3MA_main=========================
+ tt "WCA3MA_main"
+26ecc8 vxTaskEntry    +68 : 100a3ec8 ()
+100a3ec8 WCA3MA_main    +530: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WCRC1_main=========================
+ tt "WCRC1_main"
+26ecc8 vxTaskEntry    +68 : 100ae724 ()
+100ae724 WCRC1_main     +530: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WCRC2_main=========================
+ tt "WCRC2_main"
+26ecc8 vxTaskEntry    +68 : 100b16ec ()
+100b16ec WCRC2_main     +530: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WCRC3_main=========================
+ tt "WCRC3_main"
+26ecc8 vxTaskEntry    +68 : 100b46b4 ()
+100b46b4 WCRC3_main     +530: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  RNMA_main=========================
+ tt "RNMA_main"
+26ecc8 vxTaskEntry    +68 : d9a876c ()
+d9a876c RNMA_main      +46c: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  RKMA_main=========================
+ tt "RKMA_main"
+26ecc8 vxTaskEntry    +68 : d2b1650 ()
+d2b1650 RKMA_main      +530: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  RBMA_main=========================
+ tt "RBMA_main"
+26ecc8 vxTaskEntry    +68 : cbfbccc ()
+cbfbccc RBMA_main      +46c: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  RVA1MA_main=========================
+ tt "RVA1MA_main"
+26ecc8 vxTaskEntry    +68 : c5abd18 ()
+c5abd18 RVA1MA_main    +518: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  RMRH_main=========================
+ tt "RMRH_main"
+26ecc8 vxTaskEntry    +68 : RMRH_main ()
+19103df4 RMRH_main      +30 : DRSA4A_get_err_log (4)
+190e23bc DRSA4A_get_err_log+cc : DRSAER_get_err_log(int, char *) (4, c4a03f0)
+190e48b8 DRSAER_get_err_log(int, char *)+b0 : DRSAXI_recv_reply_from_dsp(int, DRSAXI_dpram_channel_enum, int, DRSAXI_rpl_struct *, int) (4, 2, 1d, c49c350, 7d00)
+190e8fbc DRSAXI_recv_reply_from_dsp(int, DRSAXI_dpram_channel_enum, int, DRSAXI_rpl_struct *, int)+1f4: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  RYMA_main=========================
+ tt "RYMA_main"
+26ecc8 vxTaskEntry    +68 : b78db6c ()
+b78db6c RYMA_main      +46c: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WEMA_main=========================
+ tt "WEMA_main"
+26ecc8 vxTaskEntry    +68 : b2519d4 ()
+b2519d4 WEMA_main      +630: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WSMA_main=========================
+ tt "WSMA_main"
+26ecc8 vxTaskEntry    +68 : ab63970 ()
+ab63970 WSMA_main      +630: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  RSMA_main=========================
+ tt "RSMA_main"
+26ecc8 vxTaskEntry    +68 : a443c00 ()
+a443c00 RSMA_main      +618: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  FSMA_main=========================
+ tt "FSMA_main"
+26ecc8 vxTaskEntry    +68 : 9d640b8 ()
+9d640b8 FSMA_main      +630: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  LFMA_main=========================
+ tt "LFMA_main"
+26ecc8 vxTaskEntry    +68 : LFMA_main ()
+9dd457c LFMA_main      +344: LFMA_task ()
+9dd41e8 LFMA_task      +1384: taskDelay ()
+value = 0 = 0x0
+->============================tt  IPMA_main=========================
+ tt "IPMA_main"
+26ecc8 vxTaskEntry    +68 : 8fdce34 ()
+8fdce34 IPMA_main      +630: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WPMA_main=========================
+ tt "WPMA_main"
+26ecc8 vxTaskEntry    +68 : 894ecf4 ()
+894ecf4 WPMA_main      +538: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  SMSB=========================
+ tt "SMSB"
+26ecc8 vxTaskEntry    +68 : 1bd7f930 ()
+1bd7f930 SMSB_main      +784: SMSBserverHandler::dispatch(void) ()
+1bd87a80 SMSBserverHandler::dispatch(void)+108: SMSBMessage::receiveRequest(void) ()
+1bd8e9a4 SMSBMessage::receiveRequest(void)+54 : 1bd9d390 ()
+1bd9d4bc SMDCReadImDataMessage::SMDCReadImDataMessage(void)+7d0: CN4AWrapper::receiveRequest(void *, int, int *, int *, int) ()
+1bdab0a0 CN4AWrapper::receiveRequest(void *, int, int *, int *, int)+74 : CN4A_receive_request ()
+1be8b9a0 CN4A_receive_request+350: 1becb1c8 ()
+1becb1c8 CNMAHandler::CNMA_receiveRequest(char const *, void *, int, int *, int *, int)+3f8: CNCM::CNCM_ReceiveRequest(unsigned long, int, void *, int, int *, int *, int, unsigned long *) ()
+1be93f40 CNCM::CNCM_ReceiveRequest(unsigned long, int, void *, int, int *, int *, int, unsigned long *)+f0 : CNCM::CNCM_RecvreqIntime(unsigned long, int, long, void *, int, int *, int *, int, unsigned long *) ()
+1be94240 CNCM::CNCM_RecvreqIntime(unsigned long, int, long, void *, int, int *, int *, int, unsigned long *)+270: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  SMJC_main=========================
+ tt "SMJC_main"
+26ecc8 vxTaskEntry    +68 : SMJC_main ()
+1bd744ec SMJC_main      +3dc: SMJCserverHandler::dispatch(void) ()
+1bd77a9c SMJCserverHandler::dispatch(void)+dc : SMJCMessage::receiveRequest(void) ()
+1bd914c4 SMJCMessage::receiveRequest(void)+54 : 1bd9e184 ()
+1bd9e2b0 SMDCReadImDataMessage::SMDCReadImDataMessage(void)+15c4: CN4AWrapper::receiveRequest(void *, int, int *, int *, int) ()
+1bdab0a0 CN4AWrapper::receiveRequest(void *, int, int *, int *, int)+74 : CN4A_receive_request ()
+1be8b9a0 CN4A_receive_request+350: 1becb1c8 ()
+1becb1c8 CNMAHandler::CNMA_receiveRequest(char const *, void *, int, int *, int *, int)+3f8: CNCM::CNCM_ReceiveRequest(unsigned long, int, void *, int, int *, int *, int, unsigned long *) ()
+1be93f40 CNCM::CNCM_ReceiveRequest(unsigned long, int, void *, int, int *, int *, int, unsigned long *)+f0 : CNCM::CNCM_RecvreqIntime(unsigned long, int, long, void *, int, int *, int *, int, unsigned long *) ()
+1be94240 CNCM::CNCM_RecvreqIntime(unsigned long, int, long, void *, int, int *, int *, int, unsigned long *)+270: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  SMTC_main=========================
+ tt "SMTC_main"
+26ecc8 vxTaskEntry    +68 : 1bd795ac ()
+1bd795ac SMTC_main      +3f4: SMTCserverHandler::dispatch(void) ()
+1bd7d4ac SMTCserverHandler::dispatch(void)+c0 : SMTCMessage::receiveRequest(void) ()
+1bd931c8 SMTCMessage::receiveRequest(void)+54 : 1bd9ef78 ()
+1bd9f0a4 SMDCReadImDataMessage::SMDCReadImDataMessage(void)+23b8: CN4AWrapper::receiveRequest(void *, int, int *, int *, int) ()
+1bdab0a0 CN4AWrapper::receiveRequest(void *, int, int *, int *, int)+74 : CN4A_receive_request ()
+1be8b9a0 CN4A_receive_request+350: 1becb1c8 ()
+1becb1c8 CNMAHandler::CNMA_receiveRequest(char const *, void *, int, int *, int *, int)+3f8: CNCM::CNCM_ReceiveRequest(unsigned long, int, void *, int, int *, int *, int, unsigned long *) ()
+1be93f40 CNCM::CNCM_ReceiveRequest(unsigned long, int, void *, int, int *, int *, int, unsigned long *)+f0 : CNCM::CNCM_RecvreqIntime(unsigned long, int, long, void *, int, int *, int *, int, unsigned long *) ()
+1be94240 CNCM::CNCM_RecvreqIntime(unsigned long, int, long, void *, int, int *, int *, int, unsigned long *)+270: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  SMTCH_MAIN=========================
+ tt "SMTCH_MAIN"
+26ecc8 vxTaskEntry    +68 : 1bdadd0c ()
+1bdadd0c SMTCH_MAIN     +778: CN4A_send_request ()
+1be8afd0 CN4A_send_request+340: CNMAHandler::CNMA_sendRequest(char const *, void const *, int, int) ()
+1beca8b0 CNMAHandler::CNMA_sendRequest(char const *, void const *, int, int)+280: CNCM::CNCM_SendRequest(unsigned long, int, void const *, int, int, unsigned long) ()
+1be92f08 CNCM::CNCM_SendRequest(unsigned long, int, void const *, int, int, unsigned long)+1a0: CNCM::CNCM_Connect(CNLO_CLIENT_INFO_STRUCT *, int) ()
+1be9343c CNCM::CNCM_Connect(CNLO_CLIENT_INFO_STRUCT *, int)+98 : CNCM::CNCM_ConnectInTime(CNLO_CLIENT_INFO_STRUCT *, int) ()
+1be9382c CNCM::CNCM_ConnectInTime(CNLO_CLIENT_INFO_STRUCT *, int)+2e4: GFTM_delay (3e8)
+1bf4c070 GFTM_delay     +c4 : taskDelay ()
+value = 0 = 0x0
+->============================tt  TRLO_MAIN=========================
+ tt "TRLO_MAIN"
+26ecc8 vxTaskEntry    +68 : 1be79ba8 ()
+1be79ba8 TRLO_MAIN      +c24: TRLocalHandler::Active(int, TRMessager *, TRMode *, TRrealTimeTrace *) ()
+1be78568 TRLocalHandler::Active(int, TRMessager *, TRMode *, TRrealTimeTrace *)+2ec: TRMessager::RecRequest(int) ()
+1be1af9c TRMessager::RecRequest(int)+94 : CN4A_receive_request ()
+1be8b9a0 CN4A_receive_request+350: 1becb1c8 ()
+1becb1c8 CNMAHandler::CNMA_receiveRequest(char const *, void *, int, int *, int *, int)+3f8: CNCM::CNCM_ReceiveRequest(unsigned long, int, void *, int, int *, int *, int, unsigned long *) ()
+1be93f40 CNCM::CNCM_ReceiveRequest(unsigned long, int, void *, int, int *, int *, int, unsigned long *)+f0 : CNCM::CNCM_RecvreqIntime(unsigned long, int, long, void *, int, int *, int *, int, unsigned long *) ()
+1be94240 CNCM::CNCM_RecvreqIntime(unsigned long, int, long, void *, int, int *, int *, int, unsigned long *)+270: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  CNPS_MAIN=========================
+ tt "CNPS_MAIN"
+26ecc8 vxTaskEntry    +68 : CNPS_MAIN ()
+1be76c08 CNPS_MAIN      +348: CN4A_receive_request ()
+1be8b9a0 CN4A_receive_request+350: 1becb1c8 ()
+1becb1c8 CNMAHandler::CNMA_receiveRequest(char const *, void *, int, int *, int *, int)+3f8: CNCM::CNCM_ReceiveRequest(unsigned long, int, void *, int, int *, int *, int, unsigned long *) ()
+1be93f40 CNCM::CNCM_ReceiveRequest(unsigned long, int, void *, int, int *, int *, int, unsigned long *)+f0 : CNCM::CNCM_RecvreqIntime(unsigned long, int, long, void *, int, int *, int *, int, unsigned long *) ()
+1be94240 CNCM::CNCM_RecvreqIntime(unsigned long, int, long, void *, int, int *, int *, int, unsigned long *)+270: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  SMHB_MAIN=========================
+ tt "SMHB_MAIN"
+26ecc8 vxTaskEntry    +68 : SMHB_MAIN ()
+1bdad2cc SMHB_MAIN      +364: GFTM_delay (3a98)
+1bf4c070 GFTM_delay     +c4 : taskDelay ()
+value = 0 = 0x0
+->============================tt  SMCH_MAIN=========================
+ tt "SMCH_MAIN"
+26ecc8 vxTaskEntry    +68 : 1bdacc24 ()
+1bdacc24 SMCH_MAIN      +7fc: CN4A_snd_rqst_rec_rpl ()
+1be8cd44 CN4A_snd_rqst_rec_rpl+364: CNMAHandler::CNMA_sndRqstrecRpl(char const *, void const *, int, void *, int, int *, int, int) ()
+1becbf1c CNMAHandler::CNMA_sndRqstrecRpl(char const *, void const *, int, void *, int, int *, int, int)+36c: CNCM::CNCM_SendRequest(unsigned long, int, void const *, int, int, unsigned long) ()
+1be92f08 CNCM::CNCM_SendRequest(unsigned long, int, void const *, int, int, unsigned long)+1a0: CNCM::CNCM_Connect(CNLO_CLIENT_INFO_STRUCT *, int) ()
+1be9343c CNCM::CNCM_Connect(CNLO_CLIENT_INFO_STRUCT *, int)+98 : CNCM::CNCM_ConnectInTime(CNLO_CLIENT_INFO_STRUCT *, int) ()
+1be9382c CNCM::CNCM_ConnectInTime(CNLO_CLIENT_INFO_STRUCT *, int)+2e4: GFTM_delay (3e8)
+1bf4c070 GFTM_delay     +c4 : taskDelay ()
+value = 0 = 0x0
+->============================tt  RIIO_main=========================
+ tt "RIIO_main"
+26ecc8 vxTaskEntry    +68 : 18008d90 ()
+18008d90 RIIO_main      +530: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WIIO_main=========================
+ tt "WIIO_main"
+26ecc8 vxTaskEntry    +68 : 179f7cb0 ()
+179f7cb0 WIIO_main      +530: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WMPU_main=========================
+ tt "WMPU_main"
+26ecc8 vxTaskEntry    +68 : WMPU_main ()
+1880cffc WMPU_main      +a0 : DRSA4A_get_err_log (1)
+1878c478 DRSA4A_get_err_log+cc : DRSAER_get_err_log(int, char *) (1, 177de970)
+1878ead4 DRSAER_get_err_log(int, char *)+b0 : DRSAXI_recv_reply_from_dsp(int, DRSAXI_dpram_channel_enum, int, DRSAXI_rpl_struct *, int) (1, 2, b, 177da8d0, 7d00)
+187936d4 DRSAXI_recv_reply_from_dsp(int, DRSAXI_dpram_channel_enum, int, DRSAXI_rpl_struct *, int)+340: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WMIM_main=========================
+ tt "WMIM_main"
+26ecc8 vxTaskEntry    +68 : WMIM_main ()
+1880d09c WMIM_main      +30 : DRIM4A_get_err_log (0)
+1877f648 DRIM4A_get_err_log+cc : DRIMER_get_err_log(int, char *) (0, 177c60d0)
+18780010 DRIMER_get_err_log(int, char *)+a8 : DRIMXI_recv_reply_from_dsp(int, DRIMXI_dpram_channel_enum, int, DRIMXI_rpl_struct *) (0, 2, 5, 177c2070)
+18783ccc DRIMXI_recv_reply_from_dsp(int, DRIMXI_dpram_channel_enum, int, DRIMXI_rpl_struct *)+234: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WMMO_main=========================
+ tt "WMMO_main"
+26ecc8 vxTaskEntry    +68 : 18809b34 ()
+18809b34 WMMO_main(void)+7d8: sleep (1)
+212a38 sleep          +24 : nanosleep ()
+2128a0 nanosleep      +160: taskDelay ()
+value = 0 = 0x0
+->============================tt  WUA1MA_main=========================
+ tt "WUA1MA_main"
+26ecc8 vxTaskEntry    +68 : 133b1714 ()
+133b1714 WUA1MA_main    +64c: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WUA2MA_main=========================
+ tt "WUA2MA_main"
+26ecc8 vxTaskEntry    +68 : 133e82bc ()
+133e82bc WUA2MA_main    +64c: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WUA3MA_main=========================
+ tt "WUA3MA_main"
+26ecc8 vxTaskEntry    +68 : 1341ee64 ()
+1341ee64 WUA3MA_main    +64c: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WUA4MA_main=========================
+ tt "WUA4MA_main"
+26ecc8 vxTaskEntry    +68 : 13455a0c ()
+13455a0c WUA4MA_main    +64c: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WUREWD_main=========================
+ tt "WUREWD_main"
+26ecc8 vxTaskEntry    +68 : 13458398 ()
+13458398 WUREWD_main    +64c: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WRMA_main=========================
+ tt "WRMA_main"
+26ecc8 vxTaskEntry    +68 : 111a4a14 ()
+111a4a14 WRMA_main      +530: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WCA1MA_main=========================
+ tt "WCA1MA_main"
+26ecc8 vxTaskEntry    +68 : 1006dc18 ()
+1006dc18 WCA1MA_main    +530: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WCA2MA_main=========================
+ tt "WCA2MA_main"
+26ecc8 vxTaskEntry    +68 : 10088d70 ()
+10088d70 WCA2MA_main    +530: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WCA3MA_main=========================
+ tt "WCA3MA_main"
+26ecc8 vxTaskEntry    +68 : 100a3ec8 ()
+100a3ec8 WCA3MA_main    +530: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WCRC1_main=========================
+ tt "WCRC1_main"
+26ecc8 vxTaskEntry    +68 : 100ae724 ()
+100ae724 WCRC1_main     +530: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WCRC2_main=========================
+ tt "WCRC2_main"
+26ecc8 vxTaskEntry    +68 : 100b16ec ()
+100b16ec WCRC2_main     +530: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WCRC3_main=========================
+ tt "WCRC3_main"
+26ecc8 vxTaskEntry    +68 : 100b46b4 ()
+100b46b4 WCRC3_main     +530: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  RNMA_main=========================
+ tt "RNMA_main"
+26ecc8 vxTaskEntry    +68 : d9a876c ()
+d9a876c RNMA_main      +46c: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  RKMA_main=========================
+ tt "RKMA_main"
+26ecc8 vxTaskEntry    +68 : d2b1650 ()
+d2b1650 RKMA_main      +530: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  RBMA_main=========================
+ tt "RBMA_main"
+26ecc8 vxTaskEntry    +68 : cbfbccc ()
+cbfbccc RBMA_main      +46c: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  RVA1MA_main=========================
+ tt "RVA1MA_main"
+26ecc8 vxTaskEntry    +68 : c5abd18 ()
+c5abd18 RVA1MA_main    +518: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  RMRH_main=========================
+ tt "RMRH_main"
+26ecc8 vxTaskEntry    +68 : RMRH_main ()
+19103df4 RMRH_main      +30 : DRSA4A_get_err_log (4)
+190e23bc DRSA4A_get_err_log+cc : DRSAER_get_err_log(int, char *) (4, c4a03f0)
+190e48b8 DRSAER_get_err_log(int, char *)+b0 : DRSAXI_recv_reply_from_dsp(int, DRSAXI_dpram_channel_enum, int, DRSAXI_rpl_struct *, int) (4, 2, 1d, c49c350, 7d00)
+190e8fbc DRSAXI_recv_reply_from_dsp(int, DRSAXI_dpram_channel_enum, int, DRSAXI_rpl_struct *, int)+1f4: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  RYMA_main=========================
+ tt "RYMA_main"
+26ecc8 vxTaskEntry    +68 : b78db6c ()
+b78db6c RYMA_main      +46c: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WEMA_main=========================
+ tt "WEMA_main"
+26ecc8 vxTaskEntry    +68 : b2519d4 ()
+b2519d4 WEMA_main      +630: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WSMA_main=========================
+ tt "WSMA_main"
+26ecc8 vxTaskEntry    +68 : ab63970 ()
+ab63970 WSMA_main      +630: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  RSMA_main=========================
+ tt "RSMA_main"
+26ecc8 vxTaskEntry    +68 : a443c00 ()
+a443c00 RSMA_main      +618: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  FSMA_main=========================
+ tt "FSMA_main"
+26ecc8 vxTaskEntry    +68 : 9d640b8 ()
+9d640b8 FSMA_main      +630: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  LFMA_main=========================
+ tt "LFMA_main"
+26ecc8 vxTaskEntry    +68 : LFMA_main ()
+9dd457c LFMA_main      +344: LFMA_task ()
+9dd41e8 LFMA_task      +1384: taskDelay ()
+value = 0 = 0x0
+->============================tt  IPMA_main=========================
+ tt "IPMA_main"
+26ecc8 vxTaskEntry    +68 : 8fdce34 ()
+8fdce34 IPMA_main      +630: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================tt  WPMA_main=========================
+ tt "WPMA_main"
+26ecc8 vxTaskEntry    +68 : 894ecf4 ()
+894ecf4 WPMA_main      +538: CN4A_main_loop ()
+1be8e0e4 CN4A_main_loop +320: CNMAHandler::CNMA_mainloop(void) ()
+1beccd14 CNMAHandler::CNMA_mainloop(void)+104: 1bea008c ()
+1bea008c CNEH::CNEH_MainLoop(void)+430: CNFD::CNFD_Select(fd_set *, fd_set *, int *, int) ()
+1bebaaec CNFD::CNFD_Select(fd_set *, fd_set *, int *, int)+144: select ()
+20bf28 select         +2d8: semTake ()
+2638a4 semTake        +13c: semBTake ()
+value = 0 = 0x0
+->============================checkStack=========================
+ checkStack
+  NAME        ENTRY        TID     SIZE   CUR  HIGH  MARGIN
+------------ ------------ -------- ----- ----- ----- ------
+tExcTask     excTask      1dfcf730  7984   288  1184   6800 
+tLogTask     logTask      1dfccaa0  4992   272  1312   3680 
+tShell       shell        1bf8aee0 19040  1088  4400  14640 
+tWdbTask     wdbTask      1bf92020  7904   304   384   7520 
+tAioIoTask1  aioIoTask    1dfde800 28656   256   320  28336 
+tAioIoTask0  aioIoTask    1dfd7490 28656   256   320  28336 
+tNetTask     netTask      1c1aad20  9984   240  1488   8496 
+tAioWait     aioWaitTask  1dfe5b70 28656   368   544  28112 
+tPortmapd    portmapd     1bf97f90  9984   608   768   9216 
+tTelnetd     telnetd      1bf95320  7984   368  2000   5984 
+tTelnetOut_8 telnetOutTas 82625e0   7968   800  1728   6240 
+tTelnetIn_82 telnetInTask 8256e20   7968   896  1792   6176 
+SMSB         SMSB_main    1bd3a290 1199312  3680 71264 1128048 
+tTffsPTask   flPollTask   1dfcade0  2032   176   416   1616 
+SMJC_main    SMJC_main    1b64e7c0 49040  3600  8224  40816 
+SMTC_main    SMTC_main    1b6420c0 49040  6112  8080  40960 
+SMTCH_MAIN   SMTCH_MAIN   1b61cc80 49040  2256 10448  38592 
+TRLO_MAIN    TRLO_MAIN    1b635a00 49040  3376 14376  34664 
+CNPS_MAIN    CNPS_MAIN    1b629340 49040 32720 37648  11392 
+SMHB_MAIN    SMHB_MAIN    1b6105c0 49040   304  7232  41808 
+SMCH_MAIN    SMCH_MAIN    1b603f00 49040  1408  9408  39632 
+RIIO_main    RIIO_main    18008580 99040  1392  7168  91872 
+WIIO_main    WIIO_main    177f7320 99040  1392  7168  91872 
+WMPU_main    WMPU_main    177dea60 99040 17056 23824  75216 
+WMIM_main    WMIM_main    177c61a0 99040 16928 23728  75312 
+WMMO_main    WMMO_main(vo 17fd4750 30432   608  5832  24600 
+WUA1MA_main  WUA1MA_main  12f109c0 2999040  1392  7168 2991872 
+WUA2MA_main  WUA2MA_main  12c340e0 4999040  1392  7168 4991872 
+WUA3MA_main  WUA3MA_main  1276f380 2999040  1392  7168 2991872 
+WUA4MA_main  WUA4MA_main  12492aa0 2999040  1392  7168 2991872 
+WUREWD_main  WUREWD_main  14166860 99040  1392  7168  91872 
+WRMA_main    WRMA_main    10721ff0 999040  1392  7168 991872 
+WCA1MA_main  WCA1MA_main  10763740 99040  1392  7168  91872 
+WCA2MA_main  WCA2MA_main  10128420 99040  1392  7168  91872 
+WCA3MA_main  WCA3MA_main  1010fb60 99040  1392  7168  91872 
+WCRC1_main   WCRC1_main   fe0cae0  99040  1392  7168  91872 
+WCRC2_main   WCRC2_main   fdf4220  99040  1392  7232  91808 
+WCRC3_main   WCRC3_main   fddb960  99040  1392  7168  91872 
+RNMA_main    RNMA_main    d96b0e0  999040  1376  7152 991888 
+RKMA_main    RKMA_main    d2b0e40  999040  1392  7168 991872 
+RBMA_main    RBMA_main    cbfb5a0  999040  1376  7152 991888 
+RVA1MA_main  RVA1MA_main  c594920  999040  1392  7168 991872 
+RMRH_main    RMRH_main    c4a04c0  99040 16992 23792  75248 
+RYMA_main    RYMA_main    b78d440  99040  1376  7152  91888 
+WEMA_main    WEMA_main    b24afa0  999040  1392  7168 991872 
+WSMA_main    WSMA_main    aa84a30  999040  1392  7168 991872 
+RSMA_main    RSMA_main    a3ea0c0  999040  1392  7168 991872 
+FSMA_main    FSMA_main    9d410c0  999040  1392  7168 991872 
+LFMA_main    LFMA_main    9c4cc60  99040   432  7120  91920 
+IPMA_main    IPMA_main    8f76fb0  999040  1392  7168 991872 
+WPMA_main    WPMA_main    8947df0  999040  1376  7152 991888 
+INTERRUPT                           5008     0   784   4224 
+value = 36 = 0x24 = '$'
+->============================memShow=========================
+ memShow
+ status    bytes     blocks   avg block  max block
+ ------ ---------- --------- ---------- ----------
+current
+   free  109659744       141     777728  101284080
+  alloc  375092496     60083       6242          -
+cumulative
+  alloc  432439152    830844        520          -
+value = 0 = 0x0
+->============================0xe0f30000=========================
+ 0xe0f30000
+value = -520945664 = 0xe0f30000 = __sn_t24__default_alloc_template2b1i0$_S_node_allocator_lock + 0xc2f64a80
+->============================iosFdShow=========================
+ iosFdShow
+ fd name                 drv
+  3 /tyCo/0                1   
+  4 /aioPipe               2   
+  5 (socket)               4   
+  6 (socket)               4   
+  7 (socket)               4   
+  8 /NFSData/SM/SM_JOB_LIST   6   
+  9 (socket)               4   
+ 10 (socket)               4   
+ 11 /pty/rmt_825cc00.M     8   
+ 12 /pty/rmt_825cc00.S     7 in out err
+ 13 /NFSData/SM/SM_PROF_LIST   6   
+ 14 (socket)               4   
+ 15 (socket)               4   
+ 16 (socket)               4   
+ 17 (socket)               4   
+ 18 (socket)               4   
+ 20 (socket)               4   
+ 21 (socket)               4   
+ 22 (socket)               4   
+ 23 (socket)               4   
+ 24 /NFSData/SM/SM_PROF_LIST   6   
+ 25 (socket)               4   
+ 26 /NFSData/SM/SM_PROF_LIST   6   
+ 27 (socket)               4   
+ 28 (socket)               4   
+ 29 (socket)               4   
+ 30 (socket)               4   
+ 31 (socket)               4   
+ 32 (socket)               4   
+ 33 (socket)               4   
+ 35 (socket)               4   
+ 36 (socket)               4   
+ 37 (socket)               4   
+ 38 (socket)               4   
+ 39 (socket)               4   
+ 40 (socket)               4   
+ 41 (socket)               4   
+ 42 (socket)               4   
+ 43 (socket)               4   
+ 44 (socket)               4   
+ 45 (socket)               4   
+ 46 (socket)               4   
+ 47 (socket)               4   
+ 48 (socket)               4   
+ 49 (socket)               4   
+ 50 (socket)               4   
+ 51 (socket)               4   
+ 52 (socket)               4   
+ 53 (socket)               4   
+ 54 (socket)               4   
+ 55 (socket)               4   
+ 56 (socket)               4   
+ 57 (socket)               4   
+ 58 (socket)               4   
+ 59 (socket)               4   
+ 60 (socket)               4   
+ 61 (socket)               4   
+ 62 (socket)               4   
+ 63 (socket)               4   
+ 64 (socket)               4   
+ 65 (socket)               4   
+ 66 (socket)               4   
+ 67 (socket)               4   
+ 68 (socket)               4   
+ 69 (socket)               4   
+ 70 (socket)               4   
+ 71 (socket)               4   
+ 72 (socket)               4   
+ 73 (socket)               4   
+ 74 (socket)               4   
+ 75 (socket)               4   
+ 76 /pipe/WCA3_E84_SIGNAL_PIPE   2   
+ 77 /pipe/WCA2_E84_SIGNAL_PIPE   2   
+ 78 /pipe/WCA1_E84_SIGNAL_PIPE   2   
+ 79 /pipe/WCA3_STATUS_INFO   2   
+ 80 /pipe/WCA2_STATUS_INFO   2   
+ 81 /pipe/WCA1_STATUS_INFO   2   
+ 82 /pipe/WCA3_CARRIER_ID   2   
+ 83 /pipe/WCA2_CARRIER_ID   2   
+ 84 /pipe/WCA1_CARRIER_ID   2   
+ 85 /pipe/WCA3_TRANSFER_STATE   2   
+ 86 /pipe/WCA2_TRANSFER_STATE   2   
+ 87 /pipe/WCA3_ACCESS_STATE   2   
+ 88 /pipe/WCA1_TRANSFER_STATE   2   
+ 89 /pipe/WCA2_ACCESS_STATE   2   
+ 90 /pipe/WCA1_ACCESS_STATE   2   
+ 91 (socket)               4   
+ 92 (socket)               4   
+ 93 (socket)               4   
+ 94 (socket)               4   
+ 95 (socket)               4   
+ 96 (socket)               4   
+ 97 (socket)               4   
+ 98 (socket)               4   
+ 99 (socket)               4   
+100 (socket)               4   
+101 (socket)               4   
+102 (socket)               4   
+103 (socket)               4   
+104 (socket)               4   
+105 (socket)               4   
+106 (socket)               4   
+107 (socket)               4   
+108 (socket)               4   
+109 (socket)               4   
+110 (socket)               4   
+111 (socket)               4   
+112 (socket)               4   
+113 (socket)               4   
+114 (socket)               4   
+115 (socket)               4   
+116 (socket)               4   
+117 (socket)               4   
+118 (socket)               4   
+119 (socket)               4   
+120 (socket)               4   
+121 (socket)               4   
+122 (socket)               4   
+123 (socket)               4   
+value = 32 = 0x20 = ' '
+->============================devs=========================
+ devs
+drv name                
+  0 /null               
+  1 /tyCo/0             
+  1 /tyCo/1             
+  1 /tyCo/2             
+  1 /tyCo/3             
+  2 /aioPipe            
+  5 host:               
+  9 /vio                
+ 10 /tgtsvr             
+  6 /NFSData            
+  6 /NFSData/data/process
+  6 /NFSData/data/user  
+  6 /NFSData/data/service
+  2 /pipe/WCA3_E84_SIGNAL_PIPE
+  2 /pipe/WCA2_E84_SIGNAL_PIPE
+  2 /pipe/WCA1_E84_SIGNAL_PIPE
+  2 /pipe/WCA3_STATUS_INFO
+  2 /pipe/WCA2_STATUS_INFO
+  2 /pipe/WCA1_STATUS_INFO
+  2 /pipe/WCA3_CARRIER_ID
+  2 /pipe/WCA2_CARRIER_ID
+  2 /pipe/WCA3_TRANSFER_STATE
+  2 /pipe/WCA1_CARRIER_ID
+  2 /pipe/WCA2_TRANSFER_STATE
+  2 /pipe/WCA1_TRANSFER_STATE
+  2 /pipe/WCA3_ACCESS_STATE
+  2 /pipe/WCA2_ACCESS_STATE
+  2 /pipe/WCA1_ACCESS_STATE
+  7 /pty/rmt_825cc00.S  
+  8 /pty/rmt_825cc00.M  
+value = 25 = 0x19
+->============================    d "0x12345"=========================
+     d "0x12345"
+0824bff0:  3078 3132 3334 3500 0000 0000 082c 39c8   *0x12345......,9.*
+0824c000:  0824 bfe0 0000 0030 0824 bdb8 0000 0000   *.$.....0.$......*
+0824c010:  696e 7420 2a3a 434e 4644 5f53 656c 6563   *int *:CNFD_Selec*
+0824c020:  7428 6664 5f73 6574 202a 2c20 6f69 6429   *t(fd_set *, oid)*
+0824c030:  0824 c000 0000 0020 0000 0000 0000 0000   *.$..... ........*
+0824c040:  5750 4d41 5f6d 6169 6e00 0000 0000 0000   *WPMA_main.......*
+0824c050:  0824 c030 0000 0030 0000 0000 0000 0000   *.$.0...0........*
+0824c060:  6664 5f73 6574 202a 0000 0000 0000 0000   *fd_set *........*
+0824c070:  0000 0000 0000 0000 0000 0000 0000 0000   *................*
+0824c080:  0824 c050 0000 0030 0000 0000 0000 0000   *.$.P...0........*
+0824c090:  6664 5f73 6574 202a 4644 5f53 656c 6563   *fd_set *FD_Selec*
+0824c0a0:  7428 6664 5f73 6574 202a 2c20 6664 5f73   *t(fd_set *, fd_s*
+0824c0b0:  0824 c080 0000 0030 0824 bf38 0000 0000   *.$.....0.$.8....*
+0824c0c0:  696e 7420 2a3a 434e 4644 5f53 656c 6563   *int *:CNFD_Selec*
+0824c0d0:  7428 6664 5f73 6574 202a 2c20 6f69 6429   *t(fd_set *, oid)*
+0824c0e0:  0824 c0b0 0000 0030 0000 0000 0000 0000   *.$.....0........*
+value = 21 = 0x15
+->============================    d "0x12346"=========================
+     d "0x12346"
+0824bfd0:  3078 3132 3334 3600 0000 0000 0000 0000   *0x12346.........*
+0824bfe0:  0824 bfc0 0000 0020 1b61 cc80 0000 0000   *.$..... .a......*
+0824bff0:  3078 3132 3334 3500 0000 0000 082c 39c8   *0x12345......,9.*
+0824c000:  0824 bfe0 0000 0030 0824 bdb8 0000 0000   *.$.....0.$......*
+0824c010:  696e 7420 2a3a 434e 4644 5f53 656c 6563   *int *:CNFD_Selec*
+0824c020:  7428 6664 5f73 6574 202a 2c20 6f69 6429   *t(fd_set *, oid)*
+0824c030:  0824 c000 0000 0020 0000 0000 0000 0000   *.$..... ........*
+0824c040:  5750 4d41 5f6d 6169 6e00 0000 0000 0000   *WPMA_main.......*
+0824c050:  0824 c030 0000 0030 0000 0000 0000 0000   *.$.0...0........*
+0824c060:  6664 5f73 6574 202a 0000 0000 0000 0000   *fd_set *........*
+0824c070:  0000 0000 0000 0000 0000 0000 0000 0000   *................*
+0824c080:  0824 c050 0000 0030 0000 0000 0000 0000   *.$.P...0........*
+0824c090:  6664 5f73 6574 202a 4644 5f53 656c 6563   *fd_set *FD_Selec*
+0824c0a0:  7428 6664 5f73 6574 202a 2c20 6664 5f73   *t(fd_set *, fd_s*
+0824c0b0:  0824 c080 0000 0030 0824 bf38 0000 0000   *.$.....0.$.8....*
+0824c0c0:  696e 7420 2a3a 434e 4644 5f53 656c 6563   *int *:CNFD_Selec*
+value = 21 = 0x15
+->============================    ls=========================
+     ls
+Can't open ".".
+value = -1 = 0xffffffff
+->============================    ooot=========================
+     ooot
+undefined symbol: ooot
+->

@@ -1,0 +1,22 @@
+******************************************CHeckMC配置文件***********************************
+
+#XXMC_tc.h数据结构定义文件的存放路径，需包含要解析的XXMC_tc.h及其依赖的头文件，推荐使用项目根目录
+tc_path = C:\102\私有区\A2系统加工制造文件\S600\1编译区\SRC
+
+#XXMC.ini机器常数文件的存放路径
+ini_path = C:\102\私有区\A2系统加工制造文件\S600\1编译区\IT\CM\data
+
+#特定的机器常数中使用了宏,不存在不用填，多项之间使用逗号分隔
+macro = 
+
+#不是按照XXMC_FILE_STRUCT命名的需手动给出ini与STRUCT的对应关系，ini和STRUCT用冒号分开，多项之间使用逗号分隔
+sp_mc = VMMC.ini:VMMC_FILE_100_STRUCT, 
+
+#不是按照XXMC_tc.h命名的，需要手动给出具体的全路径名解析，多项之间使用逗号分隔
+sp_file = LOFC.ini:\LO\com\ext\typ\LOFC_tc.h,
+REMC.ini:\RE\com\ext\typ\REFC_tc.h,
+COFC.ini:\CO\com\ext\typ\COFC_tc.h
+
+#存在同名文件，但内容不一样，某些机器常数需要指定特定的目录，多项之间使用逗号分隔
+sp_dir = ILIMC.ini:\IL2\com,
+DCIMC.ini:\DC2\com

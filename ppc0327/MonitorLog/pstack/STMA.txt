@@ -1,0 +1,16 @@
+=====pstack 14627-----STMA
+Thread 2 (Thread 0xb6ff1b70 (LWP 14634)):
+#0  0x00dfc424 in __kernel_vsyscall ()
+#1  0x008410b1 in select () from /lib/libc.so.6
+#2  0x0804c978 in STHardwareMonitor::STHM_sleep(int) ()
+#3  0x0804cd37 in STHardwareMonitor::thread_lot(void*) ()
+#4  0x00b239e9 in start_thread () from /lib/libpthread.so.0
+#5  0x00848cde in clone () from /lib/libc.so.6
+Thread 1 (Thread 0xb775b740 (LWP 14627)):
+#0  0x00dfc424 in __kernel_vsyscall ()
+#1  0x008410b1 in select () from /lib/libc.so.6
+#2  0x00749293 in CNFD::CNFD_Select(fd_set*, fd_set*, int*, int) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#3  0x00758fde in CNEH::CNEH_MainLoop() () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#4  0x007516c8 in CNMAHandler::CNMA_mainloop() () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#5  0x0074f284 in CN4A_main_loop () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#6  0x0804d1c5 in main ()

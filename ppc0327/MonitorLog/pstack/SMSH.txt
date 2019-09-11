@@ -1,0 +1,5 @@
+=====pstack 13465-----SMSH
+#0  0x009d6424 in __kernel_vsyscall ()
+#1  0x00505dcb in poll () from /lib/libc.so.6
+#2  0x0089e4d7 in GFTM_delay () from /home/506OI/SMEE/lib/linux/libGF4A.so
+#3  0x0804b9b4 in main ()

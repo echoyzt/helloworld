@@ -1,0 +1,8 @@
+=====pstack 14432-----RCEX
+#0  0x00697424 in __kernel_vsyscall ()
+#1  0x0033807d in ___newselect_nocancel () from /lib/libc.so.6
+#2  0x00458293 in CNFD::CNFD_Select(fd_set*, fd_set*, int*, int) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#3  0x00467fde in CNEH::CNEH_MainLoop() () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#4  0x004606c8 in CNMAHandler::CNMA_mainloop() () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#5  0x0045e284 in CN4A_main_loop () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#6  0x08049e1f in main ()

@@ -1,0 +1,84 @@
+=====pstack 13375-----GMSD
+Thread 7 (Thread 0xb7756b70 (LWP 13403)):
+#0  0x007b3424 in __kernel_vsyscall ()
+#1  0x0016b2fc in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/libpthread.so.0
+#2  0x00e05a2d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/libc.so.6
+#3  0x005c2a0a in CLogQueue::consume(CLogBaseData*&) () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#4  0x005c2540 in CLogQueue::run(void*) () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#5  0x00519d02 in CThread::thread_run_process(void*) () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#6  0x00512b16 in CCond::consume(int (*)(void*), void*, int (*)(void*), void*) () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#7  0x00519eff in CThread::thread_run(void*) () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#8  0x001679e9 in start_thread () from /lib/libpthread.so.0
+#9  0x00df5cde in clone () from /lib/libc.so.6
+Thread 6 (Thread 0xb6d55b70 (LWP 13404)):
+#0  0x007b3424 in __kernel_vsyscall ()
+#1  0x0016b2fc in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/libpthread.so.0
+#2  0x00e05a2d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/libc.so.6
+#3  0x005c2a0a in CLogQueue::consume(CLogBaseData*&) () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#4  0x005c2540 in CLogQueue::run(void*) () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#5  0x00519d02 in CThread::thread_run_process(void*) () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#6  0x00512b16 in CCond::consume(int (*)(void*), void*, int (*)(void*), void*) () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#7  0x00519eff in CThread::thread_run(void*) () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#8  0x001679e9 in start_thread () from /lib/libpthread.so.0
+#9  0x00df5cde in clone () from /lib/libc.so.6
+Thread 5 (Thread 0xb5fffb70 (LWP 15207)):
+#0  0x007b3424 in __kernel_vsyscall ()
+#1  0x0016b2fc in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/libpthread.so.0
+#2  0x00e05a2d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/libc.so.6
+#3  0x00512cff in CCond::wait(pthread_cond_t*, pthread_mutex_t*) () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#4  0x0051c0d0 in CTimerActiveQueue::waitTimerEvent() () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#5  0x005a66ae in CTimerManageThread::run(void*) () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#6  0x00519d02 in CThread::thread_run_process(void*) () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#7  0x00512b16 in CCond::consume(int (*)(void*), void*, int (*)(void*), void*) () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#8  0x00519eff in CThread::thread_run(void*) () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#9  0x001679e9 in start_thread () from /lib/libpthread.so.0
+#10 0x00df5cde in clone () from /lib/libc.so.6
+Thread 4 (Thread 0xb55feb70 (LWP 15208)):
+#0  0x007b3424 in __kernel_vsyscall ()
+#1  0x0016b2fc in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/libpthread.so.0
+#2  0x00e05a2d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/libc.so.6
+#3  0x00512cff in CCond::wait(pthread_cond_t*, pthread_mutex_t*) () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#4  0x0051c771 in CTimerEventsQueue::output() () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#5  0x005a6887 in CTimerCallbackThread::run(void*) () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#6  0x00519d02 in CThread::thread_run_process(void*) () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#7  0x00512b16 in CCond::consume(int (*)(void*), void*, int (*)(void*), void*) () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#8  0x00519eff in CThread::thread_run(void*) () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#9  0x001679e9 in start_thread () from /lib/libpthread.so.0
+#10 0x00df5cde in clone () from /lib/libc.so.6
+Thread 3 (Thread 0xb4bfdb70 (LWP 15209)):
+#0  0x007b3424 in __kernel_vsyscall ()
+#1  0x0016b2fc in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/libpthread.so.0
+#2  0x00e05a2d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/libc.so.6
+#3  0x00512cff in CCond::wait(pthread_cond_t*, pthread_mutex_t*) () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#4  0x00591c4d in CConnectQueue::outPut() () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#5  0x005a5255 in CSocketManage::outputManageQueue() () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#6  0x0058fcd2 in CConnectMThread::run(void*) () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#7  0x00519d02 in CThread::thread_run_process(void*) () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#8  0x00512b16 in CCond::consume(int (*)(void*), void*, int (*)(void*), void*) () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#9  0x00519eff in CThread::thread_run(void*) () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#10 0x001679e9 in start_thread () from /lib/libpthread.so.0
+#11 0x00df5cde in clone () from /lib/libc.so.6
+Thread 2 (Thread 0xb41fcb70 (LWP 15210)):
+#0  0x007b3424 in __kernel_vsyscall ()
+#1  0x0016b2fc in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/libpthread.so.0
+#2  0x00e05a2d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/libc.so.6
+#3  0x00512cff in CCond::wait(pthread_cond_t*, pthread_mutex_t*) () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#4  0x00591c4d in CConnectQueue::outPut() () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#5  0x005a52d6 in CSocketManage::outputCleanQueue() () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#6  0x0058d1a1 in CConnectCThread::run(void*) () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#7  0x00519d02 in CThread::thread_run_process(void*) () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#8  0x00512b16 in CCond::consume(int (*)(void*), void*, int (*)(void*), void*) () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#9  0x00519eff in CThread::thread_run(void*) () from /home/506OI/SMEE/lib/linux/libSEMP.so
+#10 0x001679e9 in start_thread () from /lib/libpthread.so.0
+#11 0x00df5cde in clone () from /lib/libc.so.6
+Thread 1 (Thread 0xb7758740 (LWP 13375)):
+#0  0x007b3424 in __kernel_vsyscall ()
+#1  0x00dee0b1 in select () from /lib/libc.so.6
+#2  0x0033aa52 in ACE_Select_Reactor_T<ACE_Reactor_Token_T<ACE_Token> >::wait_for_multiple_events(ACE_Select_Reactor_Handle_Set&, ACE_Time_Value*) () from /home/506OI/SMEE/lib/linux/libACE.so.5.8.2
+#3  0x003bb643 in ACE_TP_Reactor::get_event_for_dispatching(ACE_Time_Value*) () from /home/506OI/SMEE/lib/linux/libACE.so.5.8.2
+#4  0x003bc64f in ACE_TP_Reactor::dispatch_i(ACE_Time_Value*, ACE_TP_Token_Guard&) () from /home/506OI/SMEE/lib/linux/libACE.so.5.8.2
+#5  0x003bc78f in ACE_TP_Reactor::handle_events(ACE_Time_Value*) () from /home/506OI/SMEE/lib/linux/libACE.so.5.8.2
+#6  0x00b46db1 in TAO_ORB_Core::run(ACE_Time_Value*, int) () from /home/506OI/SMEE/lib/linux/libTAO.so.1.8.2
+#7  0x00b4132c in CORBA::ORB::run(ACE_Time_Value*) () from /home/506OI/SMEE/lib/linux/libTAO.so.1.8.2
+#8  0x00b41395 in CORBA::ORB::run() () from /home/506OI/SMEE/lib/linux/libTAO.so.1.8.2
+#9  0x0806edb5 in main ()

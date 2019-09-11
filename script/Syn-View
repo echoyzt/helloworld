@@ -1,0 +1,122 @@
+#!/bin/bash
+LANG=zh_CN.GB18030
+export LANG
+
+CHECK_OUT="$HOME/StarTeamCP_2005r2/bin/stcmd co -p"
+project="$1"
+. project.cfg
+
+if   [ ! -z "`echo $pro205     | grep $project`" ];then
+    local_dir="$HOME/$project"
+    starTeam=$ST205
+    SIT=$SIT205
+    src=$src205
+    sun=$sun205
+    lib=$lib205
+elif [ ! -z "`echo $pro203m    | grep $project`" ];then 
+    local_dir="$HOME/$project"
+    starTeam=$ST203m
+    SIT=$SIT203m
+    src=$src203m
+    sun=$sun203m
+    lib=$lib203m
+elif [ ! -z "`echo $pro203mNew | grep $project`" ];then 
+    local_dir="$HOME/$project"
+    starTeam=$ST203mNew
+    SIT=$SIT203mNew
+    src=$src203mNew
+    sun=$sun203mNew
+    lib=$lib203mNew
+elif [ ! -z "`echo $pro203m_13  | grep $project`" ];then 
+    local_dir="$HOME/$project"
+    starTeam=$ST203m_13
+    SIT=$SIT203m_13
+    src=$src203m_13
+    sun=$sun203m_13
+    lib=$lib203m_13
+elif [ ! -z "`echo $pro203m_cb  | grep $project`" ];then 
+    local_dir="$HOME/$project"
+    starTeam=$ST203m_cb
+    SIT=$SIT203m_cb
+    src=$src203m_cb
+    sun=$sun203m_cb
+    lib=$lib203m_cb
+elif [ ! -z "`echo $pro205new  | grep $project`" ];then
+    local_dir="$HOME/$project"
+    starTeam=$ST205new
+    SIT=$SIT205new
+    src=$src205new
+    sun=$sun205new
+    lib=$lib205new
+elif [ ! -z "`echo $pro20516   | grep $project`" ];then 
+    local_dir="$HOME/$project"
+    starTeam=$ST20516
+    SIT=$SIT20516
+    src=$src20516
+    sun=$sun20516
+    lib=$lib20516
+elif [ ! -z "`echo $pro206     | grep $project`" ];then 
+    local_dir="$HOME/$project"
+    starTeam=$ST206
+    SIT=$SIT206
+    src=$src206
+    sun=$sun206
+    lib=$lib206
+elif [ ! -z "`echo $pro205c    | grep $project`" ];then 
+    local_dir="$HOME/$project"
+    starTeam=$ST205c
+    SIT=$SIT205c
+    src=$src205c
+    sun=$sun205c
+    lib=$lib205c
+elif [ ! -z "`echo $pro509     | grep $project`" ];then 
+    local_dir="$HOME/$project"
+    starTeam=$ST509
+    SIT=$SIT509
+    src=$src509
+    sun=$sun509
+    lib=$lib509
+elif [ ! -z "`echo $pro301     | grep $project`" ];then 
+    local_dir="$HOME/$project/default"
+    starTeam=$ST301
+    SIT=$SIT301
+    src=$src301
+    sun=$sun301
+    lib=$lib301
+elif [ ! -z "`echo $pro301new     | grep $project`" ];then 
+    local_dir="$HOME/$project"
+    starTeam=$ST301new
+    SIT=$SIT301new
+    src=$src301new
+    sun=$sun301new
+    lib=$lib301new
+elif [ ! -z "`echo $pro301c    | grep $project`" ];then 
+    local_dir="$HOME/$project"
+    starTeam=$ST301c
+    SIT=$SIT301c
+    src=$src301c
+    sun=$sun301c
+    lib=$lib301c
+else
+	echo "error project" $project
+	exit 1
+fi
+
+LANG=zh_CN.GB18030
+export LANG
+
+/bin/rm -rf "$local_dir/$SIT"
+/bin/rm -rf "$local_dir/$src"
+$CHECK_OUT "$starTeam/$project/$sun"  -fp "$local_dir/$sun" -is -o "*"
+$CHECK_OUT "$starTeam/$project/$lib"  -fp "$local_dir/$lib" -is -o "*"
+$CHECK_OUT "$starTeam/$project/$src"  -fp "$local_dir/$src" -is -o "*"
+
+if [ ! -z "`echo $pro301        | grep $project`" ];then 
+    $CHECK_OUT "$starTeam/$project/$SIT/external"  -fp "$local_dir/$SIT/external" -is -o "*"
+fi
+
+if [ ! -z "`echo $pro301new     | grep $project`" ];then 
+    $CHECK_OUT "$starTeam/$project/$SIT/external"  -fp "$local_dir/$SIT/external" -is -o "*"
+fi
+
+exit 0

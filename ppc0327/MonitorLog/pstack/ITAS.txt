@@ -1,0 +1,8 @@
+=====pstack 13229-----ITAS
+#0  0x009ec424 in __kernel_vsyscall ()
+#1  0x005bf07d in ___newselect_nocancel () from /lib/libc.so.6
+#2  0x004c7293 in CNFD::CNFD_Select(fd_set*, fd_set*, int*, int) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#3  0x004d6fde in CNEH::CNEH_MainLoop() () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#4  0x004cf6c8 in CNMAHandler::CNMA_mainloop() () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#5  0x004cd284 in CN4A_main_loop () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#6  0x08048d3e in main ()

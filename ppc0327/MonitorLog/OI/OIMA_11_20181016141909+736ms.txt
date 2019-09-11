@@ -1,0 +1,4 @@
+Process id: 13413
+Signal information: Segmentation fault
+Stack information:
+[0xc7c400]

@@ -1,0 +1,99 @@
+=====pstack 14848-----WHMA
+Thread 7 (Thread 0xb7248b70 (LWP 14890)):
+#0  0x00e78424 in __kernel_vsyscall ()
+#1  0x00b272fc in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/libpthread.so.0
+#2  0x02a65a2d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/libc.so.6
+#3  0x00624ddb in void boost::asio::detail::posix_event::wait<boost::asio::detail::scoped_lock<boost::asio::detail::posix_mutex> >(boost::asio::detail::scoped_lock<boost::asio::detail::posix_mutex>&) () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#4  0x00623c6b in boost::asio::detail::task_io_service::do_run_one(boost::asio::detail::scoped_lock<boost::asio::detail::posix_mutex>&, boost::asio::detail::task_io_service_thread_info&, boost::system::error_code const&) () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#5  0x00623925 in boost::asio::detail::task_io_service::run(boost::system::error_code&) () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#6  0x00623f74 in boost::asio::io_service::run() () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#7  0x006209c2 in WRH_COMMON::THREAD_POOL::initialize_thread() () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#8  0x00627e7d in boost::_mfi::mf0<void, WRH_COMMON::THREAD_POOL>::operator()(WRH_COMMON::THREAD_POOL*) const () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#9  0x00627e0a in void boost::_bi::list1<boost::_bi::value<WRH_COMMON::THREAD_POOL*> >::operator()<boost::_mfi::mf0<void, WRH_COMMON::THREAD_POOL>, boost::_bi::list0>(boost::_bi::type<void>, boost::_mfi::mf0<void, WRH_COMMON::THREAD_POOL>&, boost::_bi::list0&, int) () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#10 0x00627c44 in boost::_bi::bind_t<void, boost::_mfi::mf0<void, WRH_COMMON::THREAD_POOL>, boost::_bi::list1<boost::_bi::value<WRH_COMMON::THREAD_POOL*> > >::operator()() () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#11 0x006279cc in boost::detail::thread_data<boost::_bi::bind_t<void, boost::_mfi::mf0<void, WRH_COMMON::THREAD_POOL>, boost::_bi::list1<boost::_bi::value<WRH_COMMON::THREAD_POOL*> > > >::run() () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#12 0x00e90a16 in thread_proxy () from /usr/local/boost_1.55.0/lib/libboost_thread.so.1.55.0
+#13 0x00b239e9 in start_thread () from /lib/libpthread.so.0
+#14 0x02a55cde in clone () from /lib/libc.so.6
+Thread 6 (Thread 0xb6847b70 (LWP 14891)):
+#0  0x00e78424 in __kernel_vsyscall ()
+#1  0x00b272fc in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/libpthread.so.0
+#2  0x02a65a2d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/libc.so.6
+#3  0x00624ddb in void boost::asio::detail::posix_event::wait<boost::asio::detail::scoped_lock<boost::asio::detail::posix_mutex> >(boost::asio::detail::scoped_lock<boost::asio::detail::posix_mutex>&) () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#4  0x00623c6b in boost::asio::detail::task_io_service::do_run_one(boost::asio::detail::scoped_lock<boost::asio::detail::posix_mutex>&, boost::asio::detail::task_io_service_thread_info&, boost::system::error_code const&) () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#5  0x00623925 in boost::asio::detail::task_io_service::run(boost::system::error_code&) () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#6  0x00623f74 in boost::asio::io_service::run() () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#7  0x006209c2 in WRH_COMMON::THREAD_POOL::initialize_thread() () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#8  0x00627e7d in boost::_mfi::mf0<void, WRH_COMMON::THREAD_POOL>::operator()(WRH_COMMON::THREAD_POOL*) const () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#9  0x00627e0a in void boost::_bi::list1<boost::_bi::value<WRH_COMMON::THREAD_POOL*> >::operator()<boost::_mfi::mf0<void, WRH_COMMON::THREAD_POOL>, boost::_bi::list0>(boost::_bi::type<void>, boost::_mfi::mf0<void, WRH_COMMON::THREAD_POOL>&, boost::_bi::list0&, int) () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#10 0x00627c44 in boost::_bi::bind_t<void, boost::_mfi::mf0<void, WRH_COMMON::THREAD_POOL>, boost::_bi::list1<boost::_bi::value<WRH_COMMON::THREAD_POOL*> > >::operator()() () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#11 0x006279cc in boost::detail::thread_data<boost::_bi::bind_t<void, boost::_mfi::mf0<void, WRH_COMMON::THREAD_POOL>, boost::_bi::list1<boost::_bi::value<WRH_COMMON::THREAD_POOL*> > > >::run() () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#12 0x00e90a16 in thread_proxy () from /usr/local/boost_1.55.0/lib/libboost_thread.so.1.55.0
+#13 0x00b239e9 in start_thread () from /lib/libpthread.so.0
+#14 0x02a55cde in clone () from /lib/libc.so.6
+Thread 5 (Thread 0xb5e46b70 (LWP 14892)):
+#0  0x00e78424 in __kernel_vsyscall ()
+#1  0x00b272fc in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/libpthread.so.0
+#2  0x02a65a2d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/libc.so.6
+#3  0x00624ddb in void boost::asio::detail::posix_event::wait<boost::asio::detail::scoped_lock<boost::asio::detail::posix_mutex> >(boost::asio::detail::scoped_lock<boost::asio::detail::posix_mutex>&) () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#4  0x00623c6b in boost::asio::detail::task_io_service::do_run_one(boost::asio::detail::scoped_lock<boost::asio::detail::posix_mutex>&, boost::asio::detail::task_io_service_thread_info&, boost::system::error_code const&) () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#5  0x00623925 in boost::asio::detail::task_io_service::run(boost::system::error_code&) () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#6  0x00623f74 in boost::asio::io_service::run() () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#7  0x006209c2 in WRH_COMMON::THREAD_POOL::initialize_thread() () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#8  0x00627e7d in boost::_mfi::mf0<void, WRH_COMMON::THREAD_POOL>::operator()(WRH_COMMON::THREAD_POOL*) const () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#9  0x00627e0a in void boost::_bi::list1<boost::_bi::value<WRH_COMMON::THREAD_POOL*> >::operator()<boost::_mfi::mf0<void, WRH_COMMON::THREAD_POOL>, boost::_bi::list0>(boost::_bi::type<void>, boost::_mfi::mf0<void, WRH_COMMON::THREAD_POOL>&, boost::_bi::list0&, int) () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#10 0x00627c44 in boost::_bi::bind_t<void, boost::_mfi::mf0<void, WRH_COMMON::THREAD_POOL>, boost::_bi::list1<boost::_bi::value<WRH_COMMON::THREAD_POOL*> > >::operator()() () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#11 0x006279cc in boost::detail::thread_data<boost::_bi::bind_t<void, boost::_mfi::mf0<void, WRH_COMMON::THREAD_POOL>, boost::_bi::list1<boost::_bi::value<WRH_COMMON::THREAD_POOL*> > > >::run() () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#12 0x00e90a16 in thread_proxy () from /usr/local/boost_1.55.0/lib/libboost_thread.so.1.55.0
+#13 0x00b239e9 in start_thread () from /lib/libpthread.so.0
+#14 0x02a55cde in clone () from /lib/libc.so.6
+Thread 4 (Thread 0xb5445b70 (LWP 14893)):
+#0  0x00e78424 in __kernel_vsyscall ()
+#1  0x00b272fc in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/libpthread.so.0
+#2  0x02a65a2d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/libc.so.6
+#3  0x00624ddb in void boost::asio::detail::posix_event::wait<boost::asio::detail::scoped_lock<boost::asio::detail::posix_mutex> >(boost::asio::detail::scoped_lock<boost::asio::detail::posix_mutex>&) () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#4  0x00623c6b in boost::asio::detail::task_io_service::do_run_one(boost::asio::detail::scoped_lock<boost::asio::detail::posix_mutex>&, boost::asio::detail::task_io_service_thread_info&, boost::system::error_code const&) () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#5  0x00623925 in boost::asio::detail::task_io_service::run(boost::system::error_code&) () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#6  0x00623f74 in boost::asio::io_service::run() () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#7  0x006209c2 in WRH_COMMON::THREAD_POOL::initialize_thread() () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#8  0x00627e7d in boost::_mfi::mf0<void, WRH_COMMON::THREAD_POOL>::operator()(WRH_COMMON::THREAD_POOL*) const () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#9  0x00627e0a in void boost::_bi::list1<boost::_bi::value<WRH_COMMON::THREAD_POOL*> >::operator()<boost::_mfi::mf0<void, WRH_COMMON::THREAD_POOL>, boost::_bi::list0>(boost::_bi::type<void>, boost::_mfi::mf0<void, WRH_COMMON::THREAD_POOL>&, boost::_bi::list0&, int) () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#10 0x00627c44 in boost::_bi::bind_t<void, boost::_mfi::mf0<void, WRH_COMMON::THREAD_POOL>, boost::_bi::list1<boost::_bi::value<WRH_COMMON::THREAD_POOL*> > >::operator()() () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#11 0x006279cc in boost::detail::thread_data<boost::_bi::bind_t<void, boost::_mfi::mf0<void, WRH_COMMON::THREAD_POOL>, boost::_bi::list1<boost::_bi::value<WRH_COMMON::THREAD_POOL*> > > >::run() () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#12 0x00e90a16 in thread_proxy () from /usr/local/boost_1.55.0/lib/libboost_thread.so.1.55.0
+#13 0x00b239e9 in start_thread () from /lib/libpthread.so.0
+#14 0x02a55cde in clone () from /lib/libc.so.6
+Thread 3 (Thread 0xb4a44b70 (LWP 14895)):
+#0  0x00e78424 in __kernel_vsyscall ()
+#1  0x00b272fc in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/libpthread.so.0
+#2  0x02a65a2d in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/libc.so.6
+#3  0x00624ddb in void boost::asio::detail::posix_event::wait<boost::asio::detail::scoped_lock<boost::asio::detail::posix_mutex> >(boost::asio::detail::scoped_lock<boost::asio::detail::posix_mutex>&) () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#4  0x00623c6b in boost::asio::detail::task_io_service::do_run_one(boost::asio::detail::scoped_lock<boost::asio::detail::posix_mutex>&, boost::asio::detail::task_io_service_thread_info&, boost::system::error_code const&) () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#5  0x00623925 in boost::asio::detail::task_io_service::run(boost::system::error_code&) () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#6  0x00623f74 in boost::asio::io_service::run() () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#7  0x006209c2 in WRH_COMMON::THREAD_POOL::initialize_thread() () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#8  0x00627e7d in boost::_mfi::mf0<void, WRH_COMMON::THREAD_POOL>::operator()(WRH_COMMON::THREAD_POOL*) const () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#9  0x00627e0a in void boost::_bi::list1<boost::_bi::value<WRH_COMMON::THREAD_POOL*> >::operator()<boost::_mfi::mf0<void, WRH_COMMON::THREAD_POOL>, boost::_bi::list0>(boost::_bi::type<void>, boost::_mfi::mf0<void, WRH_COMMON::THREAD_POOL>&, boost::_bi::list0&, int) () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#10 0x00627c44 in boost::_bi::bind_t<void, boost::_mfi::mf0<void, WRH_COMMON::THREAD_POOL>, boost::_bi::list1<boost::_bi::value<WRH_COMMON::THREAD_POOL*> > >::operator()() () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#11 0x006279cc in boost::detail::thread_data<boost::_bi::bind_t<void, boost::_mfi::mf0<void, WRH_COMMON::THREAD_POOL>, boost::_bi::list1<boost::_bi::value<WRH_COMMON::THREAD_POOL*> > > >::run() () from /home/506OI/SMEE/lib/linux/libWRHCommon.so
+#12 0x00e90a16 in thread_proxy () from /usr/local/boost_1.55.0/lib/libboost_thread.so.1.55.0
+#13 0x00b239e9 in start_thread () from /lib/libpthread.so.0
+#14 0x02a55cde in clone () from /lib/libc.so.6
+Thread 2 (Thread 0xb4043b70 (LWP 14916)):
+#0  0x00e78424 in __kernel_vsyscall ()
+#1  0x02a4e0b1 in select () from /lib/libc.so.6
+#2  0x00eec293 in CNFD::CNFD_Select(fd_set*, fd_set*, int*, int) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#3  0x00efbfde in CNEH::CNEH_MainLoop() () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#4  0x00ef46c8 in CNMAHandler::CNMA_mainloop() () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#5  0x00ef2284 in CN4A_main_loop () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#6  0x08054f35 in WHMA_start_driver_event_receiving_thread ()
+#7  0x00b239e9 in start_thread () from /lib/libpthread.so.0
+#8  0x02a55cde in clone () from /lib/libc.so.6
+Thread 1 (Thread 0xb77b5750 (LWP 14848)):
+#0  0x00e78424 in __kernel_vsyscall ()
+#1  0x02a4e0b1 in select () from /lib/libc.so.6
+#2  0x00eec293 in CNFD::CNFD_Select(fd_set*, fd_set*, int*, int) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#3  0x00efbfde in CNEH::CNEH_MainLoop() () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#4  0x00ef46c8 in CNMAHandler::CNMA_mainloop() () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#5  0x00ef2284 in CN4A_main_loop () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#6  0x080555ca in main ()

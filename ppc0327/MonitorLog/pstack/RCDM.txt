@@ -1,0 +1,8 @@
+=====pstack 13757-----RCDM
+#0  0x00698424 in __kernel_vsyscall ()
+#1  0x002cb0b1 in select () from /lib/libc.so.6
+#2  0x009e2293 in CNFD::CNFD_Select(fd_set*, fd_set*, int*, int) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#3  0x009f1fde in CNEH::CNEH_MainLoop() () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#4  0x009ea6c8 in CNMAHandler::CNMA_mainloop() () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#5  0x009e8284 in CN4A_main_loop () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#6  0x08049aa3 in main ()

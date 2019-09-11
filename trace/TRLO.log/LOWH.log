@@ -1,0 +1,74 @@
+09/20/2018 18:19:42+819026us LOWH <LO> LOWH_bind_handler > (function_code = 0x4c4fff03)
+09/20/2018 18:19:42+819094us LOWH <LO> LOWHGN_raise_start_production > 
+09/20/2018 18:19:42+819158us LOWH <LO> LOWHGN_raise_start_production < () = OK
+09/20/2018 18:19:42+819206us LOWH <LO> LOWH_bind_handler < () = OK
+------------------------------merge1 end------------------------------
+
+09/20/2018 18:19:50+436775us LOWH <LO> LOWH_bind_handler > (function_code = 0x4c4fff05)
+09/20/2018 18:19:50+436839us LOWH <LO> LOWHAP_lot_define >>(lot_id=1093)
+09/20/2018 18:19:50+436890us LOWH <LO> LODM_get_lot_data > ()
+09/20/2018 18:19:50+438044us LOWH <LO> LODM_get_lot_data < () = OK
+09/20/2018 18:19:50+438317us LOWH <LO> lowhap_wh_lot_request_active_sb >>( lot_id=1093, error_code=0x0 )
+09/20/2018 18:19:50+438373us LOWH <LO> LOSM_get_Q_state > ()
+09/20/2018 18:19:50+438763us LOWH <LO> LOSM_get_Q_state < () = OK
+09/20/2018 18:19:50+438837us LOWH <LO> LOWHGN_raise_lot_request_active_subscribe > 
+09/20/2018 18:19:50+438915us LOWH <LO> LOWHGN_raise_lot_request_active_subscribe < () = OK
+09/20/2018 18:19:50+438958us LOWH <LO> lowhap_wh_lot_request_active_sb <<()=OK
+09/20/2018 18:19:50+438997us LOWH <LO> LOWHAP_lot_define <<()=OK
+09/20/2018 18:19:50+439047us LOWH <LO> LOWHGN_raise_lot_define > 
+09/20/2018 18:19:50+439107us LOWH <LO> LOWHGN_raise_lot_define < () = OK
+09/20/2018 18:19:50+439150us LOWH <LO> LOWH_bind_handler < () = OK
+09/20/2018 18:19:50+439918us LOWH <LO> LOWH_bind_handler > (function_code = 0x4c4fff0c)
+09/20/2018 18:19:50+439967us LOWH <LO> LOWHAP_lot_request_first_substrate >>(lot_id=1093)
+09/20/2018 18:19:50+440016us LOWH <LO> LODM_get_lot_data > ()
+09/20/2018 18:19:50+441155us LOWH <LO> LODM_get_lot_data < () = OK
+09/20/2018 18:19:50+441213us LOWH <LO> lowhap_wh_lot_first_substrate_available_sb >>( lot_id=1093, error_code=0x0 )
+09/20/2018 18:19:50+441258us LOWH <LO> LOSM_get_Q_state > ()
+09/20/2018 18:19:50+441788us LOWH <LO> LOSM_get_Q_state < () = OK
+09/20/2018 18:19:50+441841us LOWH <LO> LOWHGN_raise_lot_first_substrate_available_subscribe > 
+09/20/2018 18:19:50+441899us LOWH <LO> LOWHGN_raise_lot_first_substrate_available_subscribe < () = OK
+09/20/2018 18:19:50+441944us LOWH <LO> lowhap_wh_lot_first_substrate_available_sb <<()=OK
+09/20/2018 18:19:50+441984us LOWH <LO> LOWHAP_lot_request_first_substrate <<()=OK
+09/20/2018 18:19:50+442025us LOWH <LO> LOWHGN_raise_lot_request_first_substrate > 
+09/20/2018 18:19:50+442079us LOWH <LO> LOWHGN_raise_lot_request_first_substrate < () = OK
+09/20/2018 18:19:50+442120us LOWH <LO> LOWH_bind_handler < () = OK
+09/20/2018 18:19:50+443984us LOWH <LO> LOWH_bind_handler > (function_code = 0x4c4fff0a)
+09/20/2018 18:19:50+444039us LOWH <LO> LOWHAP_lot_accept_substrate >>(lot_id=1093)
+09/20/2018 18:19:50+444077us LOWH <LO> LODM_get_lot_data > ()
+09/20/2018 18:19:50+445277us LOWH <LO> LODM_get_lot_data < () = OK
+09/20/2018 18:19:50+445331us LOWH <LO> LOWHAP_lot_accept_substrate <<()=OK
+09/20/2018 18:19:50+445376us LOWH <LO> LOWHGN_raise_lot_accept_substrate > 
+09/20/2018 18:19:50+445434us LOWH <LO> LOWHGN_raise_lot_accept_substrate < () = OK
+09/20/2018 18:19:50+445477us LOWH <LO> LOWH_bind_handler < () = OK
+09/20/2018 18:19:50+447299us LOWH <LO> LOWH_bind_handler > (function_code = 0x4c4fff0f)
+09/20/2018 18:19:50+447356us LOWH <LO> LOWHAP_lot_load_new_substrate >>(load_lot_id=1093, first substrate=TRUE, g_lowhap_wh_error=FALSE,g_lowhap_present_msg=0x0)
+09/20/2018 18:19:50+447401us LOWH <LO> LODM_get_lot_data > ()
+09/20/2018 18:19:50+448585us LOWH <LO> LODM_get_lot_data < () = OK
+09/20/2018 18:19:50+448643us LOWH <LO> LOWHGN_raise_lot_first_substrate_loaded_subscribe > 
+09/20/2018 18:19:50+448715us LOWH <LO> LOWHGN_raise_lot_first_substrate_loaded_subscribe < () = OK
+09/20/2018 18:19:50+448759us LOWH <LO> LOWHAP_lot_load_new_substrate <<(g_lowhap_load.load_requst=FALSE,lot_id=0,first_substrate=FALSE)=OK
+09/20/2018 18:19:50+448801us LOWH <LO> LOWHGN_raise_lot_load_new_substrate > 
+09/20/2018 18:19:50+448841us LOWH <LO> LOWHGN_raise_lot_load_new_substrate < () = OK
+09/20/2018 18:19:50+448886us LOWH <LO> LOWH_bind_handler < () = OK
+------------------------------merge2 end------------------------------
+
+09/20/2018 18:20:01+400694us LOWH <LO> LOWH_bind_handler > (function_code = 0x4c4fff14)
+09/20/2018 18:20:01+400769us LOWH <LO> LOWHAP_lot_set_substrate_state >>(substrate_state=2)
+09/20/2018 18:20:01+400834us LOWH <LO> LOWHAP_lot_set_substrate_state <<()=OK
+09/20/2018 18:20:01+400880us LOWH <LO> LOWHGN_raise_lot_set_substrate_state > 
+09/20/2018 18:20:01+400952us LOWH <LO> LOWHGN_raise_lot_set_substrate_state < () = OK
+09/20/2018 18:20:01+400998us LOWH <LO> LOWH_bind_handler < () = OK
+09/20/2018 18:20:01+470462us LOWH <LO> LOWH_bind_handler > (function_code = 0x4c4fff13)
+09/20/2018 18:20:01+470531us LOWH <LO> LOWHAP_lot_unload_last_substrate >>(lot_id=1093)
+09/20/2018 18:20:01+470579us LOWH <LO> LODM_get_lot_data > ()
+09/20/2018 18:20:01+522533us LOWH <LO> LODM_get_lot_data < () = OK
+09/20/2018 18:20:01+522593us LOWH <LO> LOWHGN_raise_lot_last_substrate_out_subscribe > 
+09/20/2018 18:20:01+522663us LOWH <LO> LOWHGN_raise_lot_last_substrate_out_subscribe < () = OK
+09/20/2018 18:20:01+522707us LOWH <LO> LOWHAP_lot_unload_last_substrate <<()=OK
+09/20/2018 18:20:01+522756us LOWH <LO> LOWHGN_raise_lot_unload_last_substrate > 
+09/20/2018 18:20:01+522820us LOWH <LO> LOWHGN_raise_lot_unload_last_substrate < () = OK
+09/20/2018 18:20:01+522866us LOWH <LO> LOWH_bind_handler < () = OK
+-------------------------------last3 end------------------------------
+
+------------------------------------------------------------------------
+2018-09-20,18:20:13

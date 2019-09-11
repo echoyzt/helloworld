@@ -1,0 +1,10 @@
+=====pstack 13169-----TRDA
+#0  0x00fba424 in __kernel_vsyscall ()
+#1  0x00a5e07d in ___newselect_nocancel () from /lib/libc.so.6
+#2  0x002f8293 in CNFD::CNFD_Select(fd_set*, fd_set*, int*, int) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#3  0x002fc276 in CNCM::CNCM_RecvreqIntime(unsigned long, int, long, void*, int, int*, int*, int, unsigned long*) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#4  0x002fc8da in CNCM::CNCM_ReceiveRequest(unsigned long, int, void*, int, int*, int*, int, unsigned long*) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#5  0x00301ef0 in CNMAHandler::CNMA_receiveRequest(char const*, void*, int, int*, int*, int) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#6  0x002fec52 in CN4A_receive_request () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#7  0x007a6b0c in TRMessager::RecRequest(int) () from /home/506OI/SMEE/lib/linux/libTR4A.so
+#8  0x08048dd8 in main ()

@@ -1,0 +1,8 @@
+=====pstack 14513-----OIUADM
+#0  0x002e7424 in __kernel_vsyscall ()
+#1  0x001e607d in ___newselect_nocancel () from /lib/libc.so.6
+#2  0x00688293 in CNFD::CNFD_Select(fd_set*, fd_set*, int*, int) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#3  0x00697fde in CNEH::CNEH_MainLoop() () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#4  0x006906c8 in CNMAHandler::CNMA_mainloop() () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#5  0x0068e284 in CN4A_main_loop () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#6  0x0805017b in main ()

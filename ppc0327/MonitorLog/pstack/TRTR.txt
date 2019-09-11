@@ -1,0 +1,28 @@
+=====pstack 13159-----TRTR
+Thread 3 (Thread 0xb71d7b70 (LWP 13167)):
+#0  0x00f73424 in __kernel_vsyscall ()
+#1  0x00b272fc in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/libpthread.so.0
+#2  0x08051768 in AOE::AThreadCond::sWait(pthread_cond_t*, pthread_mutex_t*) ()
+#3  0x08050547 in TRMQueue::output() ()
+#4  0x080514d1 in TRWriteTD::run(void*) ()
+#5  0x080551dc in AOE::AThread::sThreadRunFunc(void*) ()
+#6  0x00b239e9 in start_thread () from /lib/libpthread.so.0
+#7  0x00a65cde in clone () from /lib/libc.so.6
+Thread 2 (Thread 0xb67d6b70 (LWP 13168)):
+#0  0x00f73424 in __kernel_vsyscall ()
+#1  0x00b272fc in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/libpthread.so.0
+#2  0x0804e972 in TRFA_getitem ()
+#3  0x0804ea93 in TRFA_work_thread_run(void*) ()
+#4  0x00b239e9 in start_thread () from /lib/libpthread.so.0
+#5  0x00a65cde in clone () from /lib/libc.so.6
+Thread 1 (Thread 0xb773d740 (LWP 13159)):
+#0  0x00f73424 in __kernel_vsyscall ()
+#1  0x00a5e0b1 in select () from /lib/libc.so.6
+#2  0x0077e293 in CNFD::CNFD_Select(fd_set*, fd_set*, int*, int) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#3  0x00782276 in CNCM::CNCM_RecvreqIntime(unsigned long, int, long, void*, int, int*, int*, int, unsigned long*) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#4  0x007828da in CNCM::CNCM_ReceiveRequest(unsigned long, int, void*, int, int*, int*, int, unsigned long*) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#5  0x00787ef0 in CNMAHandler::CNMA_receiveRequest(char const*, void*, int, int*, int*, int) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#6  0x00784c52 in CN4A_receive_request () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#7  0x00ce0b0c in TRMessager::RecRequest(int) () from /home/506OI/SMEE/lib/linux/libTR4A.so
+#8  0x0804f7bb in TRTraceHandler::TRTR_active(TRMessager*) ()
+#9  0x08050229 in main ()

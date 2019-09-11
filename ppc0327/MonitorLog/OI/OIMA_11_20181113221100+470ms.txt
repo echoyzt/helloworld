@@ -1,0 +1,4 @@
+Process id: 29991
+Signal information: Segmentation fault
+Stack information:
+[0x64b400]

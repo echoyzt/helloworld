@@ -1,0 +1,117 @@
+09/20/2018 18:19:50+433118us LOPL <LO> LOPL_bind_handler > (function_code = 0x4c4fff07)
+09/20/2018 18:19:50+433187us LOPL <LO> LOPLAP_prepare_lot >>(lot_id=1093)
+09/20/2018 18:19:50+433259us LOPL <LO> LOSM_report_lot_time > ()
+09/20/2018 18:19:50+433952us LOPL <LO> LOSM_report_lot_time < () = OK
+09/20/2018 18:19:50+434008us LOPL <LO> LODM_write_lot_result_tab > ()
+09/20/2018 18:19:50+434927us LOPL <LO> LODM_write_lot_result_tab < () = OK
+09/20/2018 18:19:50+434984us LOPL <LO> LODM_update_lot_start_time > ()
+09/20/2018 18:19:50+435470us LOPL <LO> LODM_update_lot_start_time < () = OK
+09/20/2018 18:19:50+435523us LOPL <LO> LOSM_report_event > ()
+09/20/2018 18:19:50+436648us LOPL <LO> LOSM_report_event < () = OK
+09/20/2018 18:19:50+436700us LOPL <LO> LOWH_lot_define > ()
+09/20/2018 18:19:50+439108us LOPL <LO> LOWH_lot_define < () = OK
+09/20/2018 18:19:50+439159us LOPL <LO> LOSM_get_L_state > ()
+09/20/2018 18:19:50+439457us LOPL <LO> LOSM_get_L_state < () = OK
+09/20/2018 18:19:50+439502us LOPL <LO> LOPLAP_prepare_lot <<(lot:1093 ,wh_state=1, result=OK)
+09/20/2018 18:19:50+439545us LOPL <LO> LOPLGN_raise_prepare_lot > 
+09/20/2018 18:19:50+439599us LOPL <LO> LOPLGN_raise_prepare_lot < () = OK
+09/20/2018 18:19:50+439676us LOPL <LO> LOPL_bind_handler < () = OK
+09/20/2018 18:19:50+439724us LOPL <LO> loplap_lowh_lot_request_active_sb >>(lot_id=1093, error_code=0)
+09/20/2018 18:19:50+439766us LOPL <LO> loplap_check_lot_id_is_valid >>(lot_id=1093)
+09/20/2018 18:19:50+439806us LOPL <LO> loplap_check_lot_id_is_valid <<(is_valid = 1,lot_index=0)
+09/20/2018 18:19:50+439847us LOPL <LO> LOWH_lot_request_first_substrate > ()
+09/20/2018 18:19:50+442089us LOPL <LO> LOWH_lot_request_first_substrate < () = OK
+09/20/2018 18:19:50+442138us LOPL <LO> loplap_lowh_lot_request_active_sb <<( lot_id=1093 )=OK)
+09/20/2018 18:19:50+442181us LOPL <LO> loplap_lowh_lot_first_substrate_available_sb >>(lot_id=1093, error_code=0)
+09/20/2018 18:19:50+442222us LOPL <LO> loplap_check_lot_id_is_valid >>(lot_id=1093)
+09/20/2018 18:19:50+442261us LOPL <LO> loplap_check_lot_id_is_valid <<(is_valid = 1,lot_index=0)
+09/20/2018 18:19:50+442299us LOPL <LO> loplap_lowh_lot_first_substrate_available_sb >>(lot_id=1093, wh[1])
+09/20/2018 18:19:50+442339us LOPL <LO> LODM_get_lot_data > ()
+09/20/2018 18:19:50+443480us LOPL <LO> LODM_get_lot_data < () = OK
+09/20/2018 18:19:50+443530us LOPL <LO> LOSM_get_L_state > ()
+09/20/2018 18:19:50+443844us LOPL <LO> LOSM_get_L_state < () = OK
+09/20/2018 18:19:50+443899us LOPL <LO> LOWH_lot_accept_substrate > ()
+09/20/2018 18:19:50+445542us LOPL <LO> LOWH_lot_accept_substrate < () = OK
+09/20/2018 18:19:50+445600us LOPL <LO> loplap_whether_start_loading >>(lot_id=1093, current_lot_id=1093)
+09/20/2018 18:19:50+445651us LOPL <LO> loplap_check_lot_id_is_valid >>(lot_id=1093)
+09/20/2018 18:19:50+445696us LOPL <LO> loplap_check_lot_id_is_valid <<(is_valid = 1,lot_index=0)
+09/20/2018 18:19:50+445738us LOPL <LO> loplap_whether_start_loading >>111(lot_id=1093, wh[4])
+09/20/2018 18:19:50+445779us LOPL <LO> LODM_get_lot_data > ()
+09/20/2018 18:19:50+447055us LOPL <LO> LODM_get_lot_data < () = OK
+09/20/2018 18:19:50+447109us LOPL <LO> LOWH_lot_load_new_substrate_trig > 
+09/20/2018 18:19:50+447171us LOPL <LO> LOWH_lot_load_new_substrate_trig < () = OK
+09/20/2018 18:19:50+447214us LOPL <LO> LOSM_report_event > ()
+09/20/2018 18:19:50+456868us LOPL <LO> LOSM_report_event < () = OK
+09/20/2018 18:19:50+456921us LOPL <LO> LOPLGN_raise_lot_start_event_subscribe > 
+09/20/2018 18:19:50+456984us LOPL <LO> LOPLGN_raise_lot_start_event_subscribe < () = OK
+09/20/2018 18:19:50+457034us LOPL <LO> LOAL_start_lot > ()
+------------------------------merge1 end------------------------------
+
+09/20/2018 18:19:51+418086us LOPL <LO> LOAL_start_lot < () = OK
+09/20/2018 18:19:51+418154us LOPL <LO> loplap_whether_start_loading >>(lot_id=1093, ec-wh[7,6])
+09/20/2018 18:19:51+418203us LOPL <LO> loplap_whether_start_loading <<(lot_id=1093, result=OK)
+09/20/2018 18:19:51+418251us LOPL <LO> loplap_lowh_lot_first_substrate_available_sb >>333(lot_id=1093, wh[6])
+09/20/2018 18:19:51+418296us LOPL <LO> loplap_lowh_lot_first_substrate_available_sb <<(lot_id=1093, result=OK)
+09/20/2018 18:19:51+418362us LOPL <LO> loplap_lowh_lot_first_substrate_loaded_sb >>(lot_id=1093,prealign_result=TRUE,b_end_of_lot=TRUE, substrate_id=SubstrateOnStage,substrate_index=0,error_code=0)
+09/20/2018 18:19:51+418415us LOPL <LO> LOPLGN_raise_substrate_change_event_subscribe > 
+09/20/2018 18:19:51+418476us LOPL <LO> LOPLGN_raise_substrate_change_event_subscribe < () = OK
+09/20/2018 18:19:51+418520us LOPL <LO> loplap_check_lot_id_is_valid >>(lot_id=1093)
+09/20/2018 18:19:51+418560us LOPL <LO> loplap_check_lot_id_is_valid <<(is_valid = 1,lot_index=0)
+09/20/2018 18:19:51+418602us LOPL <LO> loplap_lowh_lot_first_substrate_loaded_sb 111(lot_id=1093, wh[6])
+09/20/2018 18:19:51+418648us LOPL <LO> loplap_whether_process_lot >>(lot_id=1093,lot_terminate=TRUE)
+09/20/2018 18:19:51+418690us LOPL <LO> loplap_check_lot_id_is_valid >>(lot_id=1093)
+09/20/2018 18:19:51+418730us LOPL <LO> loplap_check_lot_id_is_valid <<(is_valid = 1,lot_index=0)
+09/20/2018 18:19:51+418771us LOPL <LO> LOSM_get_L_state > ()
+09/20/2018 18:19:51+419120us LOPL <LO> LOSM_get_L_state < () = OK
+09/20/2018 18:19:51+419161us LOPL <LO> loplap_whether_process_lot (lot_id=1093, wh[7])
+09/20/2018 18:19:51+419201us LOPL <LO> LOAL_perform_lot_trig > 
+09/20/2018 18:19:51+419255us LOPL <LO> LOAL_perform_lot_trig < () = OK
+09/20/2018 18:19:51+419282us LOPL <LO> LOSM_report_event > ()
+09/20/2018 18:19:51+421521us LOPL <LO> LOSM_report_event < () = OK
+09/20/2018 18:19:51+421563us LOPL <LO> loplap_whether_process_lot <<(lot_id=1093, result=OK)
+09/20/2018 18:19:51+421600us LOPL <LO> LOSM_report_event > ()
+09/20/2018 18:19:51+423924us LOPL <LO> LOSM_report_event < () = OK
+09/20/2018 18:19:51+423969us LOPL <LO> loplap_lowh_lot_first_substrate_loaded_sb <<(load_lot_id=1093, wh[7])
+09/20/2018 18:19:51+424006us LOPL <LO> loplap_lowh_lot_first_substrate_loaded_sb <<( result=OK)
+------------------------------merge2 end------------------------------
+
+09/20/2018 18:20:01+401878us LOPL <LO> loplap_loal_last_substrate_finish_sb >>(lot_id=1093,error_code=0)
+09/20/2018 18:20:01+401941us LOPL <LO> loplap_check_lot_id_is_valid >>(lot_id=1093)
+09/20/2018 18:20:01+401985us LOPL <LO> loplap_check_lot_id_is_valid <<(is_valid = 1,lot_index=0)
+09/20/2018 18:20:01+402028us LOPL <LO> LOPLGN_raise_lot_stop_event_subscribe > 
+09/20/2018 18:20:01+402095us LOPL <LO> LOPLGN_raise_lot_stop_event_subscribe < () = OK
+09/20/2018 18:20:01+402145us LOPL <LO> LOEC_finish_lot > ()
+09/20/2018 18:20:01+469513us LOPL <LO> LOEC_finish_lot < () = OK
+09/20/2018 18:20:01+469581us LOPL <LO> LOSM_get_L_state > ()
+09/20/2018 18:20:01+470016us LOPL <LO> LOSM_get_L_state < () = OK
+09/20/2018 18:20:01+470067us LOPL <LO> LOSM_get_P_state > ()
+09/20/2018 18:20:01+470350us LOPL <LO> LOSM_get_P_state < () = OK
+09/20/2018 18:20:01+470390us LOPL <LO> LOWH_lot_unload_last_substrate_req > 
+09/20/2018 18:20:01+470441us LOPL <LO> LOWH_lot_unload_last_substrate_req < () = OK
+09/20/2018 18:20:01+470470us LOPL <LO> LOWH_lot_unload_last_substrate_wait > 
+09/20/2018 18:20:01+522834us LOPL <LO> LOWH_lot_unload_last_substrate_wait < () = OK
+09/20/2018 18:20:01+523968us LOPL <LO> loplap_loal_last_substrate_finish_sb <<()
+09/20/2018 18:20:01+524022us LOPL <LO> loplap_lowh_lot_last_substrate_out_sb >>(lot_id=1093)
+09/20/2018 18:20:01+524061us LOPL <LO> loplap_check_lot_id_is_valid >>(lot_id=1093)
+09/20/2018 18:20:01+524098us LOPL <LO> loplap_check_lot_id_is_valid <<(is_valid = 1,lot_index=0)
+09/20/2018 18:20:01+524126us LOPL <LO> LOSM_report_lot_time > ()
+09/20/2018 18:20:01+524392us LOPL <LO> LOSM_report_lot_time < () = OK
+09/20/2018 18:20:01+524431us LOPL <LO> LODM_update_lot_stop_time > ()
+09/20/2018 18:20:01+862790us LOPL <LO> LODM_update_lot_stop_time < () = OK
+09/20/2018 18:20:01+862863us LOPL <LO> LOSM_get_L_state > ()
+09/20/2018 18:20:01+863188us LOPL <LO> LOSM_get_L_state < () = OK
+09/20/2018 18:20:01+863241us LOPL <LO> LOSM_report_event > ()
+09/20/2018 18:20:01+864545us LOPL <LO> LOSM_report_event < () = OK
+09/20/2018 18:20:01+864597us LOPL <LO> loplap_lot_finish >>(lot_id=1093)
+09/20/2018 18:20:01+864644us LOPL <LO> loplap_check_lot_id_is_valid >>(lot_id=1093)
+09/20/2018 18:20:01+864677us LOPL <LO> loplap_check_lot_id_is_valid <<(is_valid = 1,lot_index=0)
+09/20/2018 18:20:01+864705us LOPL <LO> LOSM_get_L_state > ()
+09/20/2018 18:20:01+865699us LOPL <LO> LOSM_get_L_state < () = OK
+09/20/2018 18:20:01+865743us LOPL <LO> LOPLGN_raise_lot_finish_subscribe > 
+09/20/2018 18:20:01+865831us LOPL <LO> LOPLGN_raise_lot_finish_subscribe < () = OK
+09/20/2018 18:20:01+865870us LOPL <LO> loplap_lot_finish <<(lot_id=1093,nr_of_prepared=0,result=OK)
+09/20/2018 18:20:01+865907us LOPL <LO> loplap_lowh_lot_last_substrate_out_sb <<(lot_id=1093, result=OK)
+-------------------------------last3 end------------------------------
+
+------------------------------------------------------------------------
+2018-09-20,18:20:13

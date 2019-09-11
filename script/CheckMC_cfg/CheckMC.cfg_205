@@ -1,0 +1,30 @@
+******************************************CHeckMC配置文件***********************************
+
+#'#'号为无效注释行
+#XXMC_tc.h数据结构定义文件的存放路径，需包含要解析的XXMC_tc.h及其依赖的头文件，推荐使用项目根目录
+#tc_path = C:\SSB500_30\205_SWS\3.2\src
+tc_path = C:\204011\src
+
+#XXMC.ini机器常数文件的存放路径
+#ini_path = C:\SSB500_30\205_SWS\3.2\SIT\MC\data
+ini_path = C:\204011\SIT\MC\data
+
+#特定的机器常数中使用了宏,不存在不用填，多项之间使用逗号分隔
+macro = SSB500_10M
+
+#不是按照XXMC_FILE_STRUCT命名的需手动给出ini与STRUCT的对应关系，ini和STRUCT用冒号分开，多项之间使用逗号分隔
+sp_mc = MOMC.ini:WSMC_MOTOR_COMPENSATE_FILE_STRUCT, 
+MMMC.ini:WSMC_MIRROR_MAP_FILE_STRUCT, 
+OIMC.ini:OIGL_MACHINE_CONSTANT_STRUCT,
+JCMC.ini:JCMC_REVISION_NUM_STRUCT
+
+#不是按照XXMC_tc.h命名的，需要手动给出tc_path后面具体路径名解析，多项之间使用逗号分隔
+sp_file = VMMC.ini:\ES\VM\com\ext\typ\VMMC.h
+OIMC.ini:\OI\libOIGL\include\OIGL_MachineConstant.h
+
+#存在同名文件，但内容不一样，某些机器常数需要tc_path后面指定的目录（例如WM和RM对DR相关文件的依赖，文件名、结构体名一样但内容不一样），多项之间使用逗号分隔
+sp_dir = WMMC.ini:\WH\WM\res\DFRL,
+RMMC.ini:\RH\RM\res\DFRL,
+VMMC.ini:\ES\VM\res\DFRL,
+VIMC.ini:\SF\VI\IDE\inc
+FSMC.ini:\FLS\FS\com\ext\typ

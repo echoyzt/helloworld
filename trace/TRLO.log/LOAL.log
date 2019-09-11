@@ -1,0 +1,56 @@
+09/20/2018 18:19:50+457126us LOAL <LO> LOAL_bind_handler > (function_code = 0x4c4fff03)
+09/20/2018 18:19:50+457191us LOAL <LO> LOALAP_start_lot >>(lot_id=1093)
+09/20/2018 18:19:50+457241us LOAL <LO> LOEC_start_lot > ()
+------------------------------merge1 end------------------------------
+
+09/20/2018 18:19:51+382090us LOAL <LO> LOEC_start_lot < () = OK
+09/20/2018 18:19:51+382162us LOAL <LO> LODM_get_lot_data > ()
+09/20/2018 18:19:51+417883us LOAL <LO> LODM_get_lot_data < () = OK
+09/20/2018 18:19:51+417951us LOAL <LO> LOALAP_start_lot <<(current lot=1093, result=OK)
+09/20/2018 18:19:51+418006us LOAL <LO> LOALGN_raise_start_lot > 
+09/20/2018 18:19:51+418078us LOAL <LO> LOALGN_raise_start_lot < () = OK
+09/20/2018 18:19:51+418125us LOAL <LO> LOAL_bind_handler < () = OK
+09/20/2018 18:19:51+419258us LOAL <LO> LOAL_bind_handler > (function_code = 0x4c4fff04)
+09/20/2018 18:19:51+419314us LOAL <LO> LOALAP_perform_lot >>(lot_id=1093,lot_terminate=TRUE)
+09/20/2018 18:19:51+419603us LOAL <LO> LOALAP_perform_lot >>(occupied=TRUE)
+09/20/2018 18:19:51+419659us LOAL <LO> LOEC_measure_substrate_trig > 
+09/20/2018 18:19:51+419727us LOAL <LO> LOEC_measure_substrate_trig < () = OK
+09/20/2018 18:19:51+419768us LOAL <LO> LOALAP_perform_lot <<(lot_id=1093,substrate_nbr=1,result=OK)
+09/20/2018 18:19:51+419810us LOAL <LO> LOALGN_raise_perform_lot > 
+09/20/2018 18:19:51+419850us LOAL <LO> LOALGN_raise_perform_lot < () = OK
+09/20/2018 18:19:51+419889us LOAL <LO> LOAL_bind_handler < () = OK
+------------------------------merge2 end------------------------------
+
+09/20/2018 18:19:52+569216us LOAL <LO> loalap_loec_measure_substrate_sb >>(lot_id=1093,error_code=0)
+09/20/2018 18:19:52+569284us LOAL <LO> LOSM_get_L_state > ()
+09/20/2018 18:19:52+569659us LOAL <LO> LOSM_get_L_state < () = OK
+09/20/2018 18:19:52+569712us LOAL <LO> LODM_get_lot_page_data > ()
+09/20/2018 18:19:52+663009us LOAL <LO> LODM_get_lot_page_data < () = OK
+09/20/2018 18:19:52+663079us LOAL <LO> LOEC_optical_expose_plate_trig > 
+09/20/2018 18:19:52+663151us LOAL <LO> LOEC_optical_expose_plate_trig < () = OK
+09/20/2018 18:19:52+663236us LOAL <LO> LOALGN_raise_image_begin_event_subscribe > 
+09/20/2018 18:19:52+663319us LOAL <LO> LOALGN_raise_image_begin_event_subscribe < () = OK
+09/20/2018 18:19:52+663366us LOAL <LO> loalap_loec_measure_substrate_sb <<(lot_id=1093,substrate_nbr=1,result=OK)
+------------------------------merge3 end------------------------------
+
+09/20/2018 18:20:01+398452us LOAL <LO> loalap_loec_expose_plate_sb >>(lot_id=1093,substrate_id=1,plate_state=2,error_code=0)
+09/20/2018 18:20:01+398527us LOAL <LO> LOALGN_raise_image_end_event_subscribe > 
+09/20/2018 18:20:01+398596us LOAL <LO> LOALGN_raise_image_end_event_subscribe < () = OK
+09/20/2018 18:20:01+398653us LOAL <LO> LOSM_get_L_state > ()
+09/20/2018 18:20:01+399081us LOAL <LO> LOSM_get_L_state < () = OK
+09/20/2018 18:20:01+399137us LOAL <LO> loalap_loec_expose_plate_sb >>(lot_id=1093,current_state=15)
+09/20/2018 18:20:01+399190us LOAL <LO> LOSM_report_event > ()
+09/20/2018 18:20:01+400497us LOAL <LO> LOSM_report_event < () = OK
+09/20/2018 18:20:01+400554us LOAL <LO> loalap_update_substrate_state > ( lot_id=1093 plate_state=2
+09/20/2018 18:20:01+400603us LOAL <LO> LOWH_lot_set_substrate_state > ()
+09/20/2018 18:20:01+401057us LOAL <LO> LOWH_lot_set_substrate_state < () = OK
+09/20/2018 18:20:01+401111us LOAL <LO> LODM_update_substrate_state > ()
+09/20/2018 18:20:01+401657us LOAL <LO> LODM_update_substrate_state < () = OK
+09/20/2018 18:20:01+401707us LOAL <LO> loalap_update_substrate_state > ( result=OK
+09/20/2018 18:20:01+401747us LOAL <LO> LOALGN_raise_last_substrate_finish_subscribe > 
+09/20/2018 18:20:01+401852us LOAL <LO> LOALGN_raise_last_substrate_finish_subscribe < () = OK
+09/20/2018 18:20:01+401897us LOAL <LO> loalap_loec_expose_plate_sb <<(lot_id=0,substrate_nbr=1,result=OK)
+-------------------------------last4 end------------------------------
+
+------------------------------------------------------------------------
+2018-09-20,18:20:12

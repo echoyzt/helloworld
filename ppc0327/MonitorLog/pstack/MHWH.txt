@@ -1,0 +1,8 @@
+=====pstack 14216-----MHWH
+#0  0x00bbf424 in __kernel_vsyscall ()
+#1  0x0062807d in ___newselect_nocancel () from /lib/libc.so.6
+#2  0x003dd293 in CNFD::CNFD_Select(fd_set*, fd_set*, int*, int) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#3  0x003ecfde in CNEH::CNEH_MainLoop() () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#4  0x003e56c8 in CNMAHandler::CNMA_mainloop() () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#5  0x003e3284 in CN4A_main_loop () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#6  0x0804ab42 in main ()

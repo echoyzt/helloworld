@@ -1,0 +1,6 @@
+=====pstack 13420-----SMCM
+#0  0x009a5424 in __kernel_vsyscall ()
+#1  0x0060b960 in __nanosleep_nocancel () from /lib/libc.so.6
+#2  0x00ddc818 in GFTD_sleep () from /home/506OI/SMEE/lib/linux/libGF4A.so
+#3  0x08049044 in Active() ()
+#4  0x08049101 in main ()

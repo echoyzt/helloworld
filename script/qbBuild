@@ -1,0 +1,135 @@
+#!/usr/bin/bash
+
+# ***************************************************************
+# 编译服务器配置，新服务器移植时需要修改
+# 特别说明: 如果脚本运行时报错bad substitution，将脚本第1行的sh改成bash
+# ***************************************************************
+stCmd="$HOME/StarTeamCP_2005r2/bin/stcmd"
+RM=/usr/bin/rm
+MV=/usr/bin/mv
+COPY=/usr/bin/cp
+
+LANG=zh_CN.GB18030
+export LANG
+
+# ***************************************************************
+# 项目差异性配置，新项目移植时需要修改
+# view对应标签中的视图编号
+# ***************************************************************
+view=3.4
+projectDir=$HOME/SSB500_30/205_SWS/$view
+stHomePath="172.16.200.12:49202/205_SWS/$view"
+stName=203build
+stPasswordFile="$HOME/password/203build"
+srcDir=src
+binDirSun=SIT/bin/sun
+libDirSun=SIT/lib/sun
+
+# ***************************************************************
+# 以下是正文，无需修改
+# ***************************************************************
+LANG=C
+export LANG
+
+label=$1
+userName=203build
+userPassword=203smeebuild
+
+if [ $label = ${label%_*_*_*_*_*} ]; then
+	echo error: Invalid label.
+	exit 1
+fi
+
+tempValue=${label#*_}
+project=${tempValue%%_*}
+
+tempValue=${label#*_*_}
+modelDir=${tempValue%%_*}
+
+if [ SWS = $modelDir ];then
+	componentDir=
+	component=SWS
+else
+	usedValue=${tempValue%_*_*_*}
+	componentDir=${usedValue//_/\/}
+	component=${usedValue##*_}
+fi
+
+LANG=zh_CN.GB18030
+export LANG
+
+$RM -rf $projectDir/$srcDir/BuildHistory.log
+$stCmd co -p "$stName:@$stHomePath/$srcDir" -pwdfile $stPasswordFile -fp $projectDir/$srcDir -filter "MOIGU" -x -o -nologo "*"
+
+$stCmd co -p "$stName:@$stHomePath/$srcDir/export"      -pwdfile $stPasswordFile  -x -fp "$projectDir/$srcDir/export"      -filter "MOIGU" -o -ts -nologo 
+$stCmd co -p "$stName:@$stHomePath/$srcDir/ADAE/export"      -pwdfile $stPasswordFile  -x -fp "$projectDir/$srcDir/ADAE/export"      -filter "MOIGU" -o -ts -nologo 
+$RM -rf $projectDir/$srcDir/$componentDir
+$stCmd co -p "$stName:@$stHomePath/$srcDir/$componentDir" -fp $projectDir/$srcDir/$componentDir -pwdfile $stPasswordFile -is -vl "$label" -x -o -nologo
+
+LANG=C
+export LANG
+
+prePath=`pwd`
+cd $projectDir/$srcDir/$componentDir
+
+if [ $prePath = `pwd` ];then
+	echo error: Invalid label.
+	exit 1
+fi
+
+if [ ! -f "Makefile" ] && [ ! -f "$component.pro" ];then
+	echo error: Makefile does not exist in "$projectDir/$srcDir/$componentDir".
+	exit 1
+fi
+
+LANG=zh_CN.GB18030
+export LANG
+
+echo "#include \"string.h\"">$projectDir/$srcDir/label.c
+echo "void label(){">>$projectDir/$srcDir/label.c
+echo "static char lbl[64]=\"LABEL:$label\";">>$projectDir/$srcDir/label.c
+echo "strcpy(lbl, \"\");">>$projectDir/$srcDir/label.c
+echo "return;">>$projectDir/$srcDir/label.c
+echo "}">>$projectDir/$srcDir/label.c
+
+$COPY $projectDir/$srcDir/Makefile.head.sun $projectDir/$srcDir/Makefile.head
+
+touch .check_time
+dateFileList=`find $projectDir/$srcDir/$componentDir -newer .check_time -print`
+for dateFile in $dateFileList
+do
+	touch -m $dateFile
+done
+rm -f .check_time
+
+$stCmd co -p "$stName:@$stHomePath/$binDirSun" -fp $projectDir/$binDirSun -pwdfile $stPasswordFile -filter "MOIGU" -x -o -nologo
+$stCmd co -p "$stName:@$stHomePath/$libDirSun" -fp $projectDir/$libDirSun -pwdfile $stPasswordFile -filter "MOIGU" -x -o -nologo
+
+# 严格规则：不管编译对错，每个标签只能使用一次。与宽松规则互斥。
+# descripetion=`date "+20%y-%m-%d %H:%M"` $userName $label
+# echo %descripetion%>>$projectDir/$srcDir/BuildHistory.log
+# $stCmd ci -p "$stName:@$stHomePath/$srcDir" -fp $projectDir/$srcDir -pwdfile $stPasswordFile -r "$descripetion" -filter "M" -nologo BuildHistory.log
+
+LANG=C
+export LANG
+
+if [ -f "$projectDir/$srcDir/$componentDir/$component.pro" ];then
+	qmake && gmake all || exit 1
+	gmake all install
+else
+	gmake lib && gmake all || exit 1
+	gmake all install
+fi
+
+LANG=zh_CN.GB18030
+export LANG
+
+$stCmd ci  -p "$stName:@$stHomePath/$binDirSun" -fp $projectDir/$binDirSun -pwdfile $stPasswordFile -is -vl "$label" -r "$label" -filter "M" -nologo
+$stCmd ci  -p "$stName:@$stHomePath/$libDirSun" -fp $projectDir/$libDirSun -pwdfile $stPasswordFile -is -vl "$label" -r "$label" -filter "M" -nologo
+$stCmd add -p "$stName:@$stHomePath/$binDirSun" -fp $projectDir/$binDirSun -pwdfile $stPasswordFile -d "$label" -vl "$label" -nologo
+$stCmd add -p "$stName:@$stHomePath/$libDirSun" -fp $projectDir/$libDirSun -pwdfile $stPasswordFile -d "$label" -vl "$label" -nologo
+
+LANG=C
+export LANG
+
+exit 0

@@ -1,0 +1,8 @@
+=====pstack 14917-----JCMADM
+#0  0x0094a424 in __kernel_vsyscall ()
+#1  0x0038007d in ___newselect_nocancel () from /lib/libc.so.6
+#2  0x0047f293 in CNFD::CNFD_Select(fd_set*, fd_set*, int*, int) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#3  0x0048efde in CNEH::CNEH_MainLoop() () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#4  0x004876c8 in CNMAHandler::CNMA_mainloop() () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#5  0x00485284 in CN4A_main_loop () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#6  0x0804bd72 in main ()

@@ -1,0 +1,599 @@
+09/20/2018 18:19:42+815948us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff03)
+09/20/2018 18:19:42+816031us LOSM <LO> LOSMAP_get_Q_state > ( )
+09/20/2018 18:19:42+816081us LOSM <LO> LOSMAP_get_Q_state < (q_state=LO4A_Q_DISABLED) = OK
+09/20/2018 18:19:42+816130us LOSM <LO> LOSMGN_raise_get_Q_state > 
+09/20/2018 18:19:42+816191us LOSM <LO> LOSMGN_raise_get_Q_state < () = OK
+09/20/2018 18:19:42+816239us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:19:42+816568us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff01)
+09/20/2018 18:19:42+816642us LOSM <LO> LOSMAP_report_event > (lot_id=0, event_id=LOSM_E_SYSTEM_START_CHECK)
+09/20/2018 18:19:42+816695us LOSM <LO> LOSMAP_report_event > (current_state(Q:LO4A_Q_DISABLED,P:LO4A_P_INIT)
+09/20/2018 18:19:42+816741us LOSM <LO> LOSMAP_report_event (result1=0)
+09/20/2018 18:19:42+816790us LOSM <LO> besm_send_queue_event_item event_id:LOSM_E_SYSTEM_START_CHECK
+09/20/2018 18:19:42+816834us LOSM <LO> LOIT_queue_event_item_set_attribute > ( tag=0x4c4fff08, dvalue=2)
+09/20/2018 18:19:42+816878us LOSM <LO> LOIT_queue_event_item_set_attribute < () = OK
+09/20/2018 18:19:42+816920us LOSM <LO> besm_send_queue_event_item < ( )
+09/20/2018 18:19:42+816961us LOSM <LO> besm_send_queue_state_item queue_state:2
+09/20/2018 18:19:42+817005us LOSM <LO> LOIT_queue_state_item_set_attribute > ( tag=0x4c4fff07, dvalue=1)
+09/20/2018 18:19:42+817049us LOSM <LO> LOIT_queue_state_item_set_attribute < () = OK
+09/20/2018 18:19:42+817092us LOSM <LO> besm_send_queue_state_item < ( )
+09/20/2018 18:19:42+817132us LOSM <LO> besm_Q_event_handler valid event:LOSM_E_SYSTEM_START_CHECK,queue state:LO4A_Q_ENABLED
+09/20/2018 18:19:42+817175us LOSM <LO> besm_update_queue_info > ()
+09/20/2018 18:19:42+817215us LOSM <LO> LOSMAP_get_queue_info > ()
+09/20/2018 18:19:42+817253us LOSM <LO> LOSMAP_get_queue_info < ( queue_enable=TRUE,process_state=0)
+09/20/2018 18:19:42+817294us LOSM <LO> LOSMGN_raise_queue_info_event_subscribe > 
+09/20/2018 18:19:42+817389us LOSM <LO> LOSMGN_raise_queue_info_event_subscribe < () = OK
+09/20/2018 18:19:42+817432us LOSM <LO> besm_update_queue_info < ( queue_enable=TRUE)
+09/20/2018 18:19:42+817474us LOSM <LO> besm_QC_invalid_handler invalid event:LOSM_E_SYSTEM_START_CHECK,qc_state:LO4A_QC_EMPTY
+09/20/2018 18:19:42+817516us LOSM <LO> besm_send_process_event_item event_id:LOSM_E_SYSTEM_START_CHECK,p_state:LO4A_P_INIT
+09/20/2018 18:19:42+817557us LOSM <LO> LOIT_process_event_item_set_attribute > ( tag=0x4c4fff02, dvalue=2)
+09/20/2018 18:19:42+817598us LOSM <LO> LOIT_process_event_item_set_attribute < () = OK
+09/20/2018 18:19:42+817643us LOSM <LO> besm_send_process_event_item < ( )
+09/20/2018 18:19:42+817684us LOSM <LO> besm_send_process_state_item process_state:LO4A_P_INIT
+09/20/2018 18:19:42+817722us LOSM <LO> besm_send_process_state_item < ( )
+09/20/2018 18:19:42+817760us LOSM <LO> besm_update_queue_info > ()
+09/20/2018 18:19:42+817796us LOSM <LO> LOSMAP_get_queue_info > ()
+09/20/2018 18:19:42+817836us LOSM <LO> LOSMAP_get_queue_info < ( queue_enable=TRUE,process_state=1)
+09/20/2018 18:19:42+817876us LOSM <LO> LOSMGN_raise_queue_info_event_subscribe > 
+09/20/2018 18:19:42+817964us LOSM <LO> LOSMGN_raise_queue_info_event_subscribe < () = OK
+09/20/2018 18:19:42+818007us LOSM <LO> besm_update_queue_info < ( queue_enable=TRUE)
+09/20/2018 18:19:42+818046us LOSM <LO> besm_P_event_handler valid event:LOSM_E_SYSTEM_START_CHECK,process state:LO4A_P_IDLE
+09/20/2018 18:19:42+818086us LOSM <LO> LOSMAP_report_event > (current_state(Q:LO4A_Q_ENABLED,P:LO4A_P_IDLE)
+09/20/2018 18:19:42+818125us LOSM <LO> LOSMAP_report_event < () = OK
+09/20/2018 18:19:42+818167us LOSM <LO> LOSMGN_raise_report_event > 
+09/20/2018 18:19:42+818222us LOSM <LO> LOSMGN_raise_report_event < () = OK
+09/20/2018 18:19:42+818263us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:19:42+818513us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff07)
+09/20/2018 18:19:42+818568us LOSM <LO> LOSMAP_get_queue_info > ()
+09/20/2018 18:19:42+818610us LOSM <LO> LOSMAP_get_queue_info < ( queue_enable=TRUE,process_state=1)
+09/20/2018 18:19:42+818659us LOSM <LO> LOSMGN_raise_get_queue_info > 
+09/20/2018 18:19:42+818748us LOSM <LO> LOSMGN_raise_get_queue_info < () = OK
+09/20/2018 18:19:42+818793us LOSM <LO> LOSM_bind_handler < () = OK
+------------------------------merge1 end------------------------------
+
+09/20/2018 18:19:50+423764us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff05)
+09/20/2018 18:19:50+423833us LOSM <LO> LOSMAP_add_L_state_model > ( lot_id=1093 )
+09/20/2018 18:19:50+423883us LOSM <LO> LOSMAP_add_L_state_model > ( lot_id=1093 )
+09/20/2018 18:19:50+423928us LOSM <LO> besm_update_queue_info > ()
+09/20/2018 18:19:50+423971us LOSM <LO> LOSMAP_get_queue_info > ()
+09/20/2018 18:19:50+424013us LOSM <LO> LOSMAP_get_queue_info > ([1]:lot_id:1093,lot_state=0,start_time=0-0,stop_time=0-0)
+09/20/2018 18:19:50+424058us LOSM <LO> LOSMAP_get_queue_info < ( queue_enable=TRUE,process_state=1)
+09/20/2018 18:19:50+424102us LOSM <LO> LOSMGN_raise_queue_info_event_subscribe > 
+09/20/2018 18:19:50+424197us LOSM <LO> LOSMGN_raise_queue_info_event_subscribe < () = OK
+09/20/2018 18:19:50+424242us LOSM <LO> besm_update_queue_info < ( queue_enable=TRUE)
+09/20/2018 18:19:50+424282us LOSM <LO> LOSMAP_add_L_state_model < (g_last_lot_node = 0xb73bd290) = OK
+09/20/2018 18:19:50+424325us LOSM <LO> LOSMAP_L_init > ( )
+09/20/2018 18:19:50+424368us LOSM <LO> besm_L_add_transition current_state:LO4A_L_QUEUED,event_id:LOSM_E_RETICLE_RESOLVED,new_state:LO4A_L_SETTINGUP
+09/20/2018 18:19:50+424411us LOSM <LO> besm_L_add_transition current_state:LO4A_L_QUEUED,event_id:LOSM_E_ABORT_LOT,new_state:LO4A_L_ABORTING
+09/20/2018 18:19:50+424455us LOSM <LO> besm_L_add_transition current_state:LO4A_L_SETTINGUP,event_id:LOSM_E_STOP_LOT,new_state:LO4A_L_STOPPING
+09/20/2018 18:19:50+424496us LOSM <LO> besm_L_add_transition current_state:LO4A_L_SETTINGUP,event_id:LOSM_E_ABORT_LOT,new_state:LO4A_L_ABORTING
+09/20/2018 18:19:50+424536us LOSM <LO> besm_L_add_transition current_state:LO4A_L_SETTINGUP,event_id:LOSM_E_MODIFY_LOT,new_state:LO4A_L_QUEUED
+09/20/2018 18:19:50+424577us LOSM <LO> besm_L_add_transition current_state:LO4A_L_SETTINGUP,event_id:LOSM_E_READY_TO_RUN,new_state:LO4A_L_READY_TO_RUN
+09/20/2018 18:19:50+424619us LOSM <LO> besm_L_add_transition current_state:LO4A_L_SETTINGUP,event_id:LOSM_E_ACTIVE_LOT,new_state:LO4A_L_LOADING
+09/20/2018 18:19:50+424674us LOSM <LO> besm_L_add_transition current_state:LO4A_L_READY_TO_RUN,event_id:LOSM_E_ACTIVE_LOT,new_state:LO4A_L_LOADING
+09/20/2018 18:19:50+424717us LOSM <LO> besm_L_add_transition current_state:LO4A_L_READY_TO_RUN,event_id:LOSM_E_ABORT_LOT,new_state:LO4A_L_ABORTING
+09/20/2018 18:19:50+424758us LOSM <LO> besm_L_add_transition current_state:LO4A_L_READY_TO_RUN,event_id:LOSM_E_MODIFY_LOT,new_state:LO4A_L_QUEUED
+09/20/2018 18:19:50+424800us LOSM <LO> besm_L_add_transition current_state:LO4A_L_LOADING,event_id:LOSM_E_SUBSTRATE_LOADED,new_state:LO4A_L_WORKING
+09/20/2018 18:19:50+424843us LOSM <LO> besm_L_add_transition current_state:LO4A_L_WORKING,event_id:LOSM_E_LAST_SUBSTRATE_EXPOSURE_DONE,new_state:LO4A_L_POST_PROCESSING
+09/20/2018 18:19:50+424887us LOSM <LO> besm_L_add_transition current_state:LO4A_L_POST_PROCESSING,event_id:LOSM_E_PROCESSED_SUBSTRATE_OUT,new_state:LO4A_L_FULLY_PROCESSED
+09/20/2018 18:19:50+424928us LOSM <LO> besm_L_add_transition current_state:LO4A_L_LOADING,event_id:LOSM_E_PAUSE_LOT,new_state:LO4A_L_PAUSING
+09/20/2018 18:19:50+424972us LOSM <LO> besm_L_add_transition current_state:LO4A_L_WORKING,event_id:LOSM_E_PAUSE_LOT,new_state:LO4A_L_PAUSING
+09/20/2018 18:19:50+425012us LOSM <LO> besm_L_add_transition current_state:LO4A_L_POST_PROCESSING,event_id:LOSM_E_PAUSE_LOT,new_state:LO4A_L_PAUSING
+09/20/2018 18:19:50+425052us LOSM <LO> besm_L_add_transition current_state:LO4A_L_PAUSING,event_id:LOSM_E_SUBSTRATE_UNLOAD,new_state:LO4A_L_PAUSED
+09/20/2018 18:19:50+425093us LOSM <LO> besm_L_add_transition current_state:LO4A_L_PAUSED,event_id:LOSM_E_ACTIVE_LOT,new_state:LO4A_L_LOADING
+09/20/2018 18:19:50+425135us LOSM <LO> besm_L_add_transition current_state:LO4A_L_LOADING,event_id:LOSM_E_STOP_LOT,new_state:LO4A_L_STOPPING
+09/20/2018 18:19:50+425178us LOSM <LO> besm_L_add_transition current_state:LO4A_L_WORKING,event_id:LOSM_E_STOP_LOT,new_state:LO4A_L_STOPPING
+09/20/2018 18:19:50+425222us LOSM <LO> besm_L_add_transition current_state:LO4A_L_POST_PROCESSING,event_id:LOSM_E_STOP_LOT,new_state:LO4A_L_STOPPING
+09/20/2018 18:19:50+425262us LOSM <LO> besm_L_add_transition current_state:LO4A_L_PAUSING,event_id:LOSM_E_STOP_LOT,new_state:LO4A_L_STOPPING
+09/20/2018 18:19:50+425302us LOSM <LO> besm_L_add_transition current_state:LO4A_L_PAUSED,event_id:LOSM_E_STOP_LOT,new_state:LO4A_L_STOPPING
+09/20/2018 18:19:50+425342us LOSM <LO> besm_L_add_transition current_state:LO4A_L_STOPPING,event_id:LOSM_E_LOT_CLEARED,new_state:LO4A_L_STOPPED
+09/20/2018 18:19:50+425383us LOSM <LO> besm_L_add_transition current_state:LO4A_L_LOADING,event_id:LOSM_E_ABORT_LOT,new_state:LO4A_L_ABORTING
+09/20/2018 18:19:50+425423us LOSM <LO> besm_L_add_transition current_state:LO4A_L_WORKING,event_id:LOSM_E_ABORT_LOT,new_state:LO4A_L_ABORTING
+09/20/2018 18:19:50+425466us LOSM <LO> besm_L_add_transition current_state:LO4A_L_POST_PROCESSING,event_id:LOSM_E_ABORT_LOT,new_state:LO4A_L_ABORTING
+09/20/2018 18:19:50+425506us LOSM <LO> besm_L_add_transition current_state:LO4A_L_PAUSING,event_id:LOSM_E_ABORT_LOT,new_state:LO4A_L_ABORTING
+09/20/2018 18:19:50+425547us LOSM <LO> besm_L_add_transition current_state:LO4A_L_PAUSED,event_id:LOSM_E_ABORT_LOT,new_state:LO4A_L_ABORTING
+09/20/2018 18:19:50+425586us LOSM <LO> besm_L_add_transition current_state:LO4A_L_STOPPING,event_id:LOSM_E_ABORT_LOT,new_state:LO4A_L_ABORTING
+09/20/2018 18:19:50+425631us LOSM <LO> besm_L_add_transition current_state:LO4A_L_ABORTING,event_id:LOSM_E_SYSTEM_MATERIAL_CLEARED,new_state:LO4A_L_ABORTED
+09/20/2018 18:19:50+425676us LOSM <LO> besm_L_add_transition current_state:LO4A_L_SETTINGUP,event_id:LOSM_E_STOP_QUEUE,new_state:LO4A_L_QUEUED
+09/20/2018 18:19:50+425719us LOSM <LO> besm_L_add_transition current_state:LO4A_L_READY_TO_RUN,event_id:LOSM_E_STOP_QUEUE,new_state:LO4A_L_QUEUED
+09/20/2018 18:19:50+425760us LOSM <LO> besm_L_add_transition current_state:LO4A_L_SETTINGUP,event_id:LOSM_E_STOPPING_QUEUE,new_state:LO4A_L_QUEUED
+09/20/2018 18:19:50+425800us LOSM <LO> besm_L_add_transition current_state:LO4A_L_READY_TO_RUN,event_id:LOSM_E_STOPPING_QUEUE,new_state:LO4A_L_QUEUED
+09/20/2018 18:19:50+425840us LOSM <LO> LOSMAP_L_init < () = OK
+09/20/2018 18:19:50+425879us LOSM <LO> LOSMGN_raise_add_L_state_model > 
+09/20/2018 18:19:50+425935us LOSM <LO> LOSMGN_raise_add_L_state_model < () = OK
+09/20/2018 18:19:50+425979us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:19:50+426173us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff01)
+09/20/2018 18:19:50+426224us LOSM <LO> LOSMAP_report_event > (lot_id=1093, event_id=LOSM_E_ADD_LOT)
+09/20/2018 18:19:50+426266us LOSM <LO> LOSMAP_report_event > (current_state(Q:LO4A_Q_ENABLED,P:LO4A_P_IDLE)
+09/20/2018 18:19:50+426308us LOSM <LO> LOSMAP_report_event (result1=0)
+09/20/2018 18:19:50+426348us LOSM <LO> besm_Q_invalid_handler invalid event:LOSM_E_ADD_LOT,queue state:LO4A_Q_ENABLED
+09/20/2018 18:19:50+426391us LOSM <LO> besm_send_qc_event_item event_id:LOSM_E_ADD_LOT
+09/20/2018 18:19:50+426434us LOSM <LO> LOIT_qc_event_item_set_attribute > ( tag=0x4c4fff0a, dvalue=1)
+09/20/2018 18:19:50+426477us LOSM <LO> LOIT_qc_event_item_set_attribute < () = OK
+09/20/2018 18:19:50+426517us LOSM <LO> besm_send_qc_event_item < ( )
+09/20/2018 18:19:50+426554us LOSM <LO> besm_send_qc_state_item event_id:LOSM_E_ADD_LOT
+09/20/2018 18:19:50+426597us LOSM <LO> LOIT_qc_state_item_set_attribute > ( tag=0x4c4fff09, dvalue=2)
+09/20/2018 18:19:50+426647us LOSM <LO> LOIT_qc_state_item_set_attribute < () = OK
+09/20/2018 18:19:50+426691us LOSM <LO> besm_send_qc_state_item < ( )
+09/20/2018 18:19:50+426731us LOSM <LO> besm_QC_event_handler valid event:LOSM_E_ADD_LOT,queue_content_state:LO4A_QC_QUEUED
+09/20/2018 18:19:50+426773us LOSM <LO> LOSMAP_report_event > (current_state(L:LO4A_L_QUEUED)
+09/20/2018 18:19:50+426812us LOSM <LO> besm_send_lot_event_item event_id:LOSM_E_ADD_LOT,lot_state=LO4A_L_QUEUED,lot_id=1093
+09/20/2018 18:19:50+426854us LOSM <LO> LOIT_lot_event_item_set_attribute > ( tag=0x4c4fff04, dvalue=1, lot_id=1093)
+09/20/2018 18:19:50+426895us LOSM <LO> LOIT_lot_event_item_set_attribute < () = OK
+09/20/2018 18:19:50+426934us LOSM <LO> besm_send_lot_event_item < ( )
+09/20/2018 18:19:50+426988us LOSM <LO> besm_L_invalid_handler invalid event:LOSM_E_ADD_LOT,lot state:LO4A_L_QUEUED
+09/20/2018 18:19:50+427034us LOSM <LO> besm_send_process_event_item event_id:LOSM_E_ADD_LOT,p_state:LO4A_P_IDLE
+09/20/2018 18:19:50+427078us LOSM <LO> LOIT_process_event_item_set_attribute > ( tag=0x4c4fff02, dvalue=3)
+09/20/2018 18:19:50+427121us LOSM <LO> LOIT_process_event_item_set_attribute < () = OK
+09/20/2018 18:19:50+427160us LOSM <LO> besm_send_process_event_item < ( )
+09/20/2018 18:19:50+427200us LOSM <LO> besm_send_process_state_item process_state:LO4A_P_IDLE
+09/20/2018 18:19:50+427242us LOSM <LO> LOIT_process_state_item_set_attribute > ( tag=0x4c4fff01, dvalue=1)
+09/20/2018 18:19:50+427284us LOSM <LO> LOIT_process_state_item_set_attribute < () = OK
+09/20/2018 18:19:50+427324us LOSM <LO> besm_send_process_state_item < ( )
+09/20/2018 18:19:50+427362us LOSM <LO> besm_update_queue_info > ()
+09/20/2018 18:19:50+427400us LOSM <LO> LOSMAP_get_queue_info > ()
+09/20/2018 18:19:50+427437us LOSM <LO> LOSMAP_get_queue_info > ([1]:lot_id:1093,lot_state=0,start_time=0-0,stop_time=0-0)
+09/20/2018 18:19:50+427482us LOSM <LO> LOSMAP_get_queue_info < ( queue_enable=TRUE,process_state=2)
+09/20/2018 18:19:50+427522us LOSM <LO> LOSMGN_raise_queue_info_event_subscribe > 
+09/20/2018 18:19:50+427610us LOSM <LO> LOSMGN_raise_queue_info_event_subscribe < () = OK
+09/20/2018 18:19:50+427661us LOSM <LO> besm_update_queue_info < ( queue_enable=TRUE)
+09/20/2018 18:19:50+427702us LOSM <LO> besm_P_event_handler valid event:LOSM_E_ADD_LOT,process state:LO4A_P_SETUP
+09/20/2018 18:19:50+427745us LOSM <LO> LOSMAP_report_event > (current_state(Q:LO4A_Q_ENABLED,P:LO4A_P_SETUP)
+09/20/2018 18:19:50+427788us LOSM <LO> LOSMAP_report_event < () = OK
+09/20/2018 18:19:50+427827us LOSM <LO> LOSMGN_raise_report_event > 
+09/20/2018 18:19:50+428063us LOSM <LO> LOSMGN_raise_report_event < () = OK
+09/20/2018 18:19:50+428114us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:19:50+429722us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff02)
+09/20/2018 18:19:50+429774us LOSM <LO> LOSMAP_get_P_state > ( )
+09/20/2018 18:19:50+429815us LOSM <LO> LOSMAP_get_P_state < (p_state=LO4A_P_SETUP) = OK
+09/20/2018 18:19:50+429856us LOSM <LO> LOSMGN_raise_get_P_state > 
+09/20/2018 18:19:50+429910us LOSM <LO> LOSMGN_raise_get_P_state < () = OK
+09/20/2018 18:19:50+429950us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:19:50+430005us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff03)
+09/20/2018 18:19:50+430048us LOSM <LO> LOSMAP_get_Q_state > ( )
+09/20/2018 18:19:50+430086us LOSM <LO> LOSMAP_get_Q_state < (q_state=LO4A_Q_ENABLED) = OK
+09/20/2018 18:19:50+430126us LOSM <LO> LOSMGN_raise_get_Q_state > 
+09/20/2018 18:19:50+430179us LOSM <LO> LOSMGN_raise_get_Q_state < () = OK
+09/20/2018 18:19:50+430220us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:19:50+430272us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff07)
+09/20/2018 18:19:50+430315us LOSM <LO> LOSMAP_get_queue_info > ()
+09/20/2018 18:19:50+430355us LOSM <LO> LOSMAP_get_queue_info > ([1]:lot_id:1093,lot_state=0,start_time=0-0,stop_time=16344512-16344512)
+09/20/2018 18:19:50+430394us LOSM <LO> LOSMAP_get_queue_info < ( queue_enable=TRUE,process_state=2)
+09/20/2018 18:19:50+430430us LOSM <LO> LOSMGN_raise_get_queue_info > 
+09/20/2018 18:19:50+430514us LOSM <LO> LOSMGN_raise_get_queue_info < () = OK
+09/20/2018 18:19:50+430543us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:19:50+430714us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff03)
+09/20/2018 18:19:50+430748us LOSM <LO> LOSMAP_get_Q_state > ( )
+09/20/2018 18:19:50+430771us LOSM <LO> LOSMAP_get_Q_state < (q_state=LO4A_Q_ENABLED) = OK
+09/20/2018 18:19:50+430795us LOSM <LO> LOSMGN_raise_get_Q_state > 
+09/20/2018 18:19:50+430839us LOSM <LO> LOSMGN_raise_get_Q_state < () = OK
+09/20/2018 18:19:50+430865us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:19:50+430936us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff02)
+09/20/2018 18:19:50+430966us LOSM <LO> LOSMAP_get_P_state > ( )
+09/20/2018 18:19:50+430990us LOSM <LO> LOSMAP_get_P_state < (p_state=LO4A_P_SETUP) = OK
+09/20/2018 18:19:50+431014us LOSM <LO> LOSMGN_raise_get_P_state > 
+09/20/2018 18:19:50+431054us LOSM <LO> LOSMGN_raise_get_P_state < () = OK
+09/20/2018 18:19:50+431080us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:19:50+431149us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff04)
+09/20/2018 18:19:50+431180us LOSM <LO> LOSMAP_get_L_state > ( lot_id=1093 )
+09/20/2018 18:19:50+431204us LOSM <LO> LOSMAP_get_L_state < (lot_state=LO4A_L_QUEUED,history_state=LO4A_L_QUEUED) = OK
+09/20/2018 18:19:50+431228us LOSM <LO> LOSMAP_get_L_state < () = OK
+09/20/2018 18:19:50+431250us LOSM <LO> LOSMGN_raise_get_L_state > 
+09/20/2018 18:19:50+431293us LOSM <LO> LOSMGN_raise_get_L_state < () = OK
+09/20/2018 18:19:50+431320us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:19:50+433680us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff09)
+09/20/2018 18:19:50+433749us LOSM <LO> LOSMAP_report_lot_time > (lot_id=1093)
+09/20/2018 18:19:50+433805us LOSM <LO> LOSMAP_report_lot_time < ( )
+09/20/2018 18:19:50+433857us LOSM <LO> LOSMGN_raise_report_lot_time > 
+09/20/2018 18:19:50+434157us LOSM <LO> LOSMGN_raise_report_lot_time < () = OK
+09/20/2018 18:19:50+434192us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:19:50+435597us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff01)
+09/20/2018 18:19:50+435635us LOSM <LO> LOSMAP_report_event > (lot_id=1093, event_id=LOSM_E_RETICLE_RESOLVED)
+09/20/2018 18:19:50+435663us LOSM <LO> LOSMAP_report_event > (current_state(Q:LO4A_Q_ENABLED,P:LO4A_P_SETUP)
+09/20/2018 18:19:50+435688us LOSM <LO> LOSMAP_report_event (result1=0)
+09/20/2018 18:19:50+435712us LOSM <LO> besm_Q_invalid_handler invalid event:LOSM_E_RETICLE_RESOLVED,queue state:LO4A_Q_ENABLED
+09/20/2018 18:19:50+435738us LOSM <LO> besm_QC_invalid_handler invalid event:LOSM_E_RETICLE_RESOLVED,qc_state:LO4A_QC_QUEUED
+09/20/2018 18:19:50+435762us LOSM <LO> LOSMAP_report_event > (current_state(L:LO4A_L_QUEUED)
+09/20/2018 18:19:50+435785us LOSM <LO> besm_send_lot_event_item event_id:LOSM_E_RETICLE_RESOLVED,lot_state=LO4A_L_QUEUED,lot_id=1093
+09/20/2018 18:19:50+435810us LOSM <LO> LOIT_lot_event_item_set_attribute > ( tag=0x4c4fff04, dvalue=2, lot_id=1093)
+09/20/2018 18:19:50+435834us LOSM <LO> LOIT_lot_event_item_set_attribute < () = OK
+09/20/2018 18:19:50+435858us LOSM <LO> besm_send_lot_event_item < ( )
+09/20/2018 18:19:50+435880us LOSM <LO> besm_send_lot_state_item lot_state:LO4A_L_QUEUED,lot_id=1093
+09/20/2018 18:19:50+435906us LOSM <LO> LOIT_lot_state_item_set_attribute > ( tag=0x4c4fff03, dvalue=0, lot_id=1093)
+09/20/2018 18:19:50+435931us LOSM <LO> LOIT_lot_state_item_set_attribute < () = OK
+09/20/2018 18:19:50+435954us LOSM <LO> besm_send_lot_state_item < ( )
+09/20/2018 18:19:50+435976us LOSM <LO> besm_L_event_handler valid event:LOSM_E_RETICLE_RESOLVED,lot state:LO4A_L_SETTINGUP history state:LO4A_L_QUEUED
+09/20/2018 18:19:50+436007us LOSM <LO> besm_update_queue_info > ()
+09/20/2018 18:19:50+436031us LOSM <LO> LOSMAP_get_queue_info > ()
+09/20/2018 18:19:50+436055us LOSM <LO> LOSMAP_get_queue_info > ([1]:lot_id:1093,lot_state=1,start_time=1537438790-0,stop_time=0-0)
+09/20/2018 18:19:50+436081us LOSM <LO> LOSMAP_get_queue_info < ( queue_enable=TRUE,process_state=2)
+09/20/2018 18:19:50+436105us LOSM <LO> LOSMGN_raise_queue_info_event_subscribe > 
+09/20/2018 18:19:50+436182us LOSM <LO> LOSMGN_raise_queue_info_event_subscribe < () = OK
+09/20/2018 18:19:50+436224us LOSM <LO> besm_update_queue_info < ( queue_enable=TRUE)
+09/20/2018 18:19:50+436260us LOSM <LO> besm_send_process_event_item event_id:LOSM_E_RETICLE_RESOLVED,p_state:LO4A_P_SETUP
+09/20/2018 18:19:50+436297us LOSM <LO> besm_send_process_event_item < ( )
+09/20/2018 18:19:50+436331us LOSM <LO> besm_P_invalid_handler invalid event:LOSM_E_RETICLE_RESOLVED,process state:LO4A_P_SETUP
+09/20/2018 18:19:50+436535us LOSM <LO> LOSMAP_report_event > (current_state(Q:LO4A_Q_ENABLED,P:LO4A_P_SETUP)
+09/20/2018 18:19:50+436568us LOSM <LO> LOSMAP_report_event < () = OK
+09/20/2018 18:19:50+436592us LOSM <LO> LOSMGN_raise_report_event > 
+09/20/2018 18:19:50+436635us LOSM <LO> LOSMGN_raise_report_event < () = OK
+09/20/2018 18:19:50+436662us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:19:50+438488us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff03)
+09/20/2018 18:19:50+438552us LOSM <LO> LOSMAP_get_Q_state > ( )
+09/20/2018 18:19:50+438606us LOSM <LO> LOSMAP_get_Q_state < (q_state=LO4A_Q_ENABLED) = OK
+09/20/2018 18:19:50+438667us LOSM <LO> LOSMGN_raise_get_Q_state > 
+09/20/2018 18:19:50+438741us LOSM <LO> LOSMGN_raise_get_Q_state < () = OK
+09/20/2018 18:19:50+438798us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:19:50+439231us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff04)
+09/20/2018 18:19:50+439283us LOSM <LO> LOSMAP_get_L_state > ( lot_id=1093 )
+09/20/2018 18:19:50+439322us LOSM <LO> LOSMAP_get_L_state < (lot_state=LO4A_L_SETTINGUP,history_state=LO4A_L_QUEUED) = OK
+09/20/2018 18:19:50+439360us LOSM <LO> LOSMAP_get_L_state < () = OK
+09/20/2018 18:19:50+439395us LOSM <LO> LOSMGN_raise_get_L_state > 
+09/20/2018 18:19:50+439446us LOSM <LO> LOSMGN_raise_get_L_state < () = OK
+09/20/2018 18:19:50+439482us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:19:50+439742us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff07)
+09/20/2018 18:19:50+439789us LOSM <LO> LOSMAP_get_queue_info > ()
+09/20/2018 18:19:50+439826us LOSM <LO> LOSMAP_get_queue_info > ([1]:lot_id:1093,lot_state=1,start_time=1537438790-0,stop_time=16344512-16344512)
+09/20/2018 18:19:50+439865us LOSM <LO> LOSMAP_get_queue_info < ( queue_enable=TRUE,process_state=2)
+09/20/2018 18:19:50+440090us LOSM <LO> LOSMGN_raise_get_queue_info > 
+09/20/2018 18:19:50+440446us LOSM <LO> LOSMGN_raise_get_queue_info < () = OK
+09/20/2018 18:19:50+440489us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:19:50+440538us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff03)
+09/20/2018 18:19:50+440577us LOSM <LO> LOSMAP_get_Q_state > ( )
+09/20/2018 18:19:50+440613us LOSM <LO> LOSMAP_get_Q_state < (q_state=LO4A_Q_ENABLED) = OK
+09/20/2018 18:19:50+440649us LOSM <LO> LOSMGN_raise_get_Q_state > 
+09/20/2018 18:19:50+440817us LOSM <LO> LOSMGN_raise_get_Q_state < () = OK
+09/20/2018 18:19:50+440849us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:19:50+440889us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff02)
+09/20/2018 18:19:50+440927us LOSM <LO> LOSMAP_get_P_state > ( )
+09/20/2018 18:19:50+440962us LOSM <LO> LOSMAP_get_P_state < (p_state=LO4A_P_SETUP) = OK
+09/20/2018 18:19:50+440999us LOSM <LO> LOSMGN_raise_get_P_state > 
+09/20/2018 18:19:50+441184us LOSM <LO> LOSMGN_raise_get_P_state < () = OK
+09/20/2018 18:19:50+441226us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:19:50+441267us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff04)
+09/20/2018 18:19:50+441297us LOSM <LO> LOSMAP_get_L_state > ( lot_id=1093 )
+09/20/2018 18:19:50+441321us LOSM <LO> LOSMAP_get_L_state < (lot_state=LO4A_L_SETTINGUP,history_state=LO4A_L_QUEUED) = OK
+09/20/2018 18:19:50+441346us LOSM <LO> LOSMAP_get_L_state < () = OK
+09/20/2018 18:19:50+441370us LOSM <LO> LOSMGN_raise_get_L_state > 
+09/20/2018 18:19:50+441559us LOSM <LO> LOSMGN_raise_get_L_state < () = OK
+09/20/2018 18:19:50+441591us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:19:50+441631us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff03)
+09/20/2018 18:19:50+441660us LOSM <LO> LOSMAP_get_Q_state > ( )
+09/20/2018 18:19:50+441693us LOSM <LO> LOSMAP_get_Q_state < (q_state=LO4A_Q_ENABLED) = OK
+09/20/2018 18:19:50+441728us LOSM <LO> LOSMGN_raise_get_Q_state > 
+09/20/2018 18:19:50+441778us LOSM <LO> LOSMGN_raise_get_Q_state < () = OK
+09/20/2018 18:19:50+441813us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:19:50+443604us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff04)
+09/20/2018 18:19:50+443668us LOSM <LO> LOSMAP_get_L_state > ( lot_id=1093 )
+09/20/2018 18:19:50+443710us LOSM <LO> LOSMAP_get_L_state < (lot_state=LO4A_L_SETTINGUP,history_state=LO4A_L_QUEUED) = OK
+09/20/2018 18:19:50+443748us LOSM <LO> LOSMAP_get_L_state < () = OK
+09/20/2018 18:19:50+443783us LOSM <LO> LOSMGN_raise_get_L_state > 
+09/20/2018 18:19:50+443834us LOSM <LO> LOSMGN_raise_get_L_state < () = OK
+09/20/2018 18:19:50+443871us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:19:50+447292us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff01)
+09/20/2018 18:19:50+447342us LOSM <LO> LOSMAP_report_event > (lot_id=1093, event_id=LOSM_E_ACTIVE_LOT)
+09/20/2018 18:19:50+447381us LOSM <LO> LOSMAP_report_event > (current_state(Q:LO4A_Q_ENABLED,P:LO4A_P_SETUP)
+09/20/2018 18:19:50+447417us LOSM <LO> LOSMAP_report_event (result1=0)
+09/20/2018 18:19:50+447453us LOSM <LO> besm_Q_invalid_handler invalid event:LOSM_E_ACTIVE_LOT,queue state:LO4A_Q_ENABLED
+09/20/2018 18:19:50+447490us LOSM <LO> besm_QC_invalid_handler invalid event:LOSM_E_ACTIVE_LOT,qc_state:LO4A_QC_QUEUED
+09/20/2018 18:19:50+447527us LOSM <LO> LOSMAP_report_event > (current_state(L:LO4A_L_SETTINGUP)
+09/20/2018 18:19:50+447562us LOSM <LO> besm_send_lot_event_item event_id:LOSM_E_ACTIVE_LOT,lot_state=LO4A_L_SETTINGUP,lot_id=1093
+09/20/2018 18:19:50+447590us LOSM <LO> besm_send_sh_event > ()
+09/20/2018 18:19:50+455440us LOSM <LO> besm_send_sh_event < ( lot_id=1093 ) = OK
+09/20/2018 18:19:50+455495us LOSM <LO> LOIT_lot_event_item_set_attribute > ( tag=0x4c4fff04, dvalue=4, lot_id=1093)
+09/20/2018 18:19:50+455539us LOSM <LO> LOIT_lot_event_item_set_attribute < () = OK
+09/20/2018 18:19:50+455576us LOSM <LO> besm_send_lot_event_item < ( )
+09/20/2018 18:19:50+455666us LOSM <LO> besm_send_lot_state_item lot_state:LO4A_L_SETTINGUP,lot_id=1093
+09/20/2018 18:19:50+455712us LOSM <LO> LOIT_lot_state_item_set_attribute > ( tag=0x4c4fff03, dvalue=1, lot_id=1093)
+09/20/2018 18:19:50+455752us LOSM <LO> LOIT_lot_state_item_set_attribute < () = OK
+09/20/2018 18:19:50+455790us LOSM <LO> besm_send_lot_state_item < ( )
+09/20/2018 18:19:50+455829us LOSM <LO> besm_L_event_handler valid event:LOSM_E_ACTIVE_LOT,lot state:LO4A_L_LOADING history state:LO4A_L_SETTINGUP
+09/20/2018 18:19:50+455869us LOSM <LO> besm_update_queue_info > ()
+09/20/2018 18:19:50+455906us LOSM <LO> LOSMAP_get_queue_info > ()
+09/20/2018 18:19:50+455944us LOSM <LO> LOSMAP_get_queue_info > ([1]:lot_id:1093,lot_state=14,start_time=1537438790-0,stop_time=0-0)
+09/20/2018 18:19:50+455985us LOSM <LO> LOSMAP_get_queue_info < ( queue_enable=TRUE,process_state=2)
+09/20/2018 18:19:50+456033us LOSM <LO> LOSMGN_raise_queue_info_event_subscribe > 
+09/20/2018 18:19:50+456122us LOSM <LO> LOSMGN_raise_queue_info_event_subscribe < () = OK
+09/20/2018 18:19:50+456162us LOSM <LO> besm_update_queue_info < ( queue_enable=TRUE)
+09/20/2018 18:19:50+456199us LOSM <LO> besm_send_process_event_item event_id:LOSM_E_ACTIVE_LOT,p_state:LO4A_P_SETUP
+09/20/2018 18:19:50+456237us LOSM <LO> LOIT_process_event_item_set_attribute > ( tag=0x4c4fff02, dvalue=35)
+09/20/2018 18:19:50+456273us LOSM <LO> LOIT_process_event_item_set_attribute < () = OK
+09/20/2018 18:19:50+456307us LOSM <LO> besm_send_process_event_item < ( )
+09/20/2018 18:19:50+456341us LOSM <LO> besm_send_process_state_item process_state:LO4A_P_SETUP
+09/20/2018 18:19:50+456378us LOSM <LO> LOIT_process_state_item_set_attribute > ( tag=0x4c4fff01, dvalue=2)
+09/20/2018 18:19:50+456414us LOSM <LO> LOIT_process_state_item_set_attribute < () = OK
+09/20/2018 18:19:50+456445us LOSM <LO> besm_send_process_state_item < ( )
+09/20/2018 18:19:50+456472us LOSM <LO> besm_update_queue_info > ()
+09/20/2018 18:19:50+456494us LOSM <LO> LOSMAP_get_queue_info > ()
+09/20/2018 18:19:50+456516us LOSM <LO> LOSMAP_get_queue_info > ([1]:lot_id:1093,lot_state=14,start_time=1537438790-0,stop_time=0-0)
+09/20/2018 18:19:50+456542us LOSM <LO> LOSMAP_get_queue_info < ( queue_enable=TRUE,process_state=4)
+09/20/2018 18:19:50+456566us LOSM <LO> LOSMGN_raise_queue_info_event_subscribe > 
+09/20/2018 18:19:50+456639us LOSM <LO> LOSMGN_raise_queue_info_event_subscribe < () = OK
+09/20/2018 18:19:50+456665us LOSM <LO> besm_update_queue_info < ( queue_enable=TRUE)
+09/20/2018 18:19:50+456689us LOSM <LO> besm_P_event_handler valid event:LOSM_E_ACTIVE_LOT,process state:LO4A_P_LOADING
+09/20/2018 18:19:50+456727us LOSM <LO> LOSMAP_report_event > (current_state(Q:LO4A_Q_ENABLED,P:LO4A_P_LOADING)
+09/20/2018 18:19:50+456762us LOSM <LO> LOSMAP_report_event < () = OK
+09/20/2018 18:19:50+456797us LOSM <LO> LOSMGN_raise_report_event > 
+09/20/2018 18:19:50+464530us LOSM <LO> LOSMGN_raise_report_event < () = OK
+09/20/2018 18:19:50+464630us LOSM <LO> LOSM_bind_handler < () = OK
+------------------------------merge2 end------------------------------
+
+09/20/2018 18:19:51+418858us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff04)
+09/20/2018 18:19:51+418916us LOSM <LO> LOSMAP_get_L_state > ( lot_id=1093 )
+09/20/2018 18:19:51+418954us LOSM <LO> LOSMAP_get_L_state < (lot_state=LO4A_L_LOADING,history_state=LO4A_L_SETTINGUP) = OK
+09/20/2018 18:19:51+418982us LOSM <LO> LOSMAP_get_L_state < () = OK
+09/20/2018 18:19:51+419006us LOSM <LO> LOSMGN_raise_get_L_state > 
+09/20/2018 18:19:51+419047us LOSM <LO> LOSMGN_raise_get_L_state < () = OK
+09/20/2018 18:19:51+419075us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:19:51+419344us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff01)
+09/20/2018 18:19:51+419378us LOSM <LO> LOSMAP_report_event > (lot_id=1093, event_id=LOSM_E_SUBSTRATE_LOADED)
+09/20/2018 18:19:51+419404us LOSM <LO> LOSMAP_report_event > (current_state(Q:LO4A_Q_ENABLED,P:LO4A_P_LOADING)
+09/20/2018 18:19:51+419429us LOSM <LO> LOSMAP_report_event (result1=0)
+09/20/2018 18:19:51+419453us LOSM <LO> besm_Q_invalid_handler invalid event:LOSM_E_SUBSTRATE_LOADED,queue state:LO4A_Q_ENABLED
+09/20/2018 18:19:51+419478us LOSM <LO> besm_QC_invalid_handler invalid event:LOSM_E_SUBSTRATE_LOADED,qc_state:LO4A_QC_QUEUED
+09/20/2018 18:19:51+419502us LOSM <LO> LOSMAP_report_event > (current_state(L:LO4A_L_LOADING)
+09/20/2018 18:19:51+419526us LOSM <LO> besm_send_lot_event_item event_id:LOSM_E_SUBSTRATE_LOADED,lot_state=LO4A_L_LOADING,lot_id=1093
+09/20/2018 18:19:51+419552us LOSM <LO> besm_send_sh_event > ()
+09/20/2018 18:19:51+420458us LOSM <LO> besm_send_sh_event < ( lot_id=1093 ) = OK
+09/20/2018 18:19:51+420495us LOSM <LO> LOIT_lot_event_item_set_attribute > ( tag=0x4c4fff04, dvalue=38, lot_id=1093)
+09/20/2018 18:19:51+420521us LOSM <LO> LOIT_lot_event_item_set_attribute < () = OK
+09/20/2018 18:19:51+420544us LOSM <LO> besm_send_lot_event_item < ( )
+09/20/2018 18:19:51+420568us LOSM <LO> besm_send_lot_state_item lot_state:LO4A_L_LOADING,lot_id=1093
+09/20/2018 18:19:51+420592us LOSM <LO> LOIT_lot_state_item_set_attribute > ( tag=0x4c4fff03, dvalue=3, lot_id=1093)
+09/20/2018 18:19:51+420618us LOSM <LO> LOIT_lot_state_item_set_attribute < () = OK
+09/20/2018 18:19:51+420647us LOSM <LO> besm_send_lot_state_item < ( )
+09/20/2018 18:19:51+420670us LOSM <LO> besm_L_event_handler valid event:LOSM_E_SUBSTRATE_LOADED,lot state:LO4A_L_WORKING history state:LO4A_L_LOADING
+09/20/2018 18:19:51+420695us LOSM <LO> besm_update_queue_info > ()
+09/20/2018 18:19:51+420718us LOSM <LO> LOSMAP_get_queue_info > ()
+09/20/2018 18:19:51+420740us LOSM <LO> LOSMAP_get_queue_info > ([1]:lot_id:1093,lot_state=15,start_time=1537438790-0,stop_time=0-0)
+09/20/2018 18:19:51+420766us LOSM <LO> LOSMAP_get_queue_info < ( queue_enable=TRUE,process_state=4)
+09/20/2018 18:19:51+420791us LOSM <LO> LOSMGN_raise_queue_info_event_subscribe > 
+09/20/2018 18:19:51+420870us LOSM <LO> LOSMGN_raise_queue_info_event_subscribe < () = OK
+09/20/2018 18:19:51+420899us LOSM <LO> besm_update_queue_info < ( queue_enable=TRUE)
+09/20/2018 18:19:51+420923us LOSM <LO> besm_send_process_event_item event_id:LOSM_E_SUBSTRATE_LOADED,p_state:LO4A_P_LOADING
+09/20/2018 18:19:51+420948us LOSM <LO> LOIT_process_event_item_set_attribute > ( tag=0x4c4fff02, dvalue=31)
+09/20/2018 18:19:51+420972us LOSM <LO> LOIT_process_event_item_set_attribute < () = OK
+09/20/2018 18:19:51+420995us LOSM <LO> besm_send_process_event_item < ( )
+09/20/2018 18:19:51+421018us LOSM <LO> besm_send_process_state_item process_state:LO4A_P_LOADING
+09/20/2018 18:19:51+421041us LOSM <LO> LOIT_process_state_item_set_attribute > ( tag=0x4c4fff01, dvalue=7)
+09/20/2018 18:19:51+421065us LOSM <LO> LOIT_process_state_item_set_attribute < () = OK
+09/20/2018 18:19:51+421087us LOSM <LO> besm_send_process_state_item < ( )
+09/20/2018 18:19:51+421110us LOSM <LO> besm_update_queue_info > ()
+09/20/2018 18:19:51+421132us LOSM <LO> LOSMAP_get_queue_info > ()
+09/20/2018 18:19:51+421155us LOSM <LO> LOSMAP_get_queue_info > ([1]:lot_id:1093,lot_state=15,start_time=1537438790-0,stop_time=0-0)
+09/20/2018 18:19:51+421181us LOSM <LO> LOSMAP_get_queue_info < ( queue_enable=TRUE,process_state=5)
+09/20/2018 18:19:51+421204us LOSM <LO> LOSMGN_raise_queue_info_event_subscribe > 
+09/20/2018 18:19:51+421264us LOSM <LO> LOSMGN_raise_queue_info_event_subscribe < () = OK
+09/20/2018 18:19:51+421288us LOSM <LO> besm_update_queue_info < ( queue_enable=TRUE)
+09/20/2018 18:19:51+421311us LOSM <LO> besm_P_event_handler valid event:LOSM_E_SUBSTRATE_LOADED,process state:LO4A_P_WORKING
+09/20/2018 18:19:51+421335us LOSM <LO> LOSMAP_report_event > (current_state(Q:LO4A_Q_ENABLED,P:LO4A_P_WORKING)
+09/20/2018 18:19:51+421359us LOSM <LO> LOSMAP_report_event < () = OK
+09/20/2018 18:19:51+421381us LOSM <LO> LOSMGN_raise_report_event > 
+09/20/2018 18:19:51+421426us LOSM <LO> LOSMGN_raise_report_event < () = OK
+09/20/2018 18:19:51+421454us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:19:51+421676us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff01)
+09/20/2018 18:19:51+421710us LOSM <LO> LOSMAP_report_event > (lot_id=1093, event_id=LOSM_E_LAST_SUBSTRATE_STAGE)
+09/20/2018 18:19:51+421737us LOSM <LO> LOSMAP_report_event > (current_state(Q:LO4A_Q_ENABLED,P:LO4A_P_WORKING)
+09/20/2018 18:19:51+421762us LOSM <LO> LOSMAP_report_event (result1=0)
+09/20/2018 18:19:51+421786us LOSM <LO> besm_Q_invalid_handler invalid event:LOSM_E_LAST_SUBSTRATE_STAGE,queue state:LO4A_Q_ENABLED
+09/20/2018 18:19:51+423485us LOSM <LO> besm_QC_invalid_handler invalid event:LOSM_E_LAST_SUBSTRATE_STAGE,qc_state:LO4A_QC_QUEUED
+09/20/2018 18:19:51+423542us LOSM <LO> LOSMAP_report_event > (current_state(L:LO4A_L_WORKING)
+09/20/2018 18:19:51+423580us LOSM <LO> besm_send_lot_event_item event_id:LOSM_E_LAST_SUBSTRATE_STAGE,lot_state=LO4A_L_WORKING,lot_id=1093
+09/20/2018 18:19:51+423608us LOSM <LO> besm_send_lot_event_item < ( )
+09/20/2018 18:19:51+423655us LOSM <LO> besm_L_invalid_handler invalid event:LOSM_E_LAST_SUBSTRATE_STAGE,lot state:LO4A_L_WORKING
+09/20/2018 18:19:51+423683us LOSM <LO> besm_send_process_event_item event_id:LOSM_E_LAST_SUBSTRATE_STAGE,p_state:LO4A_P_WORKING
+09/20/2018 18:19:51+423707us LOSM <LO> besm_send_process_event_item < ( )
+09/20/2018 18:19:51+423730us LOSM <LO> besm_P_invalid_handler invalid event:LOSM_E_LAST_SUBSTRATE_STAGE,process state:LO4A_P_WORKING
+09/20/2018 18:19:51+423755us LOSM <LO> LOSMAP_report_event > (current_state(Q:LO4A_Q_ENABLED,P:LO4A_P_WORKING)
+09/20/2018 18:19:51+423779us LOSM <LO> LOSMAP_report_event < () = OK
+09/20/2018 18:19:51+423803us LOSM <LO> LOSMGN_raise_report_event > 
+09/20/2018 18:19:51+423846us LOSM <LO> LOSMGN_raise_report_event < () = OK
+09/20/2018 18:19:51+423874us LOSM <LO> LOSM_bind_handler < () = OK
+------------------------------merge3 end------------------------------
+
+09/20/2018 18:19:52+566902us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff03)
+09/20/2018 18:19:52+566970us LOSM <LO> LOSMAP_get_Q_state > ( )
+09/20/2018 18:19:52+567016us LOSM <LO> LOSMAP_get_Q_state < (q_state=LO4A_Q_ENABLED) = OK
+09/20/2018 18:19:52+567046us LOSM <LO> LOSMGN_raise_get_Q_state > 
+09/20/2018 18:19:52+567097us LOSM <LO> LOSMGN_raise_get_Q_state < () = OK
+09/20/2018 18:19:52+567125us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:19:52+569407us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff04)
+09/20/2018 18:19:52+569461us LOSM <LO> LOSMAP_get_L_state > ( lot_id=1093 )
+09/20/2018 18:19:52+569504us LOSM <LO> LOSMAP_get_L_state < (lot_state=LO4A_L_WORKING,history_state=LO4A_L_LOADING) = OK
+09/20/2018 18:19:52+569544us LOSM <LO> LOSMAP_get_L_state < () = OK
+09/20/2018 18:19:52+569583us LOSM <LO> LOSMGN_raise_get_L_state > 
+09/20/2018 18:19:52+569650us LOSM <LO> LOSMGN_raise_get_L_state < () = OK
+09/20/2018 18:19:52+569692us LOSM <LO> LOSM_bind_handler < () = OK
+------------------------------merge4 end------------------------------
+
+09/20/2018 18:20:01+174660us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff03)
+09/20/2018 18:20:01+174721us LOSM <LO> LOSMAP_get_Q_state > ( )
+09/20/2018 18:20:01+174771us LOSM <LO> LOSMAP_get_Q_state < (q_state=LO4A_Q_ENABLED) = OK
+09/20/2018 18:20:01+174812us LOSM <LO> LOSMGN_raise_get_Q_state > 
+09/20/2018 18:20:01+174874us LOSM <LO> LOSMGN_raise_get_Q_state < () = OK
+09/20/2018 18:20:01+174913us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:20:01+398738us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff04)
+09/20/2018 18:20:01+398812us LOSM <LO> LOSMAP_get_L_state > ( lot_id=1093 )
+09/20/2018 18:20:01+398856us LOSM <LO> LOSMAP_get_L_state < (lot_state=LO4A_L_WORKING,history_state=LO4A_L_LOADING) = OK
+09/20/2018 18:20:01+398894us LOSM <LO> LOSMAP_get_L_state < () = OK
+09/20/2018 18:20:01+398929us LOSM <LO> LOSMGN_raise_get_L_state > 
+09/20/2018 18:20:01+398985us LOSM <LO> LOSMGN_raise_get_L_state < () = OK
+09/20/2018 18:20:01+399027us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:20:01+399269us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff01)
+09/20/2018 18:20:01+399321us LOSM <LO> LOSMAP_report_event > (lot_id=1093, event_id=LOSM_E_LAST_SUBSTRATE_EXPOSURE_DONE)
+09/20/2018 18:20:01+399352us LOSM <LO> LOSMAP_report_event > (current_state(Q:LO4A_Q_ENABLED,P:LO4A_P_WORKING)
+09/20/2018 18:20:01+399377us LOSM <LO> LOSMAP_report_event (result1=0)
+09/20/2018 18:20:01+399401us LOSM <LO> besm_Q_invalid_handler invalid event:LOSM_E_LAST_SUBSTRATE_EXPOSURE_DONE,queue state:LO4A_Q_ENABLED
+09/20/2018 18:20:01+399427us LOSM <LO> besm_QC_invalid_handler invalid event:LOSM_E_LAST_SUBSTRATE_EXPOSURE_DONE,qc_state:LO4A_QC_QUEUED
+09/20/2018 18:20:01+399452us LOSM <LO> LOSMAP_report_event > (current_state(L:LO4A_L_WORKING)
+09/20/2018 18:20:01+399477us LOSM <LO> besm_send_lot_event_item event_id:LOSM_E_LAST_SUBSTRATE_EXPOSURE_DONE,lot_state=LO4A_L_WORKING,lot_id=1093
+09/20/2018 18:20:01+399503us LOSM <LO> LOIT_lot_event_item_set_attribute > ( tag=0x4c4fff04, dvalue=39, lot_id=1093)
+09/20/2018 18:20:01+399528us LOSM <LO> LOIT_lot_event_item_set_attribute < () = OK
+09/20/2018 18:20:01+399551us LOSM <LO> besm_send_lot_event_item < ( )
+09/20/2018 18:20:01+399574us LOSM <LO> besm_send_lot_state_item lot_state:LO4A_L_WORKING,lot_id=1093
+09/20/2018 18:20:01+399598us LOSM <LO> LOIT_lot_state_item_set_attribute > ( tag=0x4c4fff03, dvalue=3, lot_id=1093)
+09/20/2018 18:20:01+399623us LOSM <LO> LOIT_lot_state_item_set_attribute < () = OK
+09/20/2018 18:20:01+399652us LOSM <LO> besm_send_lot_state_item < ( )
+09/20/2018 18:20:01+399675us LOSM <LO> besm_L_event_handler valid event:LOSM_E_LAST_SUBSTRATE_EXPOSURE_DONE,lot state:LO4A_L_POST_PROCESSING history state:LO4A_L_WORKING
+09/20/2018 18:20:01+399700us LOSM <LO> besm_update_queue_info > ()
+09/20/2018 18:20:01+399722us LOSM <LO> LOSMAP_get_queue_info > ()
+09/20/2018 18:20:01+399744us LOSM <LO> LOSMAP_get_queue_info > ([1]:lot_id:1093,lot_state=5,start_time=1537438790-0,stop_time=0-0)
+09/20/2018 18:20:01+399781us LOSM <LO> LOSMAP_get_queue_info < ( queue_enable=TRUE,process_state=5)
+09/20/2018 18:20:01+399817us LOSM <LO> LOSMGN_raise_queue_info_event_subscribe > 
+09/20/2018 18:20:01+399913us LOSM <LO> LOSMGN_raise_queue_info_event_subscribe < () = OK
+09/20/2018 18:20:01+399944us LOSM <LO> besm_update_queue_info < ( queue_enable=TRUE)
+09/20/2018 18:20:01+399969us LOSM <LO> besm_send_process_event_item event_id:LOSM_E_LAST_SUBSTRATE_EXPOSURE_DONE,p_state:LO4A_P_WORKING
+09/20/2018 18:20:01+399994us LOSM <LO> besm_send_process_event_item < ( )
+09/20/2018 18:20:01+400017us LOSM <LO> besm_send_process_state_item process_state:LO4A_P_WORKING
+09/20/2018 18:20:01+400041us LOSM <LO> LOIT_process_state_item_set_attribute > ( tag=0x4c4fff01, dvalue=9)
+09/20/2018 18:20:01+400065us LOSM <LO> LOIT_process_state_item_set_attribute < () = OK
+09/20/2018 18:20:01+400087us LOSM <LO> besm_send_process_state_item < ( )
+09/20/2018 18:20:01+400110us LOSM <LO> besm_update_queue_info > ()
+09/20/2018 18:20:01+400132us LOSM <LO> LOSMAP_get_queue_info > ()
+09/20/2018 18:20:01+400154us LOSM <LO> LOSMAP_get_queue_info > ([1]:lot_id:1093,lot_state=5,start_time=1537438790-0,stop_time=0-0)
+09/20/2018 18:20:01+400179us LOSM <LO> LOSMAP_get_queue_info < ( queue_enable=TRUE,process_state=6)
+09/20/2018 18:20:01+400202us LOSM <LO> LOSMGN_raise_queue_info_event_subscribe > 
+09/20/2018 18:20:01+400283us LOSM <LO> LOSMGN_raise_queue_info_event_subscribe < () = OK
+09/20/2018 18:20:01+400311us LOSM <LO> besm_update_queue_info < ( queue_enable=TRUE)
+09/20/2018 18:20:01+400335us LOSM <LO> besm_P_event_handler valid event:LOSM_E_LAST_SUBSTRATE_EXPOSURE_DONE,process state:LO4A_P_UNLOADING
+09/20/2018 18:20:01+400369us LOSM <LO> LOSMAP_report_event > (current_state(Q:LO4A_Q_ENABLED,P:LO4A_P_UNLOADING)
+09/20/2018 18:20:01+400405us LOSM <LO> LOSMAP_report_event < () = OK
+09/20/2018 18:20:01+400439us LOSM <LO> LOSMGN_raise_report_event > 
+09/20/2018 18:20:01+400485us LOSM <LO> LOSMGN_raise_report_event < () = OK
+09/20/2018 18:20:01+400512us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:20:01+469717us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff04)
+09/20/2018 18:20:01+469772us LOSM <LO> LOSMAP_get_L_state > ( lot_id=1093 )
+09/20/2018 18:20:01+469812us LOSM <LO> LOSMAP_get_L_state < (lot_state=LO4A_L_POST_PROCESSING,history_state=LO4A_L_WORKING) = OK
+09/20/2018 18:20:01+469851us LOSM <LO> LOSMAP_get_L_state < () = OK
+09/20/2018 18:20:01+469886us LOSM <LO> LOSMGN_raise_get_L_state > 
+09/20/2018 18:20:01+469935us LOSM <LO> LOSMGN_raise_get_L_state < () = OK
+09/20/2018 18:20:01+469963us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:20:01+470140us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff02)
+09/20/2018 18:20:01+470179us LOSM <LO> LOSMAP_get_P_state > ( )
+09/20/2018 18:20:01+470203us LOSM <LO> LOSMAP_get_P_state < (p_state=LO4A_P_UNLOADING) = OK
+09/20/2018 18:20:01+470228us LOSM <LO> LOSMGN_raise_get_P_state > 
+09/20/2018 18:20:01+470271us LOSM <LO> LOSMGN_raise_get_P_state < () = OK
+09/20/2018 18:20:01+470298us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:20:01+524195us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff09)
+09/20/2018 18:20:01+524255us LOSM <LO> LOSMAP_report_lot_time > (lot_id=1093)
+09/20/2018 18:20:01+524295us LOSM <LO> LOSMAP_report_lot_time < ( )
+09/20/2018 18:20:01+524330us LOSM <LO> LOSMGN_raise_report_lot_time > 
+09/20/2018 18:20:01+524383us LOSM <LO> LOSMGN_raise_report_lot_time < () = OK
+09/20/2018 18:20:01+524421us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:20:01+862963us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff04)
+09/20/2018 18:20:01+863027us LOSM <LO> LOSMAP_get_L_state > ( lot_id=1093 )
+09/20/2018 18:20:01+863067us LOSM <LO> LOSMAP_get_L_state < (lot_state=LO4A_L_POST_PROCESSING,history_state=LO4A_L_WORKING) = OK
+09/20/2018 18:20:01+863106us LOSM <LO> LOSMAP_get_L_state < () = OK
+09/20/2018 18:20:01+863133us LOSM <LO> LOSMGN_raise_get_L_state > 
+09/20/2018 18:20:01+863176us LOSM <LO> LOSMGN_raise_get_L_state < () = OK
+09/20/2018 18:20:01+863203us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:20:01+863322us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff01)
+09/20/2018 18:20:01+863358us LOSM <LO> LOSMAP_report_event > (lot_id=1093, event_id=LOSM_E_PROCESSED_SUBSTRATE_OUT)
+09/20/2018 18:20:01+863384us LOSM <LO> LOSMAP_report_event > (current_state(Q:LO4A_Q_ENABLED,P:LO4A_P_UNLOADING)
+09/20/2018 18:20:01+863410us LOSM <LO> LOSMAP_report_event (result1=0)
+09/20/2018 18:20:01+863433us LOSM <LO> besm_Q_invalid_handler invalid event:LOSM_E_PROCESSED_SUBSTRATE_OUT,queue state:LO4A_Q_ENABLED
+09/20/2018 18:20:01+863459us LOSM <LO> besm_QC_invalid_handler invalid event:LOSM_E_PROCESSED_SUBSTRATE_OUT,qc_state:LO4A_QC_QUEUED
+09/20/2018 18:20:01+863484us LOSM <LO> LOSMAP_report_event > (current_state(L:LO4A_L_POST_PROCESSING)
+09/20/2018 18:20:01+863507us LOSM <LO> besm_send_lot_event_item event_id:LOSM_E_PROCESSED_SUBSTRATE_OUT,lot_state=LO4A_L_POST_PROCESSING,lot_id=1093
+09/20/2018 18:20:01+863533us LOSM <LO> LOIT_lot_event_item_set_attribute > ( tag=0x4c4fff04, dvalue=6, lot_id=1093)
+09/20/2018 18:20:01+863559us LOSM <LO> LOIT_lot_event_item_set_attribute < () = OK
+09/20/2018 18:20:01+863582us LOSM <LO> besm_send_lot_event_item < ( )
+09/20/2018 18:20:01+863605us LOSM <LO> besm_send_lot_state_item lot_state:LO4A_L_POST_PROCESSING,lot_id=1093
+09/20/2018 18:20:01+863641us LOSM <LO> LOIT_lot_state_item_set_attribute > ( tag=0x4c4fff03, dvalue=3, lot_id=1093)
+09/20/2018 18:20:01+863667us LOSM <LO> LOIT_lot_state_item_set_attribute < () = OK
+09/20/2018 18:20:01+863690us LOSM <LO> besm_send_lot_state_item < ( )
+09/20/2018 18:20:01+863713us LOSM <LO> besm_L_event_handler valid event:LOSM_E_PROCESSED_SUBSTRATE_OUT,lot state:LO4A_L_FULLY_PROCESSED history state:LO4A_L_POST_PROCESSING
+09/20/2018 18:20:01+863738us LOSM <LO> besm_update_queue_info > ()
+09/20/2018 18:20:01+863761us LOSM <LO> LOSMAP_get_queue_info > ()
+09/20/2018 18:20:01+863784us LOSM <LO> LOSMAP_get_queue_info > ([1]:lot_id:1093,lot_state=4,start_time=1537438790-1537438801,stop_time=0-0)
+09/20/2018 18:20:01+863810us LOSM <LO> LOSMAP_get_queue_info < ( queue_enable=TRUE,process_state=6)
+09/20/2018 18:20:01+863834us LOSM <LO> LOSMGN_raise_queue_info_event_subscribe > 
+09/20/2018 18:20:01+863921us LOSM <LO> LOSMGN_raise_queue_info_event_subscribe < () = OK
+09/20/2018 18:20:01+863950us LOSM <LO> besm_update_queue_info < ( queue_enable=TRUE)
+09/20/2018 18:20:01+863975us LOSM <LO> besm_send_process_event_item event_id:LOSM_E_PROCESSED_SUBSTRATE_OUT,p_state:LO4A_P_UNLOADING
+09/20/2018 18:20:01+864001us LOSM <LO> LOIT_process_event_item_set_attribute > ( tag=0x4c4fff02, dvalue=53)
+09/20/2018 18:20:01+864025us LOSM <LO> LOIT_process_event_item_set_attribute < () = OK
+09/20/2018 18:20:01+864048us LOSM <LO> besm_send_process_event_item < ( )
+09/20/2018 18:20:01+864070us LOSM <LO> besm_send_process_state_item process_state:LO4A_P_UNLOADING
+09/20/2018 18:20:01+864094us LOSM <LO> LOIT_process_state_item_set_attribute > ( tag=0x4c4fff01, dvalue=8)
+09/20/2018 18:20:01+864118us LOSM <LO> LOIT_process_state_item_set_attribute < () = OK
+09/20/2018 18:20:01+864141us LOSM <LO> besm_send_process_state_item < ( )
+09/20/2018 18:20:01+864163us LOSM <LO> besm_update_queue_info > ()
+09/20/2018 18:20:01+864186us LOSM <LO> LOSMAP_get_queue_info > ()
+09/20/2018 18:20:01+864208us LOSM <LO> LOSMAP_get_queue_info > ([1]:lot_id:1093,lot_state=4,start_time=1537438790-1537438801,stop_time=0-0)
+09/20/2018 18:20:01+864233us LOSM <LO> LOSMAP_get_queue_info < ( queue_enable=TRUE,process_state=8)
+09/20/2018 18:20:01+864257us LOSM <LO> LOSMGN_raise_queue_info_event_subscribe > 
+09/20/2018 18:20:01+864337us LOSM <LO> LOSMGN_raise_queue_info_event_subscribe < () = OK
+09/20/2018 18:20:01+864365us LOSM <LO> besm_update_queue_info < ( queue_enable=TRUE)
+09/20/2018 18:20:01+864389us LOSM <LO> besm_P_event_handler valid event:LOSM_E_PROCESSED_SUBSTRATE_OUT,process state:LO4A_P_STOPING
+09/20/2018 18:20:01+864414us LOSM <LO> LOSMAP_report_event > (current_state(Q:LO4A_Q_ENABLED,P:LO4A_P_STOPING)
+09/20/2018 18:20:01+864438us LOSM <LO> LOSMAP_report_event < () = OK
+09/20/2018 18:20:01+864479us LOSM <LO> LOSMGN_raise_report_event > 
+09/20/2018 18:20:01+864531us LOSM <LO> LOSMGN_raise_report_event < () = OK
+09/20/2018 18:20:01+864569us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:20:01+865450us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff04)
+09/20/2018 18:20:01+865496us LOSM <LO> LOSMAP_get_L_state > ( lot_id=1093 )
+09/20/2018 18:20:01+865524us LOSM <LO> LOSMAP_get_L_state < (lot_state=LO4A_L_FULLY_PROCESSED,history_state=LO4A_L_POST_PROCESSING) = OK
+09/20/2018 18:20:01+865550us LOSM <LO> LOSMAP_get_L_state < () = OK
+09/20/2018 18:20:01+865573us LOSM <LO> LOSMGN_raise_get_L_state > 
+09/20/2018 18:20:01+865616us LOSM <LO> LOSMGN_raise_get_L_state < () = OK
+09/20/2018 18:20:01+865651us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:20:01+937388us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff08)
+09/20/2018 18:20:01+937453us LOSM <LO> LOSMAP_clear_processed_lot > ()
+09/20/2018 18:20:01+937495us LOSM <LO> besm_get_processed_lot_num > (lot_queue=0xb73bd290)
+09/20/2018 18:20:01+937535us LOSM <LO> besm_get_processed_lot_num < (lot_num=1,lot_id=0)
+09/20/2018 18:20:01+937574us LOSM <LO> LOSMAP_clear_processed_lot < ( lot_id=0)
+09/20/2018 18:20:01+937610us LOSM <LO> LOSMGN_raise_clear_processed_lot > 
+09/20/2018 18:20:01+937671us LOSM <LO> LOSMGN_raise_clear_processed_lot < () = OK
+09/20/2018 18:20:01+937712us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:20:01+937912us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff03)
+09/20/2018 18:20:01+937963us LOSM <LO> LOSMAP_get_Q_state > ( )
+09/20/2018 18:20:01+938001us LOSM <LO> LOSMAP_get_Q_state < (q_state=LO4A_Q_ENABLED) = OK
+09/20/2018 18:20:01+938041us LOSM <LO> LOSMGN_raise_get_Q_state > 
+09/20/2018 18:20:01+938091us LOSM <LO> LOSMGN_raise_get_Q_state < () = OK
+09/20/2018 18:20:01+938128us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:20:01+938361us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff07)
+09/20/2018 18:20:01+938413us LOSM <LO> LOSMAP_get_queue_info > ()
+09/20/2018 18:20:01+938451us LOSM <LO> LOSMAP_get_queue_info > ([1]:lot_id:1093,lot_state=4,start_time=1537438790-1537438801,stop_time=16344512-16344512)
+09/20/2018 18:20:01+938493us LOSM <LO> LOSMAP_get_queue_info < ( queue_enable=TRUE,process_state=8)
+09/20/2018 18:20:01+938531us LOSM <LO> LOSMGN_raise_get_queue_info > 
+09/20/2018 18:20:01+938615us LOSM <LO> LOSMGN_raise_get_queue_info < () = OK
+09/20/2018 18:20:01+938667us LOSM <LO> LOSM_bind_handler < () = OK
+09/20/2018 18:20:01+939824us LOSM <LO> LOSM_bind_handler > (function_code = 0x4c4fff01)
+09/20/2018 18:20:01+939885us LOSM <LO> LOSMAP_report_event > (lot_id=0, event_id=LOSM_E_LAST_LOT_FULLY_PROCESSED)
+09/20/2018 18:20:01+939928us LOSM <LO> LOSMAP_report_event > (current_state(Q:LO4A_Q_ENABLED,P:LO4A_P_STOPING)
+09/20/2018 18:20:01+939967us LOSM <LO> LOSMAP_report_event (result1=0)
+09/20/2018 18:20:01+940004us LOSM <LO> besm_Q_invalid_handler invalid event:LOSM_E_LAST_LOT_FULLY_PROCESSED,queue state:LO4A_Q_ENABLED
+09/20/2018 18:20:01+940032us LOSM <LO> besm_send_qc_event_item event_id:LOSM_E_LAST_LOT_FULLY_PROCESSED
+09/20/2018 18:20:01+940057us LOSM <LO> LOIT_qc_event_item_set_attribute > ( tag=0x4c4fff0a, dvalue=3)
+09/20/2018 18:20:01+940082us LOSM <LO> LOIT_qc_event_item_set_attribute < () = OK
+09/20/2018 18:20:01+940126us LOSM <LO> besm_send_qc_event_item < ( )
+09/20/2018 18:20:01+940160us LOSM <LO> besm_send_qc_state_item event_id:LOSM_E_LAST_LOT_FULLY_PROCESSED
+09/20/2018 18:20:01+940195us LOSM <LO> LOIT_qc_state_item_set_attribute > ( tag=0x4c4fff09, dvalue=1)
+09/20/2018 18:20:01+940231us LOSM <LO> LOIT_qc_state_item_set_attribute < () = OK
+09/20/2018 18:20:01+940265us LOSM <LO> besm_send_qc_state_item < ( )
+09/20/2018 18:20:01+940290us LOSM <LO> besm_QC_event_handler valid event:LOSM_E_LAST_LOT_FULLY_PROCESSED,queue_content_state:LO4A_QC_EMPTY
+09/20/2018 18:20:01+940325us LOSM <LO> besm_send_process_event_item event_id:LOSM_E_LAST_LOT_FULLY_PROCESSED,p_state:LO4A_P_STOPING
+09/20/2018 18:20:01+940377us LOSM <LO> LOIT_process_event_item_set_attribute > ( tag=0x4c4fff02, dvalue=51)
+09/20/2018 18:20:01+940417us LOSM <LO> LOIT_process_event_item_set_attribute < () = OK
+09/20/2018 18:20:01+940456us LOSM <LO> besm_send_process_event_item < ( )
+09/20/2018 18:20:01+940492us LOSM <LO> besm_send_process_state_item process_state:LO4A_P_STOPING
+09/20/2018 18:20:01+940531us LOSM <LO> LOIT_process_state_item_set_attribute > ( tag=0x4c4fff01, dvalue=12)
+09/20/2018 18:20:01+940568us LOSM <LO> LOIT_process_state_item_set_attribute < () = OK
+09/20/2018 18:20:01+940611us LOSM <LO> besm_send_process_state_item < ( )
+09/20/2018 18:20:01+940648us LOSM <LO> besm_update_queue_info > ()
+09/20/2018 18:20:01+940682us LOSM <LO> LOSMAP_get_queue_info > ()
+09/20/2018 18:20:01+940708us LOSM <LO> LOSMAP_get_queue_info > ([1]:lot_id:1093,lot_state=4,start_time=1537438790-1537438801,stop_time=0-0)
+09/20/2018 18:20:01+940735us LOSM <LO> LOSMAP_get_queue_info < ( queue_enable=TRUE,process_state=1)
+09/20/2018 18:20:01+940760us LOSM <LO> LOSMGN_raise_queue_info_event_subscribe > 
+09/20/2018 18:20:01+940837us LOSM <LO> LOSMGN_raise_queue_info_event_subscribe < () = OK
+09/20/2018 18:20:01+940872us LOSM <LO> besm_update_queue_info < ( queue_enable=TRUE)
+09/20/2018 18:20:01+940914us LOSM <LO> besm_P_event_handler valid event:LOSM_E_LAST_LOT_FULLY_PROCESSED,process state:LO4A_P_IDLE
+09/20/2018 18:20:01+940950us LOSM <LO> LOSMAP_report_event > (current_state(Q:LO4A_Q_ENABLED,P:LO4A_P_IDLE)
+09/20/2018 18:20:01+940986us LOSM <LO> LOSMAP_report_event < () = OK
+09/20/2018 18:20:01+941022us LOSM <LO> LOSMGN_raise_report_event > 
+09/20/2018 18:20:01+941072us LOSM <LO> LOSMGN_raise_report_event < () = OK
+09/20/2018 18:20:01+941120us LOSM <LO> LOSM_bind_handler < () = OK
+-------------------------------last5 end------------------------------
+
+------------------------------------------------------------------------
+2018-09-20,18:20:13

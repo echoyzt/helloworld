@@ -1,0 +1,148 @@
+09/20/2018 18:19:42+815198us LORC <LO> LORC_bind_handler > (function_code = 0x4c4fff03)
+09/20/2018 18:19:42+815275us LORC <LO> LORCAP_start_queue >()
+09/20/2018 18:19:42+815330us LORC <LO> LO4A_start_production > ()
+09/20/2018 18:19:42+819344us LORC <LO> LO4A_start_production < () = OK
+09/20/2018 18:19:42+819625us LORC <LO> LORCAP_start_queue <(g_lorcap_remote_auto=FALSE)=OK
+09/20/2018 18:19:42+819680us LORC <LO> LORCGN_raise_2PRC_start_queue > 
+09/20/2018 18:19:42+819750us LORC <LO> LORCGN_raise_2PRC_start_queue < () = OK
+09/20/2018 18:19:42+819797us LORC <LO> LORC_bind_handler < () = OK
+------------------------------merge1 end------------------------------
+
+09/20/2018 18:20:01+865849us LORC <LO> lorcap_pl_lot_finish_sb >(lot_id=1093,lot_state=4,error_code=0,g_lorcap_remote_auto=FALSE)
+09/20/2018 18:20:01+865937us LORC <LO> LODM_get_lot_page_data > ()
+09/20/2018 18:20:01+935937us LORC <LO> LODM_get_lot_page_data < () = OK
+09/20/2018 18:20:01+936011us LORC <LO> LODM_get_lot_result_data > ()
+09/20/2018 18:20:01+937675us LORC <LO> LODM_get_lot_result_data < () = OK
+09/20/2018 18:20:01+937732us LORC <LO> LODM_get_lot_plate_seal_result_tab > ()
+09/20/2018 18:20:01+938474us LORC <LO> LODM_get_lot_plate_seal_result_tab < () = OK
+09/20/2018 18:20:01+938532us LORC <LO> LODM_get_lot_plate_measure_result > ()
+09/20/2018 18:20:01+940657us LORC <LO> LODM_get_lot_plate_measure_result < () = OK
+09/20/2018 18:20:01+940714us LORC <LO> LODM_get_lot_substrate_time_data > ()
+09/20/2018 18:20:01+941826us LORC <LO> LODM_get_lot_substrate_time_data < () = OK
+09/20/2018 18:20:01+941881us LORC <LO> LODM_get_lot_substrate_result_tab > ()
+09/20/2018 18:20:01+942853us LORC <LO> LODM_get_lot_substrate_result_tab < () = OK
+09/20/2018 18:20:01+942908us LORC <LO> LODM_get_work_info > ()
+------------------------------merge2 end------------------------------
+
+09/20/2018 18:20:02+103719us LORC <LO> LODM_get_work_info < () = OK
+09/20/2018 18:20:02+103794us LORC <LO> lorcap_pl_lot_finish_sb >(lot_start_time= 1537438848.000000)
+09/20/2018 18:20:02+103856us LORC <LO> lorcap_pl_lot_finish_sb >(lot_stop_time= 1537438801.524125)
+09/20/2018 18:20:02+103923us LORC <LO> lorcap_pl_lot_finish_sb >(glass id=1093)
+09/20/2018 18:20:02+103985us LORC <LO> lorcap_pl_lot_finish_sb >(glass state=SUCCEED)
+09/20/2018 18:20:02+104057us LORC <LO> lorcap_pl_lot_finish_sb >(begin_second= 1537438791.641388,end_second= 1537438801.398468,tack_time=          9.757080)
+09/20/2018 18:20:02+104106us LORC <LO> lorcap_pl_lot_finish_sb >(level_time=          0.889157)
+09/20/2018 18:20:02+104149us LORC <LO> lorcap_pl_lot_finish_sb >(copa_start_time= 1537438791.726449, copa_end_time= 1537438792.088557)
+09/20/2018 18:20:02+104195us LORC <LO> lorcap_pl_lot_finish_sb >(copa_time=          0.362108)
+09/20/2018 18:20:02+104239us LORC <LO> lorcap_pl_lot_finish_sb >(fipa_start_time= 1537438792.097420, fipa_end_time= 1537438792.566067)
+09/20/2018 18:20:02+104284us LORC <LO> lorcap_pl_lot_finish_sb >(fipa_time=          0.468647)
+09/20/2018 18:20:02+104328us LORC <LO> lorcap_pl_lot_finish_sb >(tran=0.013338,0.033987,rot=-0.001607)
+09/20/2018 18:20:02+104374us LORC <LO> lorcap_pl_lot_finish_sb >(cell_success_nr=18)
+09/20/2018 18:20:02+104415us LORC <LO> lorcap_pl_lot_finish_sb >(cell_fail_nr=0)
+09/20/2018 18:20:02+104455us LORC <LO> lorcap_pl_lot_finish_sb >(is_perform_expose=1)
+09/20/2018 18:20:02+104492us LORC <LO> lorcap_pl_lot_finish_sb >(lot_id=(null))
+09/20/2018 18:20:02+104529us LORC <LO> lorcap_pl_lot_finish_sb >(cassette_id=(null))
+09/20/2018 18:20:02+104566us LORC <LO> lorcap_pl_lot_finish_sb >(product_id=(null))
+09/20/2018 18:20:02+104596us LORC <LO> lorcap_pl_lot_finish_sb >(operation_id=(null))
+09/20/2018 18:20:02+104621us LORC <LO> lorcap_pl_lot_finish_sb >(type=(null))
+09/20/2018 18:20:02+104647us LORC <LO> LODM_get_lot_data > ()
+09/20/2018 18:20:02+105580us LORC <LO> LODM_get_lot_data < () = OK
+09/20/2018 18:20:02+105635us LORC <RE> SMEE_INT32 RE4A_get_file_name_by_recipe_id(SMEE_UINT32, SMEE_CHAR*) > (recipe_id=666)
+09/20/2018 18:20:02+105679us LORC <RE> REDM_get_file_name_by_recipe_id > ()
+09/20/2018 18:20:02+108887us LORC <RE> REDM_get_file_name_by_recipe_id < () = OK
+09/20/2018 18:20:02+108936us LORC <RE> SMEE_INT32 RE4A_get_file_name_by_recipe_id(SMEE_UINT32, SMEE_CHAR*) < (recipe_file_name=./data/user/recipes/user/TEST/20180918_segment_velocity_test.rdf) = OK
+09/20/2018 18:20:02+108991us LORC <RE> SMEE_INT32 RE4A_read_recipe_data(const SMEE_CHAR*, RE4A_RECIPE_STRUCT*) > (recipe_file_name = ./data/user/recipes/user/TEST/20180918_segment_velocity_test.rdf)
+09/20/2018 18:20:02+132814us LORC <RE> SMEE_INT32 re4a_convert_to_ext_recipe_data(REDM_RECIPE_STRUCT&, RE4A_RECIPE_STR > ()
+09/20/2018 18:20:02+132949us LORC <RE> SMEE_INT32 re4a_convert_to_ext_recipe_data(REDM_RECIPE_STRUCT&, RE4A_RECIPE_STR < () = OK
+09/20/2018 18:20:02+203368us LORC <RE> SMEE_INT32 RE4A_read_recipe_data(const SMEE_CHAR*, RE4A_RECIPE_STRUCT*) < () = OK
+09/20/2018 18:20:02+203446us LORC <LO> lorcap_pl_lot_finish_sb >(recipe_no=666)
+09/20/2018 18:20:02+203488us LORC <LO> lorcap_pl_lot_finish_sb >(scan_length=0.006000)
+09/20/2018 18:20:02+203584us LORC <LO> lorcap_pl_lot_finish_sb >(scan_times=70)
+09/20/2018 18:20:02+203651us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=20.000000)
+09/20/2018 18:20:02+203720us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=40.000000)
+09/20/2018 18:20:02+203787us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=20.000000)
+09/20/2018 18:20:02+203856us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=40.000000)
+09/20/2018 18:20:02+203925us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=20.000000)
+09/20/2018 18:20:02+203992us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=40.000000)
+09/20/2018 18:20:02+213157us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=20.000000)
+09/20/2018 18:20:02+213204us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=40.000000)
+09/20/2018 18:20:02+213245us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+213282us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+213334us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+213375us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+213413us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+213449us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+213486us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+213527us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+213576us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+213615us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+213652us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+213693us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+213731us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+213768us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+213805us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+213841us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+213879us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+213916us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+213943us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+213969us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+213993us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+214036us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+214062us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+214087us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+214112us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+214137us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+214161us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+214185us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+214210us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+214234us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+214259us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+214284us LORC <LO> lorcap_pl_lot_finish_sb >(sealing_power_set=0.000000)
+09/20/2018 18:20:02+214309us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[0]=2.500000)
+09/20/2018 18:20:02+214346us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[1]=3.000000)
+09/20/2018 18:20:02+214371us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[2]=2.500000)
+09/20/2018 18:20:02+214396us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[3]=3.000000)
+09/20/2018 18:20:02+214421us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[4]=2.500000)
+09/20/2018 18:20:02+214446us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[5]=3.000000)
+09/20/2018 18:20:02+214471us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[6]=2.500000)
+09/20/2018 18:20:02+214495us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[7]=3.000000)
+09/20/2018 18:20:02+214520us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[8]=0.000000)
+09/20/2018 18:20:02+214545us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[9]=0.000000)
+09/20/2018 18:20:02+214570us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[10]=0.000000)
+09/20/2018 18:20:02+214594us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[11]=0.000000)
+09/20/2018 18:20:02+214619us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[12]=0.000000)
+09/20/2018 18:20:02+214645us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[13]=0.000000)
+09/20/2018 18:20:02+214669us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[14]=0.000000)
+09/20/2018 18:20:02+214694us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[15]=0.000000)
+09/20/2018 18:20:02+214718us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[16]=0.000000)
+09/20/2018 18:20:02+214743us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[17]=0.000000)
+09/20/2018 18:20:02+214768us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[18]=0.000000)
+09/20/2018 18:20:02+214793us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[19]=0.000000)
+09/20/2018 18:20:02+214817us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[20]=0.000000)
+09/20/2018 18:20:02+214842us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[21]=0.000000)
+09/20/2018 18:20:02+214866us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[22]=0.000000)
+09/20/2018 18:20:02+214891us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[23]=0.000000)
+09/20/2018 18:20:02+214915us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[24]=0.000000)
+09/20/2018 18:20:02+214940us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[25]=0.000000)
+09/20/2018 18:20:02+214965us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[26]=0.000000)
+09/20/2018 18:20:02+214990us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[27]=0.000000)
+09/20/2018 18:20:02+215020us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[28]=0.000000)
+09/20/2018 18:20:02+215046us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[29]=0.000000)
+09/20/2018 18:20:02+215070us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[30]=0.000000)
+09/20/2018 18:20:02+215095us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[31]=0.000000)
+09/20/2018 18:20:02+215120us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[32]=0.000000)
+09/20/2018 18:20:02+215145us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[33]=0.000000)
+09/20/2018 18:20:02+215169us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[34]=0.000000)
+09/20/2018 18:20:02+215194us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[35]=0.000000)
+09/20/2018 18:20:02+215218us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[36]=0.000000)
+09/20/2018 18:20:02+215243us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[37]=0.000000)
+09/20/2018 18:20:02+215267us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[38]=0.000000)
+09/20/2018 18:20:02+215292us LORC <LO> lorcap_pl_lot_finish_sb >(seal_velocity[39]=0.000000)
+09/20/2018 18:20:02+215318us LORC <LO> lorcap_pl_lot_finish_sb >(seal_strategy=2)
+09/20/2018 18:20:02+216137us LORC <SX> SX4A_common_event_trig > 
+09/20/2018 18:20:02+217413us LORC <LO> LORCGN_raise_2PRC_tack_time_event_subscribe > 
+09/20/2018 18:20:02+217804us LORC <LO> LORCGN_raise_2PRC_tack_time_event_subscribe < () = OK
+09/20/2018 18:20:02+217864us LORC <LO> lorcap_pl_lot_finish_sb <()=OK
+-------------------------------last3 end------------------------------
+
+------------------------------------------------------------------------
+2018-09-20,18:20:13

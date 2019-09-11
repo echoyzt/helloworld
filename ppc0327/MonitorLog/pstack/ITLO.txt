@@ -1,0 +1,11 @@
+=====pstack 13209-----ITLO
+#0  0x00a11424 in __kernel_vsyscall ()
+#1  0x001e60b1 in select () from /lib/libc.so.6
+#2  0x0092d293 in CNFD::CNFD_Select(fd_set*, fd_set*, int*, int) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#3  0x00931276 in CNCM::CNCM_RecvreqIntime(unsigned long, int, long, void*, int, int*, int*, int, unsigned long*) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#4  0x009318da in CNCM::CNCM_ReceiveRequest(unsigned long, int, void*, int, int*, int*, int, unsigned long*) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#5  0x00936ef0 in CNMAHandler::CNMA_receiveRequest(char const*, void*, int, int*, int*, int) () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#6  0x00933c52 in CN4A_receive_request () from /home/506OI/SMEE/lib/linux/libCN4A.so
+#7  0x0051aa29 in ITMessage::RecRequest(int) () from /home/506OI/SMEE/lib/linux/libIT4A.so
+#8  0x08055f10 in ITLocalHandler::Active() ()
+#9  0x080563ef in main ()

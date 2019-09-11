@@ -1,0 +1,8 @@
+=====pstack 13083-----DBSE
+#0  0x00325424 in __kernel_vsyscall ()
+#1  0x00a5e07d in ___newselect_nocancel () from /lib/libc.so.6
+#2  0x00283097 in CNLM_server_receive_request () from /home/506OI/SMEE/lib/linux/libGF4A.so
+#3  0x00284340 in GFCN_receive_request () from /home/506OI/SMEE/lib/linux/libGF4A.so
+#4  0x00880ae8 in DBMessage::RecRequest(int) () from /home/506OI/SMEE/lib/linux/libGFDB.so
+#5  0x0804d1f0 in DBServer::Active(DBMessage*) ()
+#6  0x0804d71f in main ()
